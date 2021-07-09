@@ -1,0 +1,95 @@
+:root {
+  /* Fonts */
+  --sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --serif: Georgia, 'Times New Roman', Times, serif;
+
+  /* Font scale */
+  --base: 1;
+  --scale-up: 1.33;
+  --scale-down: 0.667;
+
+  --text-300: calc(var(--text-400) * var(--scale-down));
+  --text-400: calc(var(--text-500) * var(--scale-down));
+  --text-500: 1rem;
+  --text-600: calc(var(--text-500) * var(--scale-up));
+  --text-700: calc(var(--text-600) * var(--scale-up));
+  --text-800: calc(var(--text-700) * var(--scale-up));
+  --text-900: calc(var(--text-800) * var(--scale-up));
+  /* Colors */
+
+  --accent-primary: #EF476F;
+  --accent-primary-rgb: 239, 71, 111;
+
+  --accent-secondary: #FFD166;
+  --accent-secondary-rgb: 255, 209, 102;
+
+  --secondary: #06D6A0;
+  --secondary-rgb: 6, 214, 160;
+
+  --primary: #118AB2;
+  --primary-rgb: 17, 138, 178;
+
+  --dark: #073B4C;
+  --dark-rgb: 7, 59, 76;
+
+  --light: #e6f9ff;
+  --light-rgb: 230, 249, 255;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+body {
+  font-size: 100%;
+  font-family: var(--sans);
+  color: var(--light);
+  display: grid;
+  grid-template-columns: 25vw 1fr;
+  min-height: 100vh;
+  background: var(--dark);
+}
+
+main {
+  padding: 1rem;
+}
+
+input[type="text"] {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid rgb(var(--primary-rgb), 0.4);
+}
+
+button, input[type="submit"] {
+  padding: 0.5rem;
+  font-weight: 500;
+}
+
+.sr-only {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--sans);
+}
+
+h1,
+h2 {
+  font-weight: 900;
+}
+
+h3 {
+  font-weight: 800;
+}
+
+h4 {
+  font-weight: 700;
+}
