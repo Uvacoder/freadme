@@ -63,10 +63,6 @@ body {
   line-height: 1.5;
 }
 
-main {
-  padding: 1rem;
-}
-
 input[type="text"] {
   font-size: 1rem;
   padding: 0.5rem;
@@ -216,6 +212,6 @@ li {
   }
 
   .post time {
-    font-size: var(--size-600);
+    font-size: var(--size-500);
   }
 }

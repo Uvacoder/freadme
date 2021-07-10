@@ -1,20 +1,18 @@
 import fetch from 'node-fetch';
+import Parser from 'rss-parser';
+import { parseContent } from './parse.js';
+let parser = new Parser();
 
 const baseUrl = 'https://css-tricks.com/feed/';
 
 export async function getFeed(address) {
-    const response = await fetch(address);
-
-    if(!response.ok) {
-      return {
-        status: response.status,
-        error: new Error(`Could not find a proper feed at ${address}`),
-      };
-    }
-
-    const data = await response.text();
+  const feed = await parser.parseURL(address);
+  
+  feed.items.map((item) => {
+    return {...item, ["content:encodedSnippet"]: parseContent(item["content:encodedSnippet"])};
+  })
     
-    return data;
+    return feed;
 }
 export const get = async() => {
   const feed = await getFeed(baseUrl);
