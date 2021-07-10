@@ -23,7 +23,7 @@
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-areas: "subscribe-input subscribe-submit";
-  grid-gap: 0.5rem;
+  /* grid-gap: 0.5rem; */
   padding: 1rem;
   border-block-end: 1px solid rgb(var(--primary-rgb), 0.3);
   overflow: visible;
@@ -32,9 +32,20 @@
 .subscribe-input {
   grid-area: subscribe-input;
   background-color: rgb(var(--primary-rgb), 0.1);
+  outline-offset: 0;
+  color: var(--light);
 }
 
 .subscribe-submit {
   grid-area: subscribe-submit;
+  padding: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.125rem;
+  cursor: pointer;
+  border-radius: 0 0.125rem 0.125rem 0;
+  outline-offset: 0;
+}
+.subscribe-submit:hover {
+  background: var(--primary-light);
 }
 </style>

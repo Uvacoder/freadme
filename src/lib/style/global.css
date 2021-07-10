@@ -1,8 +1,9 @@
 :root {
   /* Fonts */
-  --sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue,
+  --sans: 'Urbanist', -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue,
   helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   --serif: Georgia, 'Times New Roman', Times, serif;
+  --body: 'Atkinson Hyperlegible';
 
   /* Font scale */
   --base: 1;
@@ -38,8 +39,13 @@
   --primary: #118AB2;
   --primary-rgb: 17, 138, 178;
 
-  --dark: #073B4C;
-  --dark-rgb: 7, 59, 76;
+  --primary-light: #1d9ac4;
+  --primary-light-rgb: 29, 154, 196;
+
+  --primary-light-hover: #3db6df;
+
+  --dark: #042b38;
+  --dark-rgb: 4, 43, 56;
 
   --light: #e6f9ff;
   --light-rgb: 230, 249, 255;
@@ -53,8 +59,7 @@
 }
 
 body {
-  font-size: 100%;
-  font-family: var(--serif);
+  font-family: var(--body);
   color: var(--light);
   display: grid;
   grid-template-columns: 25vw 1fr;
@@ -127,12 +132,13 @@ h4 {
 }
 
 a:not([class]) {
-  color: currentColor;
+  color: var(--primary);
 }
 
 :focus {
-  outline: 2px solid;
+  outline: 2px dotted;
   outline-offset: 0.25rem;
+  outline-color: rgb(var(--accent-secondary-rgb), 0.7);
 }
 
 main:focus {
@@ -141,6 +147,7 @@ main:focus {
 
 [href]:hover {
   text-decoration: none;
+  color: var(--primary-light-hover);
 }
 
 img {
@@ -199,15 +206,15 @@ li {
   }
 
   p {
-    font-size: var(--size-500);
+    font-size: var(--size-600);
   }
 
   figcaption {
-    font-size: var(--size-400);
+    font-size: var(--size-500);
   }
 
   blockquote p {
-    font-size: var(--size-600);
+    font-size: var(--size-700);
     max-width: 40ch;
   }
 

@@ -9,12 +9,14 @@
 
 <details class="post">
   <summary class="post-header">
-    <h2 class="post-title">{post.title}</h2>
+    <h2 class="post-title"><a href="{post.link}">{post.title}</a></h2>
     <section class="post-info">
       <section class="post-image">
-        <img src="{feedImage.url}" alt="{feedDescription}" class="feed-image">
+        <a href={feedLink}>
+          <img src="{feedImage.url}" alt="{feedDescription}" class="feed-image">
+        </a>
       </section>
-      <section class="post-meta">{feedTitle}: <time>{new Date(post.pubDate).toLocaleString()}</time></section>
+      <section class="post-meta"><a href="{feedLink}">{feedTitle}</a>: <time>{new Date(post.pubDate).toLocaleString()}</time></section>
     </section>
   </summary>
   <section class="content flow">{@html post["content:encoded"]}</section>
@@ -23,7 +25,7 @@
 <style>
    .post {
     --flow-space: var(--size-700);
-    border-bottom: 1px solid var(--primary);
+    border-bottom: 1px solid rgb(var(--primary-rgb), 0.5);
     padding: 1rem;
   }
 
@@ -31,9 +33,6 @@
     font-family: var(--sans);
     display: flex;
     flex-direction: column;
-  }
-  .post-header > * + * {
-    margin-top: 1rem;
   }
 
   .post-info {
@@ -43,6 +42,9 @@
     align-items: center;
   }
   .feed-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 1.33rem;
     height: 1.33rem;
   }
@@ -50,6 +52,8 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.125rem;
   }
   .post-title, .content {
     margin-inline: 2.33rem;
@@ -62,16 +66,22 @@
   }
   time {
     font-family: var(--sans);
+    color: rgb(var(--light-rgb), 0.8);
+    font-weight: 500;
   }
-  a {
-    color: var(--light);
-  }
-
   details > summary {
     list-style: none;
   }
 
   details > summary::-webkit-details-marker {
     display: none;
+  }
+  summary a {
+    color: var(--primary-light);
+    text-decoration: none;
+    }
+    summary a:hover {
+    text-decoration: underline;
+    color: var(--primary-light-hover);
   }
 </style>
