@@ -1,6 +1,7 @@
 :root {
   /* Fonts */
-  --sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue,
+  helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   --serif: Georgia, 'Times New Roman', Times, serif;
 
   /* Font scale */
@@ -8,13 +9,21 @@
   --scale-up: 1.33;
   --scale-down: 0.667;
 
-  --text-300: calc(var(--text-400) * var(--scale-down));
-  --text-400: calc(var(--text-500) * var(--scale-down));
-  --text-500: 1rem;
-  --text-600: calc(var(--text-500) * var(--scale-up));
-  --text-700: calc(var(--text-600) * var(--scale-up));
-  --text-800: calc(var(--text-700) * var(--scale-up));
-  --text-900: calc(var(--text-800) * var(--scale-up));
+  --size-300: calc(var(--size-400) * var(--scale-down));
+  --size-400: calc(var(--size-500) * var(--scale-down));
+  --size-500: 1rem;
+  --size-600: calc(var(--size-500) * var(--scale-up));
+  --size-700: calc(var(--size-600) * var(--scale-up));
+  --size-800: calc(var(--size-700) * var(--scale-up));
+  --size-900: calc(var(--size-800) * var(--scale-up));
+
+  /* Responsive size Sizes */
+  --font-0: clamp(var(--size-300), 1vw, var(--size-400));
+  --font-1: clamp(var(--size-400), 2vw, var(--size-500));
+  --font-2: clamp(var(--font-500), 2.5vw, var(--size-600));
+  --font-3: clamp(var(--font-600), 3vw, var(--size-700)); 
+  --font-4: clamp(var(--font-700), 3.5vw, var(--size-800)); 
+  --font-5: clamp(var(--font-800), 4vw, var(--size-900)); 
   /* Colors */
 
   --accent-primary: #EF476F;
@@ -40,17 +49,18 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  line-height: 1;
+  /* line-height: 1; */
 }
 
 body {
   font-size: 100%;
-  font-family: var(--sans);
+  font-family: var(--serif);
   color: var(--light);
   display: grid;
   grid-template-columns: 25vw 1fr;
   min-height: 100vh;
   background: var(--dark);
+  line-height: 1.5;
 }
 
 main {
@@ -63,9 +73,21 @@ input[type="text"] {
   border: 1px solid rgb(var(--primary-rgb), 0.4);
 }
 
+/* input:focus, input[type="size"]:focus {
+  outline: rgb(var(--primary-rgb), 0.8) 2px solid;
+  /* outline-offset: 2px; */
+} */
+
 button, input[type="submit"] {
   padding: 0.5rem;
   font-weight: 500;
+}
+
+button {
+  background: var(--primary);
+  border: none;
+  color: var(--light);
+  letter-spacing: 0.1rem;
 }
 
 .sr-only {
@@ -79,6 +101,7 @@ h2,
 h3,
 h4 {
   font-family: var(--sans);
+  line-height: 1.3;
 }
 
 h1,
@@ -86,10 +109,113 @@ h2 {
   font-weight: 900;
 }
 
+h1 {
+  font-size: var(--size-800);
+  /* max-width: 15ch; */
+}
+
+h2 {
+  font-size: var(--size-700);
+  /* max-width: 25ch; */
+}
+
 h3 {
+  font-size: var(--size-600);
   font-weight: 800;
+  /* max-width: 25ch; */
 }
 
 h4 {
+  font-size: var(--size-500);
   font-weight: 700;
+}
+
+a:not([class]) {
+  color: currentColor;
+}
+
+:focus {
+  outline: 2px solid;
+  outline-offset: 0.25rem;
+}
+
+main:focus {
+  outline: none;
+}
+
+[href]:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: min(55rem, 100%);
+}
+
+figcaption {
+  font-size: var(--size-300);
+
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+blockquote {
+  padding-inline-start: var(--size-600);
+  padding-block: var(--size-400);
+  border-inline-start: 3px solid;
+  background: rgb(var(--primary-rgb), 0.1);
+}
+
+::selection {
+  color: var(--light);
+  background: var(--accent-primary);
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+p,
+li {
+  max-width: 70ch;
+}
+
+.post > * + * {
+  margin-top: 1rem;
+}
+.post :is(h2, h3) {
+  --flow-space: var(--size-900);
+}
+.post :is(h2, h3 + *) {
+  --flow-space: var(--size-400);
+}
+.post figure,
+.post figure + * {
+  --flow-space: var(--size-900);
+}
+
+@media (min-width: 45em) {
+  h1 {
+    font-size: var(--size-900);
+  }
+
+  h2 {
+    font-size: var(--size-700);
+  }
+
+  p {
+    font-size: var(--size-500);
+  }
+
+  figcaption {
+    font-size: var(--size-400);
+  }
+
+  blockquote p {
+    font-size: var(--size-600);
+    max-width: 40ch;
+  }
+
+  .post time {
+    font-size: var(--size-600);
+  }
 }

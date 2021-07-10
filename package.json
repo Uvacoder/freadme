@@ -14,5 +14,10 @@
     "prettier-plugin-svelte": "^2.2.0",
     "svelte": "^3.34.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "rss-url-parser": "^2.2.0",
+    "xml-js": "^1.6.11"
+  }
 }

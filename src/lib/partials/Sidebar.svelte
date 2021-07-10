@@ -4,8 +4,8 @@
 
 <aside id="sidebar">
   <header class="sidebar-header">
-    <input type="text" class="subscribe-input" id="subscribe-input">
-    <label for="subscribe-input" class=sr-only>New Feed URL</label>
+    <input type="text" aria-label="New Feed URL" class="subscribe-input" id="subscribe-input">
+    <label id="subscribe-label" for="subscribe-input" class=sr-only>New Feed URL</label>
     <button type="button" class="subscribe-submit">Save</button>
   </header>
 </aside>
@@ -26,6 +26,7 @@
   grid-gap: 0.5rem;
   padding: 1rem;
   border-block-end: 1px solid rgb(var(--primary-rgb), 0.3);
+  overflow: visible;
 }
 
 .subscribe-input {
