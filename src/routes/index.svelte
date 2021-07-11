@@ -28,12 +28,9 @@
   const feed = [...data.items];
 
 </script>
-<section class="posts">
-  {#each feed as post}
-    <Post {post} feedDescription={data.description} feedImage={data.image} feedTitle={data.title} feedLink={data.link} />
-  {/each}
-</section>
+    {#each feed as post}
+      <Post {post} feedDescription={data.description} feedImage={data.image} feedTitle={data.title} feedLink={data.link} />
+    {/each}
 
 <style>
-
 </style>

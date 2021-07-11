@@ -44,8 +44,11 @@
 
   --primary-light-hover: #3db6df;
 
-  --dark: #042b38;
-  --dark-rgb: 4, 43, 56;
+  --dark: #01212c;
+  --dark-rgb: 1, 33, 44;
+  
+  --darkdark: #001922;
+  --darkdark-rgb: 0, 25, 34;
 
   --light: #e6f9ff;
   --light-rgb: 230, 249, 255;
@@ -140,12 +143,16 @@ a:not([class]) {
 }
 
 :focus {
-  outline: 2px dotted;
-  outline-offset: 0.25rem;
-  outline-color: rgb(var(--accent-secondary-rgb), 0.7);
+  outline: 2px solid;
+  outline-offset: -2px;
+  outline-color: var(--accent-primary);
 }
 
-main:focus {
+a:focus {
+  outline-offset: 2px;
+}
+
+main:focus, body:focus {
   outline: none;
 }
 
@@ -168,8 +175,14 @@ figcaption {
 blockquote {
   padding-inline-start: var(--size-600);
   padding-block: var(--size-400);
-  border-inline-start: 3px solid;
+  border-inline-start: 3px solid rgb(var(--primary-rgb), 0.8);
   background: rgb(var(--primary-rgb), 0.1);
+}
+
+hr {
+  border: none;
+  color: rgb(var(--primary-rgb), 0.5);
+  border-top: 1px solid rgb(var(--primary-rgb), 0.5);
 }
 
 ::selection {
@@ -186,9 +199,9 @@ li {
   max-width: 70ch;
 }
 
-.post > * + * {
+/* .post > * + * {
   margin-top: 1rem;
-}
+} */
 .post :is(h2, h3) {
   --flow-space: var(--size-900);
 }
@@ -200,7 +213,7 @@ li {
   --flow-space: var(--size-900);
 }
 
-.focused-only {
+.focused-only, .sr-only {
   clip: rect(0 0 0 0) !important;
   clip-path: inset(50%);
   height: 1px;

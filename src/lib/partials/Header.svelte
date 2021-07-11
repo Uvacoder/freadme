@@ -3,15 +3,15 @@
 </script>
 
 <header>
-  <section class="skip-section">
+  <div class="skip-section">
     <a href="#main-content" class="button focused-only" id="skip-link">Skip to Content</a>
-  </section>
-
-  <section class="brand-section">
-    <a href="/" aria-label="FreadMe - A Simple RSS Reader" id="brand">
+    <h1 class="sr-only" id="page-label">FreedMe - The Easy Feed Reader</h1>
+  </div>
+  <div class="brand-section">
+    <a href="/" aria-labelledby="page-label" id="brand">
       <Logo />
     </a>
-  </section>
+  </div>
 
   <nav>
 

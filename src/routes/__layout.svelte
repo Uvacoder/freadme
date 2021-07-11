@@ -7,7 +7,7 @@
 
 <Header />
 
-<main id="main-content" tabindex="0">
+<main id="main-content" class="posts" tabindex="0" aria-label="All Posts">
   <slot></slot>
 </main>
 
@@ -16,5 +16,13 @@
 <style>
   main {
     order: 2;
+  }
+  .posts:focus, .posts:focus-within {
+    background: rgb(var(--darkdark-rgb), 0.5);
+  }
+  
+  .posts:focus {
+    outline: 2px solid var(--accent-primary);
+    outline-offset: -2px;
   }
 </style>

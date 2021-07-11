@@ -8,31 +8,52 @@
 
 
 <details class="post">
-  <summary class="post-header">
-    <h2 class="post-title"><a href="{post.link}">{post.title}</a></h2>
+  <section class="content flow" tabindex="0">{@html post["content:encoded"]}</section>
+  <summary class="post-header" aria-label="{post.title}. Press space or click to open content. Then press tab to navigate to content.">
+    <div class="post-header-control">
+      <!-- <a href="#post-{post.guid}" class="button focused-only post-skip-content">Skip to Post Content</a> -->
+      <h2 class="post-title"><a href="{post.link}" tabindex="-1">{post.title}</a></h2>
+    </div>
     <section class="post-info">
       <section class="post-image">
-        <a href={feedLink}>
-          <img src="{feedImage.url}" alt="{feedDescription}" class="feed-image">
+        <a href={feedLink} tabindex="-1">
+          <img src="{feedImage.url}" alt="{feedTitle}" class="feed-image" tabindex="-1">
         </a>
       </section>
-      <section class="post-meta"><a href="{feedLink}">{feedTitle}</a>: <time>{new Date(post.pubDate).toLocaleString()}</time></section>
+      <section class="post-meta"><a href="{feedLink}" tabindex="-1">{feedTitle}</a>: <time>{new Date(post.pubDate).toLocaleString()}</time></section>
     </section>
   </summary>
-  <section class="content flow">{@html post["content:encoded"]}</section>
 </details>
 
 <style>
    .post {
     --flow-space: var(--size-700);
     border-bottom: 1px solid rgb(var(--primary-rgb), 0.5);
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .post:focus-within, .post:focus {
+    background: rgb(var(--darkdark-rgb), 0.5);
+    outline-color: transparent;
+  }
+  .post *:focus {
+    background: rgb(var(--darkdark-rgb), 0.7);
+    outline: 2px solid var(--accent-primary);
+    outline-offset: -2px;
   }
 
   .post-header {
     font-family: var(--sans);
     display: flex;
     flex-direction: column;
+    order: 1;
+    padding: 0.5rem;
+  }
+  .post-header-control {
+    order: 2;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
   }
 
   .post-info {
@@ -59,10 +80,15 @@
     margin-inline: 2.33rem;
   }
   .post-title {
-    order: 2;
+    order: 1;
     font-size: var(--size-600);
     margin-top: 0;
     line-height: 1.5;
+  }
+  .content {
+    order: 2;
+    padding: 1rem;
+    border-top: 1px solid rgb(var(--primary-rgb), 0.5);
   }
   time {
     font-family: var(--sans);
