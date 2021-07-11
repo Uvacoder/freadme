@@ -9,6 +9,7 @@
 <style>
   #feed-header {
     padding: 0.5rem;
+    border-bottom: 1px solid rgb(var(--primary-rgb), 0.5);
   }
   #feed-header:focus {
     outline: 2px solid var(--accent-primary);

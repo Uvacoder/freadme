@@ -156,13 +156,13 @@ main:focus, body:focus {
   color: var(--primary-light-hover);
 }
 
-img {
-  max-width: min(55rem, 100%);
+img, video{
+  width: min(60rem, 100%);
+  height: min(60rem, 100%);
 }
 
 figcaption {
   font-size: var(--size-300);
-
   font-style: italic;
   margin-top: 1rem;
 }

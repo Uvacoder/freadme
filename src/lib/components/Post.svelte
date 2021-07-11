@@ -31,6 +31,7 @@
     border-bottom: 1px solid rgb(var(--primary-rgb), 0.5);
     display: flex;
     flex-direction: column;
+    padding: 0.5rem 1rem;
   }
   .post:focus-within, .post:focus {
     background: rgb(var(--darkdark-rgb), 0.5);
