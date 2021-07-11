@@ -1,0 +1,2427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+  xmlns:georss="http://www.georss.org/georss"
+  xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+
+  <channel>
+    <title>CSS-Tricks</title>
+    <atom:link href="https://css-tricks.com/feed/" rel="self" type="application/rss+xml" />
+    <link>https://css-tricks.com</link>
+    <description>Tips, Tricks, and Techniques on using Cascading Style Sheets.</description>
+    <lastBuildDate>Fri, 09 Jul 2021 18:53:53 +0000</lastBuildDate>
+    <language>en-US</language>
+    <sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+    <sy:updateFrequency>
+	1	</sy:updateFrequency>
+    <generator>https://wordpress.org/?v=5.7.2</generator>
+
+    <image>
+      <url>https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/star.png?fit=32%2C32&#038;ssl=1</url>
+      <title>CSS-Tricks</title>
+      <link>https://css-tricks.com</link>
+      <width>32</width>
+      <height>32</height>
+    </image>
+    <site xmlns="com-wordpress:feed-additions:1">45537868</site>
+    <item>
+      <title>:focus-visible in WebKit</title>
+      <link>https://blogs.igalia.com/mrego/2021/06/07/focus-visible-in-webkit-may-2021/</link>
+      <comments>https://css-tricks.com/focus-visible-in-webkit/#comments</comments>
+
+      <dc:creator><![CDATA[Chris Coyier]]></dc:creator>
+      <pubDate>Fri, 09 Jul 2021 18:53:51 +0000</pubDate>
+      <category><![CDATA[Link]]></category>
+      <category><![CDATA[:focus-visible]]></category>
+      <category><![CDATA[webkit]]></category>
+      <guid isPermaLink="false">https://css-tricks.com/?p=344334</guid>
+
+      <description><![CDATA[<p>This is a <a href="https://blogs.igalia.com/mrego/2021/06/07/focus-visible-in-webkit-may-2021/">nice update</a> from Manuel Rego Casasnovas. <a href="https://www.igalia.com/">Igalia</a> has this idea to sort of crowd-source important web platform features that need to get worked on (that&#8217;s the sort of work they do). They call it <a href="https://css-tricks.com/open-prioritization/">Open Prioritization</a>. &#8230;</p>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/focus-visible-in-webkit/">:focus-visible in WebKit</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </description>
+      <content:encoded><![CDATA[
+<p>This is a <a href="https://blogs.igalia.com/mrego/2021/06/07/focus-visible-in-webkit-may-2021/">nice update</a> from Manuel Rego Casasnovas. <a href="https://www.igalia.com/">Igalia</a> has this idea to sort of crowd-source important web platform features that need to get worked on (that&#8217;s the sort of work they do). They call it <a href="https://css-tricks.com/open-prioritization/">Open Prioritization</a>. The &#8220;winner&#8221; of that (the one with the most-pledged dollars) is what they&#8217;ll do. That turned out to be <code><a href="https://css-tricks.com/almanac/selectors/f/focus-visible/">:focus-visible</a></code> support in WebKit (Safari). As I write, people have pledged $29,337.13&nbsp;of the&nbsp;$35,000 goal, so not bad!</p>
+
+
+
+<p>That choice was made in January 2021, and as Manuel was writing in June 2021, it&#8217;s basically done because it <a href="https://webkit.org/blog/11680/release-notes-for-safari-technology-preview-125/">shipped in Safari Technical Preview 125</a> meaning it&#8217;s in Apple&#8217;s hands now. Pretty nice speed for a web feature, and a great one since it will highly encourage proper focus styles rather than that bummer situation where people remove focus styles for aesthetic reasons, hurting accessibility. </p>
+
+
+
+<span id="more-344334"></span>
+
+
+
+<p>And, bonus!</p>
+
+
+
+<blockquote class="wp-block-quote is-style-default"><p>In addition, the WPT test suite has been improved counting now ~40 tests for this feature. Also in January neither Firefox or Chrome were using&nbsp;<code>:focus-visible</code>&nbsp;on the UA style sheet, however they both use it there nowadays. Thus, doing the implementation on WebKit has helped to move forward this feature on different places.</p></blockquote>
+<p><a href="https://blogs.igalia.com/mrego/2021/06/07/focus-visible-in-webkit-may-2021/" title="Direct link to featured article">Direct Link to Article</a> &#8212; <a href="https://css-tricks.com/focus-visible-in-webkit/">Permalink</a></p><hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/focus-visible-in-webkit/">:focus-visible in WebKit</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </content:encoded>
+
+      <wfw:commentRss>https://css-tricks.com/focus-visible-in-webkit/feed/</wfw:commentRss>
+      <slash:comments>2</slash:comments>
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">344334</post-id>
+    </item>
+    <item>
+      <title>SVG Favicons in Action</title>
+      <link>https://css-tricks.com/svg-favicons-in-action/</link>
+      <comments>https://css-tricks.com/svg-favicons-in-action/#comments</comments>
+
+      <dc:creator><![CDATA[Philippe Bernard]]></dc:creator>
+      <pubDate>Fri, 09 Jul 2021 14:31:57 +0000</pubDate>
+      <category><![CDATA[Article]]></category>
+      <category><![CDATA[dark mode]]></category>
+      <category><![CDATA[favicon]]></category>
+      <guid isPermaLink="false">https://css-tricks.com/?p=343598</guid>
+
+      <description><![CDATA[<p>Ever heard of favicons made with SVG? If you are a regular reader of CSS-Tricks, you probably have. But does your website actually use one?</p>
+<p>The task is more non-trivial than you might think. As we will see in this &#8230;</p>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/svg-favicons-in-action/">SVG Favicons in Action</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </description>
+      <content:encoded><![CDATA[
+<p>Ever heard of favicons made with SVG? If you are a regular reader of CSS-Tricks, you probably have. But does your website actually use one?</p>
+
+
+
+<p>The task is more non-trivial than you might think. As we will see in this article, creating a useful SVG favicon involves editing an SVG file manually, which is something many of us try to avoid or are uncomfortable doing. Plus, we are talking about a <em>favicon</em>. We can spend a few hours playing with a hot new CSS framework. But a favicon? It sometimes feels too small to be worth our time.</p>
+
+
+
+<p>This article is about creating an SVG favicon <strong>for real</strong>. If you&#8217;re in front of your laptop, get the vector file of a logo ready. By the end of your (active!) reading, your SVG favicon will be ready to shine.</p>
+
+
+
+<span id="more-343598"></span>
+
+
+
+<h3 id="h-why-an-svg-favicon-at-all">Why an SVG favicon at all?</h3>
+
+
+
+<p>We are here for the &#8220;how&#8221; but it&#8217;s worth reflecting: what is an SVG favicon even good for? We already have other file types that handle this, right?</p>
+
+
+
+<p>SVG is a vector format. As such, it has valuable features over raster formats, including those typically used for favicons, like PNG. SVGs scale and are often more compact than its binary cousins because, well, they’re just code! <a href="https://css-tricks.com/svg-path-syntax-illustrated-guide/">Everything is drawn in numbers and letters!</a></p>
+
+
+
+<p>That&#8217;s good news, but how does this help our favicon? Desktop favicons are small, <a href="https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/samples/gg491740(v=vs.85)?redirectedfrom=MSDN">at most 64×64</a>. And you can ship your <a href="https://www.w3schools.com/tags/att_link_sizes.asp">icons in several resolutions</a>. Scaling is a feature we don&#8217;t really need here.</p>
+
+
+
+<p>File size is another source of disappointment. While SVG has a clear edge over a high resolution PNG file, the tables turn in low resolution. It is common for a 48×48 PNG favicon to result in a smaller file size than its SVG equivalent.</p>
+
+
+
+<p>Yet, we have a good reason to pay attention to SVG favicon: <a href="https://css-tricks.com/dark-mode-favicons/">dark mode support</a>.</p>
+
+
+
+<p><a href="https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/">Dark mode</a> has received a lot of attention recently. You may even have implemented dark mode for your own websites. What does that mean for favicon? It means the ability to show different icons based on the brightness of the browser tab&#8217;s background.</p>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<figure class="wp-block-image size-full"><img loading="lazy" width="255" height="260" src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1623320546163_blue-red.png?resize=255%2C260&#038;ssl=1" alt="" class="wp-image-343599" data-recalc-dims="1"/></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-full"><img loading="lazy" width="255" height="260" src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1624524473573_codepen-demo.png?resize=255%2C260&#038;ssl=1" alt="" class="wp-image-343600" data-recalc-dims="1"/></figure>
+</div>
+</div>
+</div></div>
+
+
+
+<p>We are going to prepare such an icon.</p>
+
+
+
+<h3 id="h-how-to-create-an-svg-favicon-in-theory">How to create an SVG favicon (in theory)</h3>
+
+
+
+<p>Getting dark mode support for an SVG favicon relies on a CSS trick (10 points to Gryffindor), namely that we can drop a <code>&lt;style&gt;</code> tag right inside SVG, and use a media query to detect the user’s current theme preference. Something like this:</p>
+
+
+
+<pre rel="SVG" class="wp-block-csstricks-code-block language-svg" data-line=""><code markup="tt">&lt;svg>
+  &lt;style>
+    @media (prefers-color-scheme: dark) {
+      // Your dark styles here
+    }
+  &lt;/style>
+
+  &lt;!-- more stuff -->
+
+&lt;/svg></code></pre>
+
+
+
+<p>With this pattern, your light/dark favicon is only limited by your imagination. For example, <a href="https://css-tricks.com/svg-favicons-and-all-the-fun-things-we-can-do-with-them/">change the color of all lines</a>:</p>
+
+
+
+<pre rel="SVG" class="wp-block-csstricks-code-block language-svg" data-line=""><code markup="tt">&lt;svg>
+  &lt;style>
+    path { fill: black; }
+    @media (prefers-color-scheme: dark) {
+      path { fill: white; }
+    }
+  &lt;/style>
+
+  &lt;!-- more stuff -->
+
+&lt;/svg></code></pre>
+
+
+
+<p>Now is the time to actually write these styles. This is when the troubles begin.</p>
+
+
+
+<p>SVGs are images, and the logo we are using to build our favicon was probably created with a tool like Adobe Illustrator or InkScape. Why not use the same tool again? That’s because apps like these haven’t really integrated CSS and media queries into their products. It’s not that they can&#8217;t handle them, but you have to forget the mouse-only experience they promise. You are going to use the keyboard and type code.</p>
+
+
+
+<p>Which leads us to a second option: write the CSS by hand. After all, this is the way to go with front-end development. Why should it be different here? Unfortunately, SVG is often hard to read. Sure, this is an XML dialect, which is (almost) like HTML. But SVG images are cluttered with long <code>path</code> declarations and other markup we often don’t see in our day-to-day work. For example, the Raspberry Pi logo is more than 8KB of raw data. This make manual editing more tedious than it sounds.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="1388" height="776" src="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1624450349267_raspebby-logo-code.png?resize=1388%2C776&#038;ssl=1" alt="" class="wp-image-343601" srcset="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1624450349267_raspebby-logo-code.png?w=1388&amp;ssl=1 1388w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1624450349267_raspebby-logo-code.png?resize=300%2C168&amp;ssl=1 300w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1624450349267_raspebby-logo-code.png?resize=1024%2C572&amp;ssl=1 1024w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1624450349267_raspebby-logo-code.png?resize=768%2C429&amp;ssl=1 768w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1624450349267_raspebby-logo-code.png?resize=1000%2C559&amp;ssl=1 1000w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /><figcaption>That is a lot of code.</figcaption></figure>
+
+
+
+<h3 id="h-how-to-create-an-svg-favicon-in-practice">How to create an SVG favicon (in practice)</h3>
+
+
+
+<p>To understand how we can deal with an SVG favicon quickly and easily, we first need to define what we want to achieve.</p>
+
+
+
+<p>The technique we covered above calls for creativity: replace a color, invert them all (which we’ll get to), change a shape&#8230; But the setup for a favicon is not the right time for this. A favicon should almost always be the website&#8217;s logo. Its appearance? Aesthetic? The message it conveys? All these questions have been answered already. Preparing the favicon should be fine-tuning the logo so it fits the small space allocated in browser tabs.</p>
+
+
+
+<p>Often, the logo is perfect as-is and its favicon counterpart is a scaled down version of it. Sometimes, we need to add margin to make it square. What motivates a dark icon, then?</p>
+
+
+
+<p>Contrast.</p>
+
+
+
+<p>Many logos are designed for light backgrounds. When they don&#8217;t, another version exists solely for the purpose of darker backgrounds.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="303" src="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/slack-dark-mode-comparison.jpg?resize=1024%2C303&#038;ssl=1" alt="" class="wp-image-343607" srcset="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/slack-dark-mode-comparison.jpg?resize=1024%2C303&amp;ssl=1 1024w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/slack-dark-mode-comparison.jpg?resize=300%2C89&amp;ssl=1 300w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/slack-dark-mode-comparison.jpg?resize=768%2C227&amp;ssl=1 768w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/slack-dark-mode-comparison.jpg?resize=1000%2C296&amp;ssl=1 1000w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/slack-dark-mode-comparison.jpg?w=1224&amp;ssl=1 1224w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /><figcaption>Notice that even the colors change slightly to account for the darker background.</figcaption></figure>
+
+
+
+<p>Therefore, whether we prepare a favicon manually or with a tool, we automatically pick the light-compatible logo and start with that. After all, desktop tabs are traditionally white or light gray. The problem arises when going dark mode.</p>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<figure class="wp-block-image"><img src="https://paper-attachments.dropbox.com/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1623325964173_facebook.png" alt="Facebook blue logo is suitable for both light and dark backgrounds"/><figcaption>In the best case, the logo is naturally a good fit for light and dark backgrounds. This happens with colorful logos, like Facebook’s.</figcaption></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image"><img src="https://paper-attachments.dropbox.com/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1623326147202_amazon.png" alt="Amazon’s favicon is 16×16, but Amazon’s logo is only 14×14—almost a quarter of the pixels is lost in padding!"/><figcaption>The favicon is sometimes made background-proof by embedding its own background. This technique has a drawback, though. It needs padding so the logo doesn&#8217;t touch the edge of the background.</figcaption></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image"><img src="https://paper-attachments.dropbox.com/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1623326256613_adidas.png" alt="Adidas logo is barely noticeable on dark background"/><figcaption>The worst case is a dark logo, perfect for light backgrounds and ill-suited for dark ones. Adidas is either clearly visible, or almost invisible.</figcaption></figure>
+</div>
+</div>
+
+
+
+<p>Now that we have pinpointed the problem, we can formulate a solution: sometimes, we need a brighter icon for dark mode. It&#8217;s very simple. For a colorful, yet too dark logo, we can add brightness to a dark mode favicon with a CSS filter:</p>
+
+
+
+<pre rel="SVG" class="wp-block-csstricks-code-block language-svg" data-line=""><code markup="tt">&lt;svg>
+  &lt;style>
+    @media (prefers-color-scheme: dark) {
+      :root {
+        filter: brightness(2);
+      }
+    }
+  &lt;/style>
+
+  &lt;!-- more stuff -->
+&lt;/svg></code></pre>
+
+
+
+<p>If the logo is in shades or gray, we can invert its colors using another CSS filter:</p>
+
+
+
+<pre rel="SVG" class="wp-block-csstricks-code-block language-svg" data-line=""><code markup="tt">&lt;svg>
+  &lt;style>
+    @media (prefers-color-scheme: dark) {
+      :root {
+        filter: invert(100%);
+      }
+    }
+  &lt;/style>
+
+  &lt;!-- more stuff -->
+
+&lt;/svg></code></pre>
+
+
+
+<p>Your turn! Open your SVG logo in a text editor and drop any of those <code>&lt;style&gt;</code> snippets above just before the closing <code>&lt;/svg&gt;</code> tag. Open your logo in a browser, switch from light to dark, then from dark to light (<a href="https://support.microsoft.com/en-us/windows/change-colors-in-windows-d26ef4d6-819a-581c-1581-493cfcc005fe">Windows</a> or <a href="https://support.apple.com/en-us/HT208976">Mac</a>), and observe the magic. Adjust the <code>brightness</code> or <code>invert</code> filters as needed.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="628" height="352" src="https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1623326448545_switch-mode.gif?resize=628%2C352&#038;ssl=1" alt="" class="wp-image-343608" data-recalc-dims="1"/><figcaption>Responsive brightness in action</figcaption></figure>
+
+
+
+<p>How fast was that?</p>
+
+
+
+<h3 id="h-even-faster-the-svg-favicon-editor">Even faster: The SVG favicon editor</h3>
+
+
+
+<p>That brightness hack we covered didn&#8217;t come out of nowhere. I wrote it while upgrading <a href="https://realfavicongenerator.net/">RealFaviconGenerator</a> with the <a href="https://realfavicongenerator.net/svg-favicon">SVG favicon editor</a>. This online tool includes everything we discussed earlier. Submit your SVG logo to get a preview of your favicon in tabs and Google result pages.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="1133" height="633" src="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1623326677662_rfg-default.png?resize=1133%2C633&#038;ssl=1" alt="" class="wp-image-343609" srcset="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1623326677662_rfg-default.png?w=1133&amp;ssl=1 1133w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1623326677662_rfg-default.png?resize=300%2C168&amp;ssl=1 300w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1623326677662_rfg-default.png?resize=1024%2C572&amp;ssl=1 1024w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1623326677662_rfg-default.png?resize=768%2C429&amp;ssl=1 768w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1623326677662_rfg-default.png?resize=1000%2C559&amp;ssl=1 1000w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<p>After that, play with the editor to produce the perfect favicon. In this example, we make the dark icon lighter, using the <code>brightness</code> filter hack behind te scene:</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="1127" height="705" src="https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1624524203946_rfg-brightness.png?resize=1127%2C705&#038;ssl=1" alt="" class="wp-image-343610" srcset="https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1624524203946_rfg-brightness.png?w=1127&amp;ssl=1 1127w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1624524203946_rfg-brightness.png?resize=300%2C188&amp;ssl=1 300w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1624524203946_rfg-brightness.png?resize=1024%2C641&amp;ssl=1 1024w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1624524203946_rfg-brightness.png?resize=768%2C480&amp;ssl=1 768w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1624524203946_rfg-brightness.png?resize=1000%2C626&amp;ssl=1 1000w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<p>Grayscale logos benefit from the <code>invert</code> filter as well:</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="1130" height="665" src="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1624524335462_rfg-invert.png?resize=1130%2C665&#038;ssl=1" alt="" class="wp-image-343611" srcset="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1624524335462_rfg-invert.png?w=1130&amp;ssl=1 1130w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1624524335462_rfg-invert.png?resize=300%2C177&amp;ssl=1 300w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1624524335462_rfg-invert.png?resize=1024%2C603&amp;ssl=1 1024w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1624524335462_rfg-invert.png?resize=768%2C452&amp;ssl=1 768w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_70347B5F4EC6CBA3A5F8B66FD0DA0625DB16DF3A3CECB6F595B44300FB4B505B_1624524335462_rfg-invert.png?resize=1000%2C588&amp;ssl=1 1000w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<p>Click on the &#8220;Generate Favicon&#8221; button, et voilà! Favicon ready, fine tuned for light and dark modes in under a minute. Mission accomplished.</p>
+
+
+
+<h3 id="h-conclusion">Conclusion</h3>
+
+
+
+<p>Beyond coolness, SVG favicons actually solve a problem that its PNG counterpart cannot. It’s only been about a year since we&#8217;ve had the ability to use SVG this way at all, but so far, it seems seldom used. With intentional purpose and tooling, maybe SVG favivons will rise and find its place among the favicon classics.</p>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/svg-favicons-in-action/">SVG Favicons in Action</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </content:encoded>
+
+      <wfw:commentRss>https://css-tricks.com/svg-favicons-in-action/feed/</wfw:commentRss>
+      <slash:comments>9</slash:comments>
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">343598</post-id>
+    </item>
+    <item>
+      <title>Beginner JavaScript Notes</title>
+      <link>https://wesbos.com/javascript</link>
+      <comments>https://css-tricks.com/beginner-javascript-notes/#comments</comments>
+
+      <dc:creator><![CDATA[Chris Coyier]]></dc:creator>
+      <pubDate>Thu, 08 Jul 2021 22:25:22 +0000</pubDate>
+      <category><![CDATA[Link]]></category>
+      <category><![CDATA[JavaScript]]></category>
+      <category><![CDATA[learning]]></category>
+      <guid isPermaLink="false">https://css-tricks.com/?p=344024</guid>
+
+      <description><![CDATA[<p>Wes has a heck of a <a href="https://wesbos.com/javascript">set of &#8220;notes&#8221;</a> for learning JavaScript. It&#8217;s organized like a curriculum, meaning if you teach JavaScript, you could do a lot worse. It&#8217;s actually more like 85 really fleshed-out blog posts organized into sections &#8230;</p>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/beginner-javascript-notes/">Beginner JavaScript Notes</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </description>
+      <content:encoded><![CDATA[
+<p>Wes has a heck of a <a href="https://wesbos.com/javascript">set of &#8220;notes&#8221;</a> for learning JavaScript. It&#8217;s organized like a curriculum, meaning if you teach JavaScript, you could do a lot worse. It&#8217;s actually more like 85 really fleshed-out blog posts organized into sections and easily navigable. If you want to be walked through it via video, <em>then</em> <a href="https://BeginnerJavaScript.com/friend/CSSTRICKS">buy the course</a>. Smart. </p>
+
+
+
+<p>If you&#8217;re looking for other curriculum for JavaScript, your best bets are:</p>
+
+
+
+<ul><li><a href="https://frontendmasters.com/bootcamp/">Frontend Masters bootcamp</a> (free) and <a href="https://frontendmasters.com/courses/web-development-v2/?utm_source=css-tricks&amp;utm_medium=website&amp;utm_campaign=css-tricks-tags-sidebar">other great courses</a> (paid)</li><li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">MDN Guides</a></li><li>Vets Who Code have <a href="https://github.com/Vets-Who-Code/JAMstack-Curriculum">an open source curriculum</a> getting into JavaScript by Week 6.</li></ul>
+
+
+
+<p>Like any other learning experience in life, the best way to learn is multiple angles. If HTML &amp; CSS are more your target, <a href="https://css-tricks.com/where-do-you-learn-html-css-in-2020/">we have a bunch of suggestions</a> there. </p>
+<p><a href="https://wesbos.com/javascript" title="Direct link to featured article">Direct Link to Article</a> &#8212; <a href="https://css-tricks.com/beginner-javascript-notes/">Permalink</a></p><hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/beginner-javascript-notes/">Beginner JavaScript Notes</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </content:encoded>
+
+      <wfw:commentRss>https://css-tricks.com/beginner-javascript-notes/feed/</wfw:commentRss>
+      <slash:comments>3</slash:comments>
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">344024</post-id>
+    </item>
+    <item>
+      <title>My Struggle to Use and Animate a Conic Gradient in SVG</title>
+      <link>https://css-tricks.com/my-struggle-to-use-and-animate-a-conic-gradient-in-svg/</link>
+      <comments>https://css-tricks.com/my-struggle-to-use-and-animate-a-conic-gradient-in-svg/#comments</comments>
+
+      <dc:creator><![CDATA[Amit Sheen]]></dc:creator>
+      <pubDate>Thu, 08 Jul 2021 14:35:38 +0000</pubDate>
+      <category><![CDATA[Article]]></category>
+      <category><![CDATA[conic gradients]]></category>
+      <category><![CDATA[loader]]></category>
+      <category><![CDATA[mix-blend-mode]]></category>
+      <category><![CDATA[SVG]]></category>
+      <guid isPermaLink="false">https://css-tricks.com/?p=343623</guid>
+
+      <description><![CDATA[<p>The wonderful company I work for, <a href="https://www.payoneer.com" rel="nofollow">Payoneer</a>, has a new logo, and my job was to <strong>recreate it and animate it</strong> for a loader component in our app. I’ll explain exactly how I did it, share the problems I &#8230;</p>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/my-struggle-to-use-and-animate-a-conic-gradient-in-svg/">My Struggle to Use and Animate a Conic Gradient in SVG</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </description>
+      <content:encoded><![CDATA[
+<p>The wonderful company I work for, <a href="https://www.payoneer.com" rel="nofollow">Payoneer</a>, has a new logo, and my job was to <strong>recreate it and animate it</strong> for a loader component in our app. I’ll explain exactly how I did it, share the problems I had, and walk you through the solution I came up with. And, as a bonus, we’ll look at animating it!</p>
+
+
+
+<p>But first, I guess some of you are asking yourselves… <em>Recreate it? Why?</em> </p>
+
+
+
+<span id="more-343623"></span>
+
+
+
+<p>The branding agency that designed our logo sent us a full set of assets categorized by themes. They came in all sizes and in every available format. We had everything, including SVGs, for the logo and the loader animation. But we couldn’t use them.</p>
+
+
+
+<p>Here’s why. Let&#8217;s take a look at the logo:</p>
+
+
+
+<figure class="wp-block-image size-full is-resized"><img loading="lazy" src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_6E4A6D840252F5540E6AD67A17BE7E31259197611E9560BE4326E845931F9BD4_1624057140872_Untitled-1.png?resize=192%2C192&#038;ssl=1" alt="" class="wp-image-343624" width="192" height="192" srcset="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_6E4A6D840252F5540E6AD67A17BE7E31259197611E9560BE4326E845931F9BD4_1624057140872_Untitled-1.png?w=256&amp;ssl=1 256w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_6E4A6D840252F5540E6AD67A17BE7E31259197611E9560BE4326E845931F9BD4_1624057140872_Untitled-1.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_6E4A6D840252F5540E6AD67A17BE7E31259197611E9560BE4326E845931F9BD4_1624057140872_Untitled-1.png?resize=100%2C100&amp;ssl=1 100w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /><figcaption>We call the new logo &#8220;The Halo.&#8221;</figcaption></figure>
+
+
+
+<p>The logo is a ring with a conic gradient that consists of five colors, and… that’s it. The problem is that SVG doesn’t support angled gradients (for now, at least), so when we export a design that has a conic gradient as an SVG, we need some sort of hack to get the desired result.</p>
+
+
+
+<p>Now, I’m no expert when it comes to working with vector graphic software, so there might be a different (and perhaps better) way to do this, but I know that the most common way to export conic gradients to SVG is to convert the gradient element to an image and insert that image into the SVG as a base64 string. That’s also what we got from the branding agency, and I trust them to know the best way to export an SVG.</p>
+
+
+
+<p>But, since the final SVG file now contains a PNG base64 string, the file size jumped to nearly 1MB, which might not be a total disaster, but it’s much higher than the 2KB that it should be. Multiply that difference by three themes (no text, light text, and dark text variations), and we’re looking at 3MB worth of images instead of 3KB worth of code. That&#8217;s a big difference, so we’ve decided to recreate the logo with SVG.</p>
+
+
+
+<h3 id="h-but-how">But how?!</h3>
+
+
+
+<p>Even though <a href="https://css-tricks.com/a-complete-guide-to-css-gradients/#h-conic-gradients">CSS fully supports conic gradients</a>, SVG does not. So the first question I asked myself was how to create a conic gradient in SVG. Actually, I asked Google. And what I found was a lot of cool, unique, creative ways to add a conic gradients to SVG, most of them relying on some sort of <code><a href="https://css-tricks.com/almanac/properties/c/clip-path/">clip-path</a></code> implementation. I first created a short <code>&lt;path&gt;</code> that represents the shape of the ring and used it as a <code>clip-path</code> on a simple <code>&lt;rect&gt;</code> element.</p>
+
+
+
+<div class="wp-block-cp-codepen-gutenberg-embed-block cp_embed_wrapper"><iframe id="cp_embed_f3790751462c23128146e697f91b6d64" src="//codepen.io/anon/embed/f3790751462c23128146e697f91b6d64?height=450&amp;theme-id=1&amp;slug-hash=f3790751462c23128146e697f91b6d64&amp;default-tab=result" height="450" scrolling="no" frameborder="0" allowfullscreen allowpaymentrequest name="CodePen Embed f3790751462c23128146e697f91b6d64" title="CodePen Embed f3790751462c23128146e697f91b6d64" class="cp_embed_iframe" style="width:100%;overflow:hidden">CodePen Embed Fallback</iframe></div>
+
+
+
+<p>Next, I needed to fill the <code>&lt;rect&gt;</code> with conic gradients, but first, I had to find all the correct color stops to recreate the look. That took a while, but after a lot of fine tuning, I got a result I’m happy with:</p>
+
+
+
+<pre rel="CSS" class="wp-block-csstricks-code-block language-css" data-line=""><code markup="tt">div.gradient {
+  background-image: conic-gradient(from 270deg, #ff4800 10%, #dfd902 35%, #20dc68, #0092f4, #da54d8 72% 75%, #ff4800 95%);
+}</code></pre>
+
+
+
+<p>The last step was to replace the <code>&lt;rect&gt;</code> with something else that supports conic gradients, and the simplest way I’ve found is to use an SVG <code>&lt;foreignObject&gt;</code> element with a regular <code>&lt;div&gt;</code> inside it, and a <code>conic-gradient</code> as a <code>background-image</code>. Then all I needed to do was to set the <code>clip-path</code> on the <code>&lt;foreignObject&gt;</code> element, and that’s it.</p>
+
+
+
+<div class="wp-block-cp-codepen-gutenberg-embed-block cp_embed_wrapper"><iframe id="cp_embed_f9f85bc810886acb6f4a837534d66ebb" src="//codepen.io/anon/embed/f9f85bc810886acb6f4a837534d66ebb?height=450&amp;theme-id=1&amp;slug-hash=f9f85bc810886acb6f4a837534d66ebb&amp;default-tab=result" height="450" scrolling="no" frameborder="0" allowfullscreen allowpaymentrequest name="CodePen Embed f9f85bc810886acb6f4a837534d66ebb" title="CodePen Embed f9f85bc810886acb6f4a837534d66ebb" class="cp_embed_iframe" style="width:100%;overflow:hidden">CodePen Embed Fallback</iframe></div>
+
+
+
+<p>So, that’s how I used a conic gradient in an SVG to keep the design fully vector and scalable with less than 20 lines of code, and less than 2KB in file size.</p>
+
+
+
+<p>But that was the easy part. Now let’s talk animation.</p>
+
+
+
+<h3 id="h-the-loader">The loader</h3>
+
+
+
+<p>Our app shows a loading animation every time a user logs in. We had been using a GIF file for it, but I had been meaning to update it to a pure CSS/SVG animation for months. The benefits are obvious: faster render means a more seamless loading experience, and a smaller file size means even faster loading. We simply get more for less, which is especially ideal for a loading animation.</p>
+
+
+
+<p>Here’s the animation I was aiming for:</p>
+
+
+
+<figure class="wp-block-image size-full is-resized"><img loading="lazy" src="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_6E4A6D840252F5540E6AD67A17BE7E31259197611E9560BE4326E845931F9BD4_1624057679356_Untitled-2.gif?resize=192%2C192&#038;ssl=1" alt="" class="wp-image-343625" width="192" height="192" data-recalc-dims="1" /></figure>
+
+
+
+<p>This type of animation is actually fairly easy with SVG. <a href="https://css-tricks.com/svg-line-animation-works/">All we really need is a trick</a> using <code>stroke-dasharray</code> and <code>stroke-dashoffset</code>. That was my starting point. I created a new <code>&lt;path&gt;</code> in the center of the ring, removed the <code>fill</code>, added a <code>stroke</code> with the right <code>stroke-width</code>, and then worked on the animation.</p>
+
+
+
+<p>It took me some playing around to get the movement just like the designers wanted it. I ended up using two animations, actually: one controls the <code>stroke-dashoffset</code>, and the second rotates the entire <code>&lt;path&gt;</code> a full turn.</p>
+
+
+
+<div class="wp-block-cp-codepen-gutenberg-embed-block cp_embed_wrapper"><iframe id="cp_embed_cb67b93488654cd72d01a612751137fb" src="//codepen.io/anon/embed/cb67b93488654cd72d01a612751137fb?height=450&amp;theme-id=1&amp;slug-hash=cb67b93488654cd72d01a612751137fb&amp;default-tab=result" height="450" scrolling="no" frameborder="0" allowfullscreen allowpaymentrequest name="CodePen Embed cb67b93488654cd72d01a612751137fb" title="CodePen Embed cb67b93488654cd72d01a612751137fb" class="cp_embed_iframe" style="width:100%;overflow:hidden">CodePen Embed Fallback</iframe></div>
+
+
+
+<p>But, since the <code>clip-path</code> property refers to the <code>fill</code> of the shape, animating the stroke meant I had to solve one of two problems: I could either find a different way to animate the movement, or find a different way to add the colors to the stroke.</p>
+
+
+
+<p>So I went back to Google and all of the creative ideas I found before, but most of them were pretty much un-animatable, so I started looking for a good non-<code>clip-path</code> way to add colors to the stroke. I looked at a few “out-of-the-box” solutions, checked out <a href="https://css-tricks.com/masking-vs-clipping-use/#masking">masking</a>, and ended up with the simplest perfect solution:</p>
+
+
+
+<pre rel="CSS" class="wp-block-csstricks-code-block language-css" data-line=""><code markup="tt">.logoBlend {
+  mix-blend-mode: lighten;
+}</code></pre>
+
+
+
+<p>A <code>lighten</code> blend mode looks at the RGB colors of each pixel of the rendered element, compares it to the RGB value of the background pixel that’s behind it, and keeps whichever is highest. That means that the parts of the element that are white will remain white, and the dark parts will get the values of the background pixel.</p>
+
+
+
+<p>By adding a white <code>&lt;rect&gt;</code> to the black path, I essentially blocked anything that’s behind it. Meanwhile, everything that’s behind the animated black stroke is visible. That meant I could bring back the <code>&lt;foreignObject&gt;</code> with the <code>conic-gradient</code>, put it behind the <code>mix-blend-mode</code> layer, and give it a simple rotate animation to match the design.</p>
+
+
+
+<div class="wp-block-cp-codepen-gutenberg-embed-block cp_embed_wrapper"><iframe id="cp_embed_27f5cb6013f05563d60549a1797290f9" src="//codepen.io/anon/embed/27f5cb6013f05563d60549a1797290f9?height=450&amp;theme-id=1&amp;slug-hash=27f5cb6013f05563d60549a1797290f9&amp;default-tab=result" height="450" scrolling="no" frameborder="0" allowfullscreen allowpaymentrequest name="CodePen Embed 27f5cb6013f05563d60549a1797290f9" title="CodePen Embed 27f5cb6013f05563d60549a1797290f9" class="cp_embed_iframe" style="width:100%;overflow:hidden">CodePen Embed Fallback</iframe></div>
+
+
+
+<p class="is-style-explanation">Note that the end result of this method will have a white background, not transparent like the static logo, but I was fine with that. If you need to, you can flip it around, use black background, and hide the light parts of your element by setting the blend mode to <code>darken</code>.</p>
+
+
+
+<h3 id="h-final-touches">Final touches</h3>
+
+
+
+<p>I was pretty much done at this point, and quite happy with the end result. But a couple of days later, I got a <a href="https://lottiefiles.com">Lottie</a>-based JSON file from the branding agency with the exact same animation. In retrospect, maybe I could spare my work and use their file, it would have worked just fine. Even the file size was surprisingly small, but it was still 8✕ bigger than the SVG, so we ended up using my animation anyway.</p>
+
+
+
+<p>But, that meant I had one last thing to do. The Lottie animation had a “start animation” where the small orange dot grows into view, and I had to add it to my animation as well. I added a short 0.5s delay to all three animations as well as a scaling animation in the beginning.</p>
+
+
+
+<div class="wp-block-cp-codepen-gutenberg-embed-block cp_embed_wrapper"><iframe id="cp_embed_ffdf9540c522d881c024045b0cf63093" src="//codepen.io/anon/embed/ffdf9540c522d881c024045b0cf63093?height=450&amp;theme-id=1&amp;slug-hash=ffdf9540c522d881c024045b0cf63093&amp;default-tab=result" height="450" scrolling="no" frameborder="0" allowfullscreen allowpaymentrequest name="CodePen Embed ffdf9540c522d881c024045b0cf63093" title="CodePen Embed ffdf9540c522d881c024045b0cf63093" class="cp_embed_iframe" style="width:100%;overflow:hidden">CodePen Embed Fallback</iframe></div>
+
+
+
+<p class="is-style-explanation">Click on “Rerun” on the Pen to see the animation again from the initial dot.</p>
+
+
+
+<p>That’s it! Now my company has a new logo and a set of lightweight, fully scalable assets to use across our web platforms.</p>
+
+
+
+<p>And for those of you wondering, yes, I did end up creating a nice little Logo component in React since we’re using it. It even renders the SVG according to a theme passed to it as a prop, making the implementation easier, and keeping all future changes in a single location.</p>
+
+
+
+<h3 id="h-what-about-you">What about you?</h3>
+
+
+
+<p>Do you think there’s a better way to get the same result? Share your thoughts in the comments! And thank you for reading.</p>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/my-struggle-to-use-and-animate-a-conic-gradient-in-svg/">My Struggle to Use and Animate a Conic Gradient in SVG</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </content:encoded>
+
+      <wfw:commentRss>https://css-tricks.com/my-struggle-to-use-and-animate-a-conic-gradient-in-svg/feed/</wfw:commentRss>
+      <slash:comments>8</slash:comments>
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">343623</post-id>
+    </item>
+    <item>
+      <title>Building a Command Line Tool with Nodejs and Fauna</title>
+      <link>https://css-tricks.com/building-a-command-line-tool-with-nodejs-and-fauna/</link>
+      <comments>https://css-tricks.com/building-a-command-line-tool-with-nodejs-and-fauna/#comments</comments>
+
+      <dc:creator><![CDATA[Fortune Ikechi]]></dc:creator>
+      <pubDate>Thu, 08 Jul 2021 14:35:09 +0000</pubDate>
+      <category><![CDATA[Sponsored]]></category>
+      <guid isPermaLink="false">https://css-tricks.com/?p=343574</guid>
+
+      <description><![CDATA[<p>Command line tools are one of the most popular applications we have today. We use command line tools every day, and they range from git, npm or yarn. Command line tools are very fast and useful for automating applications and &#8230;</p>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/building-a-command-line-tool-with-nodejs-and-fauna/">Building a Command Line Tool with Nodejs and Fauna</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </description>
+      <content:encoded><![CDATA[
+<p>Command line tools are one of the most popular applications we have today. We use command line tools every day, and they range from git, npm or yarn. Command line tools are very fast and useful for automating applications and workflows.</p>
+
+
+
+<p>We will be building a command line tool with Node.js and Fauna for our database in this post. In addition, we will be creating a random quotes application using Node.js, and add permission and a keyword for our app.</p>
+
+
+
+<span id="more-343574"></span>
+
+
+
+<h3 id="h-prerequisites">Prerequisites</h3>
+
+
+
+<p>To take full advantage of this tutorial, make sure you have the following installed on your local development environment:</p>
+
+
+
+<ul><li><a href="https://srv.buysellads.com/ads/long/x/T6IFZUDTTTTTTT4BWG2CTTTTTTT37OOSKTTTTTTTPD2RYYTTTTTTT2Z427PDC7ZY2R66WIQUC2NMTOIN2RI6AAB4C7JT" rel="nofollow">Node.js</a> version &gt;= 16.x.x installed.</li><li>Have access to one package manager such as <a href="https://srv.buysellads.com/ads/long/x/T6IFZUDTTTTTTT4BWG2CTTTTTTT3SOOSKTTTTTTTPD2RYYTTTTTTTLLB2WAMT742KHZU4SL2KMSNK2INFHYN5JBFV2DE" rel="nofollow">npm</a> or <a href="https://srv.buysellads.com/ads/long/x/T6IFZUDTTTTTTT4BWG2CTTTTTTT3ROOSKTTTTTTTPD2RYYTTTTTTTJPMFHMFELDCKRPUTOIGCJLMVWDQFHD6Y5PZVHCE" rel="nofollow">yarn</a>.</li><li>Access to Fauna dashboard.</li></ul>
+
+
+
+<h4 id="h-getting-started-with-fauna">Getting Started with Fauna</h4>
+
+
+
+<p>Register a new account using email credentials or a GitHub account. You can register a new account <a href="https://srv.buysellads.com/ads/long/x/TCSPI7ITTTTTTTCPGXECTTTTTTTVOQX3KTTTTTTTYTDOKYTTTTTTTNP3QV7NLBLNFHTW6KZ7CQY6CBDV5KBCWLJLPW7T" rel="nofollow">here</a>. Once you have created a new account or signed in, you are going to be welcomed by the dashboard screen:</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="768" height="565" src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_369B760B2B052A894C4A6D0BE72A9A14BDFC8D60CF555C8D9CA1295334687277_1617635952038_faunadashboard.png?resize=768%2C565&#038;ssl=1" alt="" class="wp-image-343575" srcset="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_369B760B2B052A894C4A6D0BE72A9A14BDFC8D60CF555C8D9CA1295334687277_1617635952038_faunadashboard.png?w=768&amp;ssl=1 768w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_369B760B2B052A894C4A6D0BE72A9A14BDFC8D60CF555C8D9CA1295334687277_1617635952038_faunadashboard.png?resize=300%2C221&amp;ssl=1 300w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<h4 id="h-creating-a-new-fauna-instance">Creating a New Fauna Instance</h4>
+
+
+
+<p>To create a new database instance using <a href="https://srv.buysellads.com/ads/long/x/T6IFZUDTTTTTTT4BWG2CTTTTTTTT3OOSKTTTTTTTPD2RYYTTTTTTTMB5K22DLYBNGHLCP2PNF3IFWW4UKHZHCWP3KAAE" rel="sponsored nofollow">Fauna</a> services, you have to follow some simple steps. On the dashboard screen, press the button New Database:</p>
+
+
+
+<figure class="wp-block-image size-full is-resized"><img loading="lazy" src="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_369B760B2B052A894C4A6D0BE72A9A14BDFC8D60CF555C8D9CA1295334687277_1617636926120_faunadbinstance.png?resize=383%2C550&#038;ssl=1" alt="" class="wp-image-343576" width="383" height="550" srcset="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_369B760B2B052A894C4A6D0BE72A9A14BDFC8D60CF555C8D9CA1295334687277_1617636926120_faunadbinstance.png?w=510&amp;ssl=1 510w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_369B760B2B052A894C4A6D0BE72A9A14BDFC8D60CF555C8D9CA1295334687277_1617636926120_faunadbinstance.png?resize=209%2C300&amp;ssl=1 209w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<p>Next, enter the name of the database and save. Once a database instance is set up, you are ready to access the key. Use access keys to connect authorization and a connection to the database from a single-page application. To create your access key, navigate to the side menu, and go to the Security tab and click on the New Key button.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="677" height="544" src="https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_3B5DF067B9B1716A74F92E81442091B58B856125C18D3FD50CAA1D3FDB895FDC_1622318296601_faunakeysquoteapp.png?resize=677%2C544&#038;ssl=1" alt="" class="wp-image-343577" srcset="https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_3B5DF067B9B1716A74F92E81442091B58B856125C18D3FD50CAA1D3FDB895FDC_1622318296601_faunakeysquoteapp.png?w=677&amp;ssl=1 677w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_3B5DF067B9B1716A74F92E81442091B58B856125C18D3FD50CAA1D3FDB895FDC_1622318296601_faunakeysquoteapp.png?resize=300%2C241&amp;ssl=1 300w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<h4 id="h-creating-a-collection">Creating a Collection</h4>
+
+
+
+<p>Navigate to your dashboard, click on the Collections tab from the side menu, press the New Collection, button, input your desired name for the new collection, and save.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="677" height="741" src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_3B5DF067B9B1716A74F92E81442091B58B856125C18D3FD50CAA1D3FDB895FDC_1622319100997_collections.png?resize=677%2C741&#038;ssl=1" alt="" class="wp-image-343578" srcset="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_3B5DF067B9B1716A74F92E81442091B58B856125C18D3FD50CAA1D3FDB895FDC_1622319100997_collections.png?w=677&amp;ssl=1 677w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_3B5DF067B9B1716A74F92E81442091B58B856125C18D3FD50CAA1D3FDB895FDC_1622319100997_collections.png?resize=274%2C300&amp;ssl=1 274w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<h4 id="h-creating-indexes">Creating Indexes</h4>
+
+
+
+<p>To complete setup, create indexes for our application. Indexes are essential because <a href="https://srv.buysellads.com/ads/long/x/T6IFZUDTTTTTTT4BWG2CTTTTTTTTDOOSKTTTTTTTPD2RYYTTTTTTTN4UPRPH57D6P3V6PJBZZQ7COBZZG3Z6AIQUP23E" rel="nofollow">searching documents</a> are done using indexes in Fauna by matching the user input against the tern field. Create an index by navigating to the Indexes tab of our Fauna dashboard.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="649" height="630" src="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_3B5DF067B9B1716A74F92E81442091B58B856125C18D3FD50CAA1D3FDB895FDC_1622373192792_indexes.png?resize=649%2C630&#038;ssl=1" alt="" class="wp-image-343579" srcset="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_3B5DF067B9B1716A74F92E81442091B58B856125C18D3FD50CAA1D3FDB895FDC_1622373192792_indexes.png?w=649&amp;ssl=1 649w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_3B5DF067B9B1716A74F92E81442091B58B856125C18D3FD50CAA1D3FDB895FDC_1622373192792_indexes.png?resize=300%2C291&amp;ssl=1 300w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<p>Now, we are ready to build our notes command-line application using Node.js and our database.</p>
+
+
+
+<h4 id="h-initializing-a-node-js-app-and-installing-dependencies">Initializing a Node.js App and Installing Dependencies</h4>
+
+
+
+<p>This section will initialize a Node.js application and install the dependencies we need using the NPM package. We are also going to build a simple quotes application from this <a href="https://srv.buysellads.com/ads/long/x/T6IFZUDTTTTTTT4BWG2CTTTTTTTTHOOSKTTTTTTTPD2RYYTTTTTTT24J5J7CVNICC2BCBM37CWBMCBSIPQUW6WBPPJZT" rel="nofollow">link.</a></p>
+
+
+
+<h4 id="h-getting-started">Getting Started</h4>
+
+
+
+<p>To get started, let’s create a folder for our application inside the project folder using the code block below on our terminal:</p>
+
+
+
+<pre rel="Terminal" class="wp-block-csstricks-code-block language-none" data-line=""><code markup="tt">mkdir quotes_cli
+cd quotes_cli
+touch quotes_app
+npm init -y</code></pre>
+
+
+
+<p>In the code block above, we created a new directory, navigated into the directory, and created a new file called quotes_app, and ended by initializing the npm dependencies. Next, add a package to make requests to the quotes server using <a href="https://srv.buysellads.com/ads/long/x/T6IFZUDTTTTTTT4BWG2CTTTTTTTTFOOSKTTTTTTTPD2RYYTTTTTTTJDHVMNNCMSIKHUCPMI5222CLYLF22BF6RDL2R3E" rel="nofollow">axios.</a></p>
+
+
+
+<pre rel="Terminal" class="wp-block-csstricks-code-block language-none" data-line=""><code markup="tt">npm i axios</code></pre>
+
+
+
+<p>Add a package for coloring our texts, <a href="https://srv.buysellads.com/ads/long/x/T6IFZUDTTTTTTT4BWG2CTTTTTTTTQOOSKTTTTTTTPD2RYYTTTTTTTO4FZT7CEO3IVQKNCYPW5HHU6OJLZ34NB7SM5HWT" rel="nofollow">chalk</a> is an NPM package that helps us add color to print on the terminal. To add chalk, use the code block below</p>
+
+
+
+<p><code>npm i chalk</code> Let’s also import a dotenv package using the code block:</p>
+
+
+
+<pre rel="Terminal" class="wp-block-csstricks-code-block language-none" data-line=""><code markup="tt">npm i dotenv</code></pre>
+
+
+
+<h3 id="h-building-the-quotes-app">Building the Quotes App</h3>
+
+
+
+<p>In our quotes_app file, let’s add the code block below</p>
+
+
+
+<pre rel="JavaScript" class="wp-block-csstricks-code-block language-javascript" data-line=""><code markup="tt">const axios = require('axios')
+const chalk = require('chalk');
+const dotenv = require('dotenv');
+const url = process.env.APP_URL
+axios({
+  method: 'get',
+  url: url,
+  headers: { 'Accept': 'application/json' },
+}).then(res => {
+  const quote = res.data.contents.quotes[0].quote
+  const author = res.data.contents.quotes[0].author
+  const log = chalk.red(`${quote} - ${author}`) 
+  console.log(log)
+}).catch(err => {
+  const log = chalk.red(err) 
+  console.log(log)
+})</code></pre>
+
+
+
+<p>In the code block above, we imported axios, chalk, and dotenv. We added the URL of our database, our <a href="https://srv.buysellads.com/ads/long/x/T6IFZUDTTTTTTT4BWG2CTTTTTTTTZOOSKTTTTTTTPD2RYYTTTTTTTNP3QV7NLBLNFHTW6KZ7CQY6CBDV5KBCWLJLPW7T" rel="sponsored nofollow">Fauna</a> database, and using axios, we made a GET request to the URL and added headers to enable us to get our response in json.</p>
+
+
+
+<p>To log a quote, we use JavaScript promises to log the quote and its author on our console and added a catch method for catching errors.</p>
+
+
+
+<p>Before we run, let’s change the permissions on our file using the code below:</p>
+
+
+
+<pre rel="Terminal" class="wp-block-csstricks-code-block language-none" data-line=""><code markup="tt">chmod +x quotes_app</code></pre>
+
+
+
+<p>Next, run the application using our keyword below:</p>
+
+
+
+<pre rel="Terminal" class="wp-block-csstricks-code-block language-none" data-line=""><code markup="tt">./quotes_app</code></pre>
+
+
+
+<p>We should get a result similar to the image below</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="1315" height="107" src="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_3B5DF067B9B1716A74F92E81442091B58B856125C18D3FD50CAA1D3FDB895FDC_1622476762593_notesapp.png?resize=1315%2C107&#038;ssl=1" alt="" class="wp-image-343580" srcset="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_3B5DF067B9B1716A74F92E81442091B58B856125C18D3FD50CAA1D3FDB895FDC_1622476762593_notesapp.png?w=1315&amp;ssl=1 1315w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_3B5DF067B9B1716A74F92E81442091B58B856125C18D3FD50CAA1D3FDB895FDC_1622476762593_notesapp.png?resize=300%2C24&amp;ssl=1 300w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_3B5DF067B9B1716A74F92E81442091B58B856125C18D3FD50CAA1D3FDB895FDC_1622476762593_notesapp.png?resize=1024%2C83&amp;ssl=1 1024w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_3B5DF067B9B1716A74F92E81442091B58B856125C18D3FD50CAA1D3FDB895FDC_1622476762593_notesapp.png?resize=768%2C62&amp;ssl=1 768w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_3B5DF067B9B1716A74F92E81442091B58B856125C18D3FD50CAA1D3FDB895FDC_1622476762593_notesapp.png?resize=1000%2C81&amp;ssl=1 1000w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<h4 id="h-conclusion">Conclusion</h4>
+
+
+
+<p>In this article, we learned more about <a href="https://srv.buysellads.com/ads/long/x/T6IFZUDTTTTTTT4BWG2CTTTTTTTT2OOSKTTTTTTTPD2RYYTTTTTTTNP3QV7NLBLNFHTW6KZ7CQY6CBDV5KBCWLJLPW7T" rel="sponsored nofollow">Fauna</a> and Node.js command-line tools. You can extend the application to be able to add date reminders in real-time.</p>
+
+
+
+<p>Here is a list of some resources that you might like after reading this post:</p>
+
+
+
+<ul><li><a href="https://srv.buysellads.com/ads/long/x/T6IFZUDTTTTTTT4BWG2CTTTTTTTTGOOSKTTTTTTTPD2RYYTTTTTTTKPZ226H5SPYG3NNWKLLKHQN4KZVP3CNNLD3KQWE" rel="nofollow">Fauna CRUD docs</a></li></ul>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/building-a-command-line-tool-with-nodejs-and-fauna/">Building a Command Line Tool with Nodejs and Fauna</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </content:encoded>
+
+      <wfw:commentRss>https://css-tricks.com/building-a-command-line-tool-with-nodejs-and-fauna/feed/</wfw:commentRss>
+      <slash:comments>8</slash:comments>
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">343574</post-id>
+    </item>
+    <item>
+      <title>A Look at Building with Astro</title>
+      <link>https://css-tricks.com/a-look-at-building-with-astro/</link>
+      <comments>https://css-tricks.com/a-look-at-building-with-astro/#comments</comments>
+
+      <dc:creator><![CDATA[Chris Coyier]]></dc:creator>
+      <pubDate>Wed, 07 Jul 2021 21:06:35 +0000</pubDate>
+      <category><![CDATA[Article]]></category>
+      <guid isPermaLink="false">https://css-tricks.com/?p=343495</guid>
+
+      <description><![CDATA[<p><a href="https://astro.build/">Astro</a> is a brand new framework for building websites. To me, the <strong>big thing</strong> is that it allows you to build a site like you&#8217;re using a JavaScript framework (and you are), but the output is a zero-JavaScript static site. &#8230;</p>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/a-look-at-building-with-astro/">A Look at Building with Astro</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </description>
+      <content:encoded><![CDATA[
+<p><a href="https://astro.build/">Astro</a> is a brand new framework for building websites. To me, the <strong>big thing</strong> is that it allows you to build a site like you&#8217;re using a JavaScript framework (and you are), but the output is a zero-JavaScript static site. You can opt-in to client-side JavaScript as needed, and there are clever options for doing so. Notably, the learning curve is somewhat flattened by the fact that it supports componentry you may already know: React/Preact (JSX), Svelte, Vue, or web components.</p>
+
+
+
+<span id="more-343495"></span>
+
+
+
+<h3 id="h-table-stakes">Table stakes</h3>
+
+
+
+<p>Starting a new project is as easy as it should be:</p>
+
+
+
+<pre rel="Command Line" class="wp-block-csstricks-code-block language-none" data-line=""><code markup="tt">npm init astro
+npm install
+npm start</code></pre>
+
+
+
+<p>There is a helpful little process and output:</p>
+
+
+
+<figure class="wp-block-image size-full is-resized"><img loading="lazy" src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-10.28.48-AM.png?resize=596%2C293&#038;ssl=1" alt="" class="wp-image-343843" width="596" height="293" srcset="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-10.28.48-AM.png?w=1526&amp;ssl=1 1526w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-10.28.48-AM.png?resize=300%2C147&amp;ssl=1 300w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-10.28.48-AM.png?resize=1024%2C503&amp;ssl=1 1024w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-10.28.48-AM.png?resize=768%2C377&amp;ssl=1 768w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-10.28.48-AM.png?resize=1000%2C491&amp;ssl=1 1000w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<p>As expected (like you would get with Next or Nuxt or any other site builder kind of project) you get a dev server at a local port you can pop right up:</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="2354" height="1806" src="https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-10.29.43-AM.png?resize=2354%2C1806&#038;ssl=1" alt="" class="wp-image-343844" srcset="https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-10.29.43-AM.png?w=2354&amp;ssl=1 2354w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-10.29.43-AM.png?resize=300%2C230&amp;ssl=1 300w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-10.29.43-AM.png?resize=1024%2C786&amp;ssl=1 1024w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-10.29.43-AM.png?resize=768%2C589&amp;ssl=1 768w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-10.29.43-AM.png?resize=1536%2C1178&amp;ssl=1 1536w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-10.29.43-AM.png?resize=2048%2C1571&amp;ssl=1 2048w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-10.29.43-AM.png?resize=1000%2C767&amp;ssl=1 1000w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<p>From here, I consider the table stakes to be CSS injection / Hot Module Reloading. No worries there:</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="2990" height="1784" src="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-10.39.20-AM.png?resize=2990%2C1784&#038;ssl=1" alt="" class="wp-image-343848" srcset="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-10.39.20-AM.png?w=2990&amp;ssl=1 2990w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-10.39.20-AM.png?resize=300%2C179&amp;ssl=1 300w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-10.39.20-AM.png?resize=1024%2C611&amp;ssl=1 1024w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-10.39.20-AM.png?resize=768%2C458&amp;ssl=1 768w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-10.39.20-AM.png?resize=1536%2C916&amp;ssl=1 1536w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-10.39.20-AM.png?resize=2048%2C1222&amp;ssl=1 2048w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-10.39.20-AM.png?resize=1000%2C597&amp;ssl=1 1000w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<h3 id="h-a-static-site-generator-with-honest-to-god-real-actual-components">A static site generator with honest-to-god real actual components</h3>
+
+
+
+<p>This is such a wonderful thing to me. I really like the idea of static site generators—I think they make a lot of sense in a lot of situations. Sending HTML over-the-wire is just a good move for resiliency, CDN-efficiency, SEO, accessibility, you name it. But in the past a lot of the options were either:</p>
+
+
+
+<ul><li>A JavaScript powered static site generator, that does generate a &#8220;static&#8221; site, but <em>also</em> ships a JavaScript bundle (e.g. Next or Gatsby)</li><li>A static site generator that is more focused on HTML and has its own templating/formats that aren&#8217;t JavaScript components (e.g. Eleventy or Jekyll)</li></ul>
+
+
+
+<p>I know there are exceptions, but this covers the vast majority of the site generator market.</p>
+
+
+
+<p>But I want both!</p>
+
+
+
+<ul><li>I want to craft sites from JavaScript-components, because the syntax and tooling around them is just better than any other component system we have right now.</li><li>I want static output that is <em>actually</em> zero-JavaScript (unless I manually opt-in to things).</li></ul>
+
+
+
+<p>That&#8217;s what happens with Astro. </p>
+
+
+
+<p>Those components? </p>
+
+
+
+<ul><li>They can be <code>.jsx</code> files</li><li>They can be <code>.svelte</code> files</li><li>They can be <code>.vue</code> files</li><li>These are &#8220;renderers&#8221; and <a href="https://github.com/snowpackjs/astro/blob/main/docs/core-concepts/ui-renderers.md">you can <abbr title="bring your own">BYO</abbr></a>. </li></ul>
+
+
+
+<p>Astro also has it&#8217;s own format (<code>.astro</code>) and it&#8217;s also very compelling because:</p>
+
+
+
+<ul><li>It&#8217;s obviously a first-class citizen of how Astro works</li><li>It&#8217;s comfortably JSX-like&#8230;</li><li>&#8230;except better because it does stuff like makes the <code>&lt;head&gt;</code> work automatically</li><li>Styled scoping works out of the box, through a normal <code>&lt;style&gt;</code> tag</li><li>&#8220;Fenced&#8221; JavaScript runs during build. Let&#8217;s look at that next.</li></ul>
+
+
+
+<h3 id="h-astro-files">Astro files</h3>
+
+
+
+<p>I mentioned some of the cool parts about the <code>.astro</code> syntax right above. At a higher level, I just like how they look. So little boilerplate! Just gets right to it.</p>
+
+
+
+<pre rel=".astro" class="wp-block-csstricks-code-block language-jsx" data-line=""><code markup="tt">---
+import SomeComponent from "../components/SomeComponent";
+
+// This runs in Node, so you look at your command line to see it.
+console.log("Hi.");
+
+// Example: &lt;SomeComponent greeting="(Optional) Hello" name="Required Name" />
+const { greeting = 'Hello', name } = Astro.props;
+const items = ["Dog", "Cat", "Platipus"];
+---
+&lt;!-- JSX-like, but also more pleasantly HTML like, like this comment  -->
+&lt;div class="module">
+  &lt;h1>{greeting}, {name}!&lt;/h1>
+  &lt;ul>
+    {items.map((item) => (
+      &lt;li>{item}&lt;/li>
+    ))}
+&lt;/ul>
+&lt;/div>
+
+&lt;SomeComponent regular="props" />
+
+&lt;style>
+   /* Scoped! */
+  .module {
+    padding: 1rem;
+  }
+&lt;/style></code></pre>
+
+
+
+<p>The &#8220;fences&#8221; (<code>---</code>) at the top is where the initial JavaScriptin&#8217; goes. That&#8217;s where I yank in the props for this component if it needs any (they can be typed if you like that), do imports/exports, and set up data for the template below.</p>
+
+
+
+<p>What feels a little funky, but is in-line with the Astro vibe, is that this is essentially Node JavaScript. It runs in the build process. So that <code>console.log()</code> statement I don&#8217;t see in my browser console, I see it in my command line. </p>
+
+
+
+<figure class="wp-block-image size-full is-resized"><img loading="lazy" src="https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/CleanShot-2021-07-02-at-12.59.00@2x.png?resize=658%2C190&#038;ssl=1" alt="" class="wp-image-343888" width="658" height="190" srcset="https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/CleanShot-2021-07-02-at-12.59.00@2x.png?w=1172&amp;ssl=1 1172w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/CleanShot-2021-07-02-at-12.59.00@2x.png?resize=300%2C87&amp;ssl=1 300w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/CleanShot-2021-07-02-at-12.59.00@2x.png?resize=1024%2C297&amp;ssl=1 1024w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/CleanShot-2021-07-02-at-12.59.00@2x.png?resize=768%2C223&amp;ssl=1 768w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/CleanShot-2021-07-02-at-12.59.00@2x.png?resize=1000%2C290&amp;ssl=1 1000w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<h3 id="h-pages-style-routing"><code>pages</code>-style routing</h3>
+
+
+
+<p>It&#8217;s tempting to say Next.js popularized this, but really the concept is as old as file systems. Think of how a classic Apache server works. If you have a file system like:</p>
+
+
+
+<pre rel="" class="wp-block-csstricks-code-block language-none" data-line=""><code markup="tt">index.html
+/about/
+  index.html</code></pre>
+
+
+
+<p>In a browser, you can visit <code>http://website.com/about</code> and that will render that <code>index.html</code> page under the <code>/about</code> folder. That&#8217;s what the routing is like here. By virtue of me having:</p>
+
+
+
+<pre rel="" class="wp-block-csstricks-code-block language-none" data-line=""><code markup="tt">/pages/
+  index.astro
+  about.astro</code></pre>
+
+
+
+<p>I&#8217;ll have a homepage as well as an <code>/about/</code> page on my site. That&#8217;s just a refreshingly nice way to deal with routing—as opposed to needing to build your own routing with component-ry all to itself.</p>
+
+
+
+<h3 id="h-if-you-want-to-do-that-thing-where-all-the-content-of-your-site-lives-in-markdown-files-right-in-the-repo-that-s-a-first-class-citizen">If you want to do that thing where all the content of your site lives in Markdown files right in the repo, that&#8217;s a first-class citizen.</h3>
+
+
+
+<p>I think this is super common for stuff like blogs and documentation, especially as those are already popular targets for static site generators. And in these early days, I think we&#8217;re going to see a lot of Astro sites along those lines while people wait to see if it&#8217;s ready for bigger undertakings.</p>
+
+
+
+<p>One way to use Markdown is to make Pages in Markdown straight away. The Markdown will also have &#8220;fences&#8221; (Frontmatter) where you chuck what layout you want to use (best to use an <code>.astro</code> file) and pass in data if you need to. Then the entire content of the Markdown file will flow into the <code>&lt;slot /&gt;</code>. Pretty darn slick:</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="550" src="https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.09.13-PM.png?resize=1024%2C550&#038;ssl=1" alt="" class="wp-image-343889" srcset="https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.09.13-PM.png?resize=1024%2C550&amp;ssl=1 1024w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.09.13-PM.png?resize=300%2C161&amp;ssl=1 300w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.09.13-PM.png?resize=768%2C412&amp;ssl=1 768w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.09.13-PM.png?resize=1536%2C825&amp;ssl=1 1536w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.09.13-PM.png?resize=2048%2C1100&amp;ssl=1 2048w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.09.13-PM.png?resize=1000%2C537&amp;ssl=1 1000w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<p>Another incredibly satisfying way to use Markdown in Astro is using the built-in <code>&lt;Markdown /&gt;</code> component. Import it and use it:</p>
+
+
+
+<pre rel=".astro" class="wp-block-csstricks-code-block language-jsx" data-line=""><code markup="tt">---
+import { Markdown } from 'astro/components';
+---
+
+&lt;main>
+  &lt;Markdown>
+    # Hello world!
+    
+    - Do thing
+    - Another thing in my *cool list*
+  &lt;/Markdown>
+
+  &lt;div>Outside Markdown&lt;/div>
+&lt;/main></code></pre>
+
+
+
+<p>You can also go snag some Markdown from elsewhere in your project and barf that into a component. That leads into fetching data, so let&#8217;s look at that next.</p>
+
+
+
+<h3 id="h-fetching-data-rules">Fetching data rules</h3>
+
+
+
+<p>We were just talking about Markdown so let&#8217;s close the loop there. You can &#8220;fetch&#8221; data internally in Astro by using <code>fetchContent</code>. Look how straightforward it is:</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="2830" height="1740" src="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.18.34-PM.png?resize=2830%2C1740&#038;ssl=1" alt="" class="wp-image-343890" srcset="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.18.34-PM.png?w=2830&amp;ssl=1 2830w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.18.34-PM.png?resize=300%2C184&amp;ssl=1 300w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.18.34-PM.png?resize=1024%2C630&amp;ssl=1 1024w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.18.34-PM.png?resize=768%2C472&amp;ssl=1 768w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.18.34-PM.png?resize=1536%2C944&amp;ssl=1 1536w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.18.34-PM.png?resize=2048%2C1259&amp;ssl=1 2048w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.18.34-PM.png?resize=1000%2C615&amp;ssl=1 1000w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<p>I fetch it the raw Markdown, then I could use the HTML it returns if I want, or slap it into a <code>&lt;Markdown /&gt;</code> component if that makes sense for whatever reason:</p>
+
+
+
+<pre rel=".astro" class="wp-block-csstricks-code-block language-jsx" data-line=""><code markup="tt">---
+import { Markdown } from 'astro/components';
+const localData = Astro.fetchContent('../content/data.md');
+---
+
+&lt;div class="module">
+  &lt;Markdown content={localData[0].astro.source} />
+&lt;/div></code></pre>
+
+
+
+<p>But I don&#8217;t have to fetch internal data only. I&#8217;m a fan of <a href="https://www.11ty.dev/">Eleventy</a>. During an Eleventy build, you can certainly go fetch data from an outside source, but I&#8217;d argue it&#8217;s a little finnicky. You fetch the data with code in a separate JavaScript file, pulling in your own network library, then processing and returning the data to use elsewhere in a template. <a href="https://www.11ty.dev/docs/quicktips/eliminate-js/#get-the-stargazers-count-from-the-github-api">Like this.</a> In Astro, that fetching can happen right alongside the component where you need it. </p>
+
+
+
+<p>Check out this real-world-ish example where I yank in data from right here from CSS-Tricks and display it as cards.</p>
+
+
+
+<pre rel=".astro" class="wp-block-csstricks-code-block language-markup" data-line=""><code markup="tt">---
+import Card from '../components/Card.astro';
+import Header from '../components/Header';
+
+const remoteData = await fetch('https://css-tricks.com/wp-json/wp/v2/posts?per_page=12&amp;_embed').then(response => response.json());
+---
+
+&lt;!doctype html>
+&lt;html lang="en">
+
+&lt;head>
+    &lt;meta charset="UTF-8">
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1">
+    &lt;title>CSS-Trickzz&lt;/title>
+    &lt;link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>&lt;text y=%22.9em%22 font-size=%2290%22>&#x2b50;&#xfe0f;&lt;/text>&lt;/svg>">
+    &lt;link rel="stylesheet" href="/style/global.css">
+
+    &lt;style lang="scss">
+      .grid {
+        margin: 4rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        @media (max-width: 650px) {
+          grid-template-columns: repeat(1, 1fr);
+          margin: 2rem;
+        }
+        gap: 3rem;
+      }
+    &lt;/style>
+&lt;/head>
+
+&lt;body>
+  &lt;main>
+    &lt;Header />
+
+    &lt;div class="grid">
+      {remoteData.map((post) => {
+        return(
+          &lt;Card title={post.title.rendered} link={post.link} excerpt={post.excerpt.rendered} featured_img={post.featured_media_src_url}
+          />
+        )
+      })}
+    &lt;/div>
+
+  &lt;/main>
+&lt;/body>
+
+&lt;/html></code></pre>
+
+
+
+<p><a href="https://css-trickzz.netlify.app/">Check it out</a>, I can build a page from CSS-Tricks data just that easily:</p>
+
+
+
+<figure class="wp-block-image size-full"><a href="https://css-trickzz.netlify.app/"><img loading="lazy" width="2254" height="2014" src="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.24.37-PM.png?resize=2254%2C2014&#038;ssl=1" alt="" class="wp-image-343891" srcset="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.24.37-PM.png?w=2254&amp;ssl=1 2254w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.24.37-PM.png?resize=300%2C268&amp;ssl=1 300w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.24.37-PM.png?resize=1024%2C915&amp;ssl=1 1024w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.24.37-PM.png?resize=768%2C686&amp;ssl=1 768w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.24.37-PM.png?resize=1536%2C1372&amp;ssl=1 1536w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.24.37-PM.png?resize=2048%2C1830&amp;ssl=1 2048w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.24.37-PM.png?resize=1000%2C894&amp;ssl=1 1000w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></a></figure>
+
+
+
+<p>What&#8217;s fascinating about that is that the data happens:</p>
+
+
+
+<ol><li>in Node, not client-side, and</li><li>during the build process.</li></ol>
+
+
+
+<p>So, in order to keep a website like this updated, I&#8217;d have to run the build/deploy process regularly. </p>
+
+
+
+<h3 id="h-i-suppose-it-s-kind-of-weird-how-astro-supports-all-these-different-frameworks-out-of-the-box">I suppose it&#8217;s kind of weird how Astro supports all these different frameworks out of the box. </h3>
+
+
+
+<p>I&#8217;ve overheard some pushback that Astro is inefficient at the <code>npm install</code> level since you have to bring down a bunch of stuff you likely won&#8217;t need or use. I&#8217;ve overheard some pushback on the idea that mixing-matching JavaScript frameworks is a terrible idea.</p>
+
+
+
+<p>I agree it&#8217;s weird-feeling, but I&#8217;m not particularly worried about non-user-facing things. When things are happening only during the build process and all the user ever gets is HTML, use whatever feels good! If you ultimately do load the components-based frameworks to do on-page interactive things, surely it makes sense to limit it to one. And since you&#8217;re getting so much at build time, maybe it makes sense to use something designed for <a href="https://twitter.com/youyuxi/status/1410763549228609537">super light on-rendered-page interactivity</a>.</p>
+
+
+
+<h3 id="h-styling">Styling</h3>
+
+
+
+<p>Let&#8217;s say you want to use Sass to style your site. With many site generators, they punt on this, as a philosophy. Like saying &#8220;nah, we don&#8217;t want to be opinionated here, you style however you want to&#8221;. And I get that, it might be a strength as sometimes frameworks that are too opinionated lose people. But to me, it often feels unfortunate as now I&#8217;m on my own to wire up some style-processing build processes (e.g. Gulp) that I really just don&#8217;t want to deal with. </p>
+
+
+
+<p>With Astro, the philosophy seems to be to support a wide swath of popular styling techniques out of the box right away. </p>
+
+
+
+<ul><li>Just <code>import "./style.css";</code> vanilla stylesheets</li><li>Use a <code>&lt;style&gt;</code> block anywhere in <code>.astro</code> files and the CSS will be scoped to that component&#8230;</li><li>&#8230; which is like CSS modules, but that&#8217;s only needed if you go for a <code>.jsx</code> file, and if you do, it&#8217;s supported.</li><li>The styling capabilities of <code>.svelte</code> and <code>.vue</code> files work as expected.</li><li>Sass is built in, just put <code>&lt;style lang="scss"&gt;</code> on the styling blocks wherever.</li></ul>
+
+
+
+<p>The <a href="https://github.com/snowpackjs/astro/blob/main/docs/guides/styling.md">styling doc</a> has more detail. </p>
+
+
+
+<h3 id="h-the-fancy-opt-in-javascript-tricks">The fancy opt-in JavaScript tricks</h3>
+
+
+
+<p>Allow me to blockquote this from the README:</p>
+
+
+
+<blockquote>
+<ul>
+<li><code>&lt;MyComponent /&gt;</code> will render an HTML-only version of <code>MyComponent</code> (default)</li>
+<li><code>&lt;MyComponent:load /&gt;</code> will render <code>MyComponent</code> on page load</li>
+<li><code>&lt;MyComponent:idle /&gt;</code> will use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback" rel="nofollow">requestIdleCallback()</a> to render <code>MyComponent</code> as soon as main thread is free</li>
+<li><code>&lt;MyComponent:visible /&gt;</code> will use an <a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API" rel="nofollow">IntersectionObserver</a> to render <code>MyComponent</code> when the element enters the viewport</li>
+</ul>
+</blockquote>
+
+
+
+<p>That&#8217;s some fancy dancing. HTML by default, and you opt-in to running your components client-side (JavaScript) only when you specifically want to, and even then, under efficient conditions. </p>
+
+
+
+<p>I put a little Vue-based counter (from <a href="https://github.com/snowpackjs/astro/blob/main/examples/framework-multiple/src/components/VueCounter.vue">their examples</a>) onto my demo site and used the <code>:visible</code> modifier to see it work. Check it out:</p>
+
+
+
+<figure class="wp-block-video"><video controls src="https://css-tricks.com/wp-content/uploads/2021/07/CleanShot-2021-07-02-at-13.48.44.mp4" playsinline></video></figure>
+
+
+
+<p>The Vue stuff only loads when it needs to. Like <a href="https://astro.build/blog/introducing-astro">the blog post</a> says:</p>
+
+
+
+<blockquote class="wp-block-quote is-style-default"><p>Of course, sometimes client-side JavaScript is inevitable. Image carousels, shopping carts, and auto-complete search bars are just a few examples of things that require some JavaScript to run in the browser. This is where Astro really shines: When a component needs some JavaScript, Astro only loads that one component (and any dependencies). The rest of your site continues to exist as static, lightweight HTML.</p></blockquote>
+
+
+
+<h3 id="h-the-discord-is-poppin">The Discord is poppin&#8217;</h3>
+
+
+
+<p>I should point out that Astro is <em>super duper new</em>. As I write, they don&#8217;t even have real documentation up. It might feel a bit early to be using a framework with docs that only exist as a README. They are working on it though! I&#8217;ve seen previews of it because I happen to <a href="https://astro.build/chat">be in the Discord</a>. </p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="2766" height="1984" src="https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.53.17-PM.png?resize=2766%2C1984&#038;ssl=1" alt="" class="wp-image-343907" srcset="https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.53.17-PM.png?w=2766&amp;ssl=1 2766w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.53.17-PM.png?resize=300%2C215&amp;ssl=1 300w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.53.17-PM.png?resize=1024%2C734&amp;ssl=1 1024w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.53.17-PM.png?resize=768%2C551&amp;ssl=1 768w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.53.17-PM.png?resize=1536%2C1102&amp;ssl=1 1536w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.53.17-PM.png?resize=2048%2C1469&amp;ssl=1 2048w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-02-at-1.53.17-PM.png?resize=1000%2C717&amp;ssl=1 1000w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<p>I think they are very smart to have a public Discord as it means there is a hot-n-fast feedback loop for them to improve the framework. I&#8217;ve found that being in it is super useful.</p>
+
+
+
+<p>I believe they are hoping that Astro grows up into much more than a framework, but a complete platform, where Astro is just the open-source core. You can hear Fred talk with Jason about that on <a href="https://www.learnwithjason.dev/ship-less-javascript-with-astro">a Learn with Jason episode</a>.</p>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/a-look-at-building-with-astro/">A Look at Building with Astro</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </content:encoded>
+
+      <wfw:commentRss>https://css-tricks.com/a-look-at-building-with-astro/feed/</wfw:commentRss>
+      <slash:comments>7</slash:comments>
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">343495</post-id>
+    </item>
+    <item>
+      <title>The Web’s Worst Default</title>
+      <link>https://css-tricks.com/the-webs-worst-default/</link>
+      <comments>https://css-tricks.com/the-webs-worst-default/#comments</comments>
+
+      <dc:creator><![CDATA[Robin Rendle]]></dc:creator>
+      <pubDate>Wed, 07 Jul 2021 14:30:34 +0000</pubDate>
+      <category><![CDATA[Article]]></category>
+      <category><![CDATA[semantics]]></category>
+      <guid isPermaLink="false">https://css-tricks.com/?p=343388</guid>
+
+      <description><![CDATA[<p>There are a lot of great defaults when it comes to browsers and the web. Think about all the accessibility features that are baked into HTML so that you don’t have to do weird stuff, like <a href="https://twitter.com/mmatuzo/status/1409493742097154048">this example from Manuel</a>&#8230;</p>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/the-webs-worst-default/">The Web’s Worst Default</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </description>
+      <content:encoded><![CDATA[
+<p>There are a lot of great defaults when it comes to browsers and the web. Think about all the accessibility features that are baked into HTML so that you don’t have to do weird stuff, like <a href="https://twitter.com/mmatuzo/status/1409493742097154048">this example from Manuel</a>:</p>
+
+
+
+<pre rel="HTML" class="wp-block-csstricks-code-block language-markup" data-line=""><code markup="tt">&lt;h2 role="heading" aria-level="1" class="sr-only">
+  Title
+&lt;/h2></code></pre>
+
+
+
+<figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">
+<blockquote class="twitter-tweet" data-width="500" data-dnt="true"><p lang="en" dir="ltr">Please don&#39;t do that.<br><br>&#8211; h1 &#8211; h6 don&#39;t need an explicit heading role.<br>&#8211; It&#39;s a bad practice to overwrite default semantics.<br>&#8211; If you need a different heading level, use a different HTML element (&lt;h1&gt; in this case).<br>&#8211; If your CMS prevents you from changing markup, switch CMS. <a href="https://t.co/3HZBIxV7uw">pic.twitter.com/3HZBIxV7uw</a></p>&mdash; Manuel Matuzović (@mmatuzo) <a href="https://twitter.com/mmatuzo/status/1409493742097154048?ref_src=twsrc%5Etfw">June 28, 2021</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div></figure>
+
+
+
+<p>You can just write your <code>&lt;h2&gt;</code> and the browser deals with the accessibility parts. This is <a href="https://css-tricks.com/why-how-and-when-to-use-semantic-html-and-aria/">why we should start with semantic HTML first</a> before adding ARIA roles to everything.</p>
+
+
+
+<span id="more-343388"></span>
+
+
+
+<p>There are other great defaults of the modern web, like responsive design: a lot of folks have mentioned that the web is responsive by default and it’s actually us web developers that break it.</p>
+
+
+
+<p>Then there are defaults when it comes to CSS. I’m thinking of stuff like <code>flex</code>. It feels pretty darn good to slap <code>display: flex</code> onto a parent element and all the children just snap next to each other since that’s mostly what I want to accomplish.</p>
+
+
+
+<p>So: defaults on the web are good!</p>
+
+
+
+<p>But there’s also a lot of bad defaults. You might be familiar with my favorite website, an <a href="https://wiki.csswg.org/ideas/mistakes">Incomplete List of Mistakes in the Design of CSS</a>, where the CSS Working Group lists out a ton of problems in the CSS spec such as:</p>
+
+
+
+<blockquote class="wp-block-quote"><p><code>size</code> should have been a shorthand for <code>width</code> and <code>height</code> instead of an @page property with a different definition</p></blockquote>
+
+
+
+<p>These defaults are annoying, some minor, some major. And some of them can be fixed, like the <a href="https://css-tricks.com/international-box-sizing-awareness-day/"><code>box-sizing</code></a> CSS property. Yes, <a href="https://css-tricks.com/chapter-8-css/">there was a time on the web</a> when even adding padding, borders, or width to an element would be confusing as all heck. Now we don’t have to worry about that quite so much.</p>
+
+
+
+<p>But I think the absolute worst default on the web was the backspace key—in most browsers, it would force users to go back to the previous page. There have been countless times where I&#8217;ve tried to remove text in an input field and suddenly I would be dragged back to the last page I was on and all my data would be lost. That sort of thing makes typing into forms feel so fragile, as if at any moment you might exhale and your entire house implodes.</p>
+
+
+
+<p class="is-style-explanation">Side note: I think this is why a lot of folks prefer native over the web. They feel how fragile the web is when it comes to these default settings. When you load an app it feels like you’re on solid ground but a web app? It&#8217;s a rickety house that’s ready to fall apart at any moment.</p>
+
+
+
+<p>Anyway, I didn’t even realize that Chrome removed the backspace key shortcut way back in 2016! <a href="https://www.zdnet.com/article/firefox-to-block-backspace-key-from-working-as-back-button/">Firefox also removed it</a> earlier this year and yet, to this very day, five years later, I’m still scared of clicking that darn backspace key. I’ll always hesitate if I click the wrong key and then, very slowly, I’ll make sure that I’m focused on the correct input, unless I nuke all my data in the form.</p>
+
+
+
+<p>I think this is kind of a good lesson when designing software: first, default settings are the most important thing in the world and are very difficult to get right; second, even if you do the right thing and fix all those bad defaults, habits are extremely hard to break.</p>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/the-webs-worst-default/">The Web’s Worst Default</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </content:encoded>
+
+      <wfw:commentRss>https://css-tricks.com/the-webs-worst-default/feed/</wfw:commentRss>
+      <slash:comments>7</slash:comments>
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">343388</post-id>
+    </item>
+    <item>
+      <title>Body Toggle</title>
+      <link>https://css-tricks.com/body-toggle/</link>
+      <comments>https://css-tricks.com/body-toggle/#comments</comments>
+
+      <dc:creator><![CDATA[Chris Coyier]]></dc:creator>
+      <pubDate>Tue, 06 Jul 2021 20:55:45 +0000</pubDate>
+      <category><![CDATA[Article]]></category>
+      <category><![CDATA[classlist]]></category>
+      <category><![CDATA[JavaScript]]></category>
+      <guid isPermaLink="false">https://css-tricks.com/?p=343438</guid>
+
+      <description><![CDATA[<p>I appreciate the clarity of <a href="https://www.reddit.com/r/css/comments/o8r89q/one_of_the_tricks_i_use_the_most_when_creating/">this trick</a> that Mikael Ainalem posted over on Reddit:</p>
+<p>It&#8217;s a one-liner that toggles the class on the <code>&#60;body&#62;</code> so you can mock up different states and toggle between them on click.</p>
+<pre rel="HTML" class="wp-block-csstricks-code-block language-markup" data-line=""><code markup="tt">&#60;body onclick="this.classList.toggle("active");"</code></pre>
+<p>Could &#8230;</p>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/body-toggle/">Body Toggle</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </description>
+      <content:encoded><![CDATA[
+<p>I appreciate the clarity of <a href="https://www.reddit.com/r/css/comments/o8r89q/one_of_the_tricks_i_use_the_most_when_creating/">this trick</a> that Mikael Ainalem posted over on Reddit:</p>
+
+
+
+<span id="more-343438"></span>
+
+
+
+<figure class="wp-block-video ticss-f3f4e8a4"><video controls src="https://css-tricks.com/wp-content/uploads/2021/06/redditsave.com_one_of_the_tricks_i_use_the_most_when_creating-y4gbhgwb0r771.mp4" playsinline></video></figure>
+
+
+
+<p>It&#8217;s a one-liner that toggles the class on the <code>&lt;body&gt;</code> so you can mock up different states and toggle between them on click.</p>
+
+
+
+<pre rel="HTML" class="wp-block-csstricks-code-block language-markup" data-line=""><code markup="tt">&lt;body onclick="this.classList.toggle("active");"></code></pre>
+
+
+
+<p>Could be on any element as well!</p>
+
+
+
+<div class="wp-block-cp-codepen-gutenberg-embed-block cp_embed_wrapper"><iframe id="cp_embed_MWmWObd" src="//codepen.io/anon/embed/MWmWObd?height=450&amp;theme-id=1&amp;slug-hash=MWmWObd&amp;default-tab=html,result" height="450" scrolling="no" frameborder="0" allowfullscreen allowpaymentrequest name="CodePen Embed MWmWObd" title="CodePen Embed MWmWObd" class="cp_embed_iframe" style="width:100%;overflow:hidden">CodePen Embed Fallback</iframe></div>
+
+
+
+<p>This can be a big thing. See <a href="https://css-tricks.com/power-changing-classes/">&#8220;The Power of Changing Classes&#8221;</a> as a case in point. Even if you aren&#8217;t much of a JavaScript person, <code>classList</code> is perhaps the one API you should know.</p>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/body-toggle/">Body Toggle</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </content:encoded>
+
+      <wfw:commentRss>https://css-tricks.com/body-toggle/feed/</wfw:commentRss>
+      <slash:comments>5</slash:comments>
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">343438</post-id>
+    </item>
+    <item>
+      <title>I&#8217;ve got one question about Jetpack for you.</title>
+      <link>https://css-tricks.com/ive-got-one-question-about-jetpack-for-you/</link>
+      <comments>https://css-tricks.com/ive-got-one-question-about-jetpack-for-you/#comments</comments>
+
+      <dc:creator><![CDATA[Chris Coyier]]></dc:creator>
+      <pubDate>Tue, 06 Jul 2021 20:00:30 +0000</pubDate>
+      <category><![CDATA[Article]]></category>
+      <category><![CDATA[jetpack]]></category>
+      <category><![CDATA[WordPress]]></category>
+      <guid isPermaLink="false">https://css-tricks.com/?p=343560</guid>
+
+      <description><![CDATA[<p>And maybe an optional follow-up if you&#8217;re up for it.</p>
+<p>Automattic, the makers of Jetpack and many other WordPress-y things, have sponsored my site (me = Chris Coyier; site = CSS-Tricks) for quite a while. <a href="https://css-tricks.com/jetpack/">I use Jetpack myself</a>, &#8230;</p>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/ive-got-one-question-about-jetpack-for-you/">I&#8217;ve got one question about Jetpack for you.</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </description>
+      <content:encoded><![CDATA[
+<p>And maybe an optional follow-up if you&#8217;re up for it.</p>
+
+
+
+<p>Automattic, the makers of Jetpack and many other WordPress-y things, have sponsored my site (me = Chris Coyier; site = CSS-Tricks) for quite a while. <a href="https://css-tricks.com/jetpack/">I use Jetpack myself</a>, and I&#8217;m always trying to tell people about its features and benefits.</p>
+
+
+
+<p>Yet I get the sense that there is a decent amount of hesitancy (or even general negative feelings) toward Jetpack. I want to hone in on that and understand it better. This will be useful for me in my attempt to be a good sponsoree, and useful for Automattic to improve Jetpack.</p>
+
+
+
+<span id="more-343560"></span>
+
+
+
+<div id="wufoo-z3puphz08qee3j"> Fill out my <a href="https://chriscoyier.wufoo.com/forms/z3puphz08qee3j">online form</a>. </div> <script type="text/javascript"> var z3puphz08qee3j; (function(d, t) { var s = d.createElement(t), options = { 'userName':'chriscoyier', 'formHash':'z3puphz08qee3j', 'autoResize':true, 'height':'800', 'async':true, 'host':'wufoo.com', 'header':'hide', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { z3puphz08qee3j = new WufooForm(); z3puphz08qee3j.initialize(options); z3puphz08qee3j.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/ive-got-one-question-about-jetpack-for-you/">I&#8217;ve got one question about Jetpack for you.</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </content:encoded>
+
+      <wfw:commentRss>https://css-tricks.com/ive-got-one-question-about-jetpack-for-you/feed/</wfw:commentRss>
+      <slash:comments>1</slash:comments>
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">343560</post-id>
+    </item>
+    <item>
+      <title>The Dilemma of Naming Font Size Variables</title>
+      <link>https://css-tricks.com/the-dilemma-of-naming-font-size-variables/</link>
+      <comments>https://css-tricks.com/the-dilemma-of-naming-font-size-variables/#comments</comments>
+
+      <dc:creator><![CDATA[Martin Lexelius]]></dc:creator>
+      <pubDate>Tue, 06 Jul 2021 14:41:22 +0000</pubDate>
+      <category><![CDATA[Article]]></category>
+      <category><![CDATA[custom properties]]></category>
+      <category><![CDATA[font-size]]></category>
+      <category><![CDATA[naming]]></category>
+      <guid isPermaLink="false">https://css-tricks.com/?p=343149</guid>
+
+      <description><![CDATA[<p>Normally, a project will have a set of pre-determined font sizes, usually as variables named in such a way that seeks some semblance of order and consistency. Any project of considerable size can use something like that. There are always &#8230;</p>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/the-dilemma-of-naming-font-size-variables/">The Dilemma of Naming Font Size Variables</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </description>
+      <content:encoded><![CDATA[
+<p>Normally, a project will have a set of pre-determined font sizes, usually as variables named in such a way that seeks some semblance of order and consistency. Any project of considerable size can use something like that. There are always headings, paragraphs, lists, etc. You <em>could</em> set font sizes explicitly and directly everywhere (e.g. <code>font-size: 18px</code>). Raw CSS, as it were. I do see that occasionally — mixing not just sizes but also units like <code>px</code>, <code>rem</code> and <code>em</code> in mindless chaos.</p>
+
+
+
+<p>That’s why the CSS of a project typically uses variables or mixins — we’re shooting for structure, maintainability and, ultimately, consistency. <a href="https://css-tricks.com/naming-things-is-only-getting-harder/">We all know naming is hard</a> and it doesn’t take looking much further than naming font size variables to see why. How should we name a small font size variable so it’s clear that it’s smaller than a large font size variable? And what happens if we need to insert a new variable in between them — is that one named in a way that clearly explains its relationship to the other size variables?</p>
+
+
+
+<p>We’ll continue talking about naming font size variables in this post. But, really, the issue extends beyond font sizes to any sort of size or length value. Think paddings, margins, widths, heights, border radii, etc. These things need structure and consistency, too!</p>
+
+
+
+<span id="more-343149"></span>
+
+
+
+<p>How do you define font sizes in your project? Does it look something like this with custom variables:</p>
+
+
+
+<pre rel="CSS" class="wp-block-csstricks-code-block language-css" data-line=""><code markup="tt">:root {
+  /* Font size variables */
+  --small: 12px;
+  --medium: 16px;
+  --large: 24px;
+}</code></pre>
+
+
+
+<p>Or perhaps in Sass (which is what we’ll be using throughout this article) you might have variables for <code>$small</code>, <code>$medium</code>, and <code>$large</code> font sizes.</p>
+
+
+
+<p>Fine. After a while, let’s say the designer adds a new <code>&lt;h1&gt;</code> heading for a hero section. And it is <em>very</em> large. Larger than anything you have in the project. No problem, you reply. You add an <code>$xlarge</code> to the project, and go about your day.</p>
+
+
+
+<p>The following day, the designer makes a nice form label, which again has a new font size. This new size, though, is larger than small, but smaller than medium.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="867" height="345" src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/font-sizes-naming-insert.png?resize=867%2C345&#038;ssl=1" alt="" class="wp-image-343150" srcset="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/font-sizes-naming-insert.png?w=867&amp;ssl=1 867w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/font-sizes-naming-insert.png?resize=300%2C119&amp;ssl=1 300w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/font-sizes-naming-insert.png?resize=768%2C306&amp;ssl=1 768w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<p>Here we go.</p>
+
+
+
+<p>What should you call it? <code>$small-medium</code>? <code>$small-2</code>? <code>$smedium</code>? Whatever you name it, you won’t be happy with it. Because there is no word for that.</p>
+
+
+
+<p>Or should you maybe refactor it? Create a new <code>$xsmall</code>, and change all instances of <code>$small</code> to <code>$xsmall</code>? And then you can use <code>$small</code> for the form label? There’s a small risk that you will forget to change somewhere and, hey, presto: a bug. What happens next time, when something is introduced that has a larger size than the <code>$medium</code> variable value? Do we have to refactor <code>$large</code> and <code>$xlarge</code> too?</p>
+
+
+
+<p>I suggest adhering to a scale, always. An easy fix would be to further abstraction, perhaps ditching numbers and sizes in favor of functional names, like <code>$form-label</code> instead of <code>$small-2</code> or <code>$xsmall</code>.</p>
+
+
+
+<p>But imagine having a set of font sizes like this:</p>
+
+
+
+<pre rel="SCSS" class="wp-block-csstricks-code-block language-scss" data-line=""><code markup="tt">$small: 12px;
+$form-label: 14px;
+$medium: 16px;
+$large: 24px;</code></pre>
+
+
+
+<p>That is a broken scale. It’s a size concept and a component concept mixed together. It raises questions. Should an alert or a button be allowed to use <code>$form-label</code>? Yuck.</p>
+
+
+
+<p>Maybe you have a Greek thing going on, naming the variables <code>$alpha</code>, <code>$beta</code>, <code>$gamma</code>? Let me ask you then, what is then bigger than <code>$alpha</code>? <code>$alpha-large</code>? Or wait, is <code>$alpha</code> the <em>small</em> one? </p>
+
+
+
+<p>I have also seen names like <code>$button-font-size</code>, <code>$label-font-size</code>, <code>$blockquote-font-size</code>. That seems to me like one variable per element used, instead of a scale, and sounds like it could be a lot of duplicated code if the same value is being used in multiple places, but with different names.</p>
+
+
+
+<p>Perhaps you’re working with one base font size and percentages only? Sure, but I would say you need variables for the percentages. <a href="https://geoffgraham.me/how-im-dealing-with-font-sizes/">That’s how Geoff handles font sizing</a> and even he admits that the setup raises his own eyebrows. Calculations with subjectively-named variables might be clear to you, but crazy-looking and complicated for anyone else jumping into the project.</p>
+
+
+
+<pre rel="CSS" class="wp-block-csstricks-code-block language-css" data-line=""><code markup="tt">h1 {
+  font-size: clamp(var(--text-size-large), calc(var(--text-size-base) * var(--text-size-scaler)), var(--text-size-huge));
+}</code></pre>
+
+
+
+<h3 id="h-we-need-a-better-system">We need a better system</h3>
+
+
+
+<p>Adding and removing stuff <em>constantly</em> is the way we <em>want</em> to work. This is modern day development — <abbr title="minimum viable product">MVP</abbr>, Agile, and all the other hot buzzwords.</p>
+
+
+
+<p>What we need is a scale syntax that allows room for changes. Adding a new size to the scale should be easy without introducing breaking changes. I’m thinking of a kind of scale that is both <strong>flexible</strong> and <strong>infinite</strong>. It must be more sophisticated than <code>$small</code>, <code>$medium</code> and <code>$large</code>.</p>
+
+
+
+<p>It should be also be <strong>descriptive</strong> and <strong>intuitive</strong>. Preferably, you shouldn’t have to look up the variable names in the settings file or the config, or wherever you store these things. I don’t have the slightest clue if <code>$epsilon</code> comes before or after <code>$sigma</code>. Do you?</p>
+
+
+
+<h3 id="h-using-existing-systems">Using existing systems</h3>
+
+
+
+<p>Before trying to invent something new, is there an existing syntax or system we can leverage? Here are a few I’ve encountered.</p>
+
+
+
+<h4 id="h-international-system-of-units"><a href="https://en.wikipedia.org/wiki/Metric_prefix">International</a> <a href="https://en.wikipedia.org/wiki/Metric_prefix">s</a><a href="https://en.wikipedia.org/wiki/Metric_prefix">ystem of</a> <a href="https://en.wikipedia.org/wiki/Metric_prefix">u</a><a href="https://en.wikipedia.org/wiki/Metric_prefix">nits</a></h4>
+
+
+
+<p>Surely, you’re familiar with terms like “kilobyte” and “megabyte.” Europeans are very used to “millimeter” and “centimeter.” Other examples are “giga,” “tera,” and “peta.” These prefixes can be used for length, weight, volume and more. Could a <code>$centi</code> font size work? It is intuitive to a certain extent, that is, if you’re familiar with the metric system. This is a finite scale. And there’s no room to add new sizes because they are already set.</p>
+
+
+
+<h4 id="h-traditional-point-size-names"><a href="https://en.wikipedia.org/wiki/Traditional_point-size_names">Traditional point-size names</a></h4>
+
+
+
+<p>Long before computers and <a href="https://en.wikipedia.org/wiki/Desktop_publishing">desktop publishing</a>, books and newspapers were printed with lead type. The type setters had different names for different sizes. The sizes have a reference to a point size (<code>pt</code>) and could, in theory, be used for pixel sizes (<code>px</code>).</p>
+
+
+
+<p>The type sizes in this system are called “Nonpareil,” “Pica,” “Cicero,” and “Great Primer,” just to name a few. The names are different depending on continent and country. Plus, the same name can have different sizes, so… quite confusing.</p>
+
+
+
+<p>That said, I do like this system in a way because it would be like paying respect to an old craftsmanship from times past. But the names are so weird and specifically meant for type sizing, that it feels like a stretch to use for things like breakpoints and spacing.</p>
+
+
+
+<h4 id="h-placing-everyday-objects-on-a-scale">Placing everyday objects on a scale</h4>
+
+
+
+<p>How about using stuff from our everyday life? Say chili peppers.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="1119" height="243" src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/chiles.png?resize=1119%2C243&#038;ssl=1" alt="" class="wp-image-343151" srcset="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/chiles.png?w=1119&amp;ssl=1 1119w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/chiles.png?resize=300%2C65&amp;ssl=1 300w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/chiles.png?resize=1024%2C222&amp;ssl=1 1024w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/chiles.png?resize=768%2C167&amp;ssl=1 768w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/chiles.png?resize=1000%2C217&amp;ssl=1 1000w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<p>There are many kinds of chili peppers. The <code>$habanero</code>, is hotter than the <code>$cayenne</code>, which is hotter than the <code>$jalapeno</code>. That would be fun, yeah?</p>
+
+
+
+<p>But as much as I enjoy the idea of writing <code>font-size: $tabasco</code>, I see two problems. If you’re not into peppers, you cannot know which pepper is hotter than another pepper — so, it’s not universally intuitive. Also, the bell pepper is 0 on the <a href="https://en.wikipedia.org/wiki/Scoville_scale">Scoville scale</a>, and nothing is below that. <a href="http://​​https://pepperhead.com/top-10-worlds-hottest-peppers/">Carolina Reaper is the hottest pepper in the world</a>, so the scale is finite.</p>
+
+
+
+<p>And yeah, peppers scale-wise are not larger or smaller, they are hotter. Bad concept. Maybe something more common, like types of balls?</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="884" height="343" src="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/balls.png?resize=884%2C343&#038;ssl=1" alt="" class="wp-image-343152" srcset="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/balls.png?w=884&amp;ssl=1 884w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/balls.png?resize=300%2C116&amp;ssl=1 300w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/balls.png?resize=768%2C298&amp;ssl=1 768w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<p>There‘s a large range of different kinds of balls. You have handballs, soccer balls, volleyballs, etc. Need something larger than a medicine ball? Use <code>$beach</code>. Something smaller than a tennis ball? Use <code>$pingpong</code>. This is very intuitive, as I’d imagine everyone has played with all sorts of balls at some point, or at least are familiar of them from sports.</p>
+
+
+
+<p>But is a ping pong ball larger than a golf ball? Who knows? Further, a bowling ball and a soccer ball are actually the same size. So… again, not perfect.</p>
+
+
+
+<p>Scaling up to planets could work, but you would have to be knowledgeable in astronomy.</p>
+
+
+
+<p>How about straight-up numbers? We’re unable to use numbers alone because tools like <a href="https://www.npmjs.com/package/stylelint">stylelinter</a> will protest. But would something like this work:</p>
+
+
+
+<pre rel="SCSS" class="wp-block-csstricks-code-block language-scss" data-line=""><code markup="tt">$font-14: 14px;
+$font-16: 16px;
+$font-24: 24px;</code></pre>
+
+
+
+<p>Well, it’s infinite as there is always room for new additions. But it’s also incredibly specific, and there are some downsides to have the actual value be part of the name like that. Let’s assume that <code>$font-18</code> is used in a lot of places. And now, they say, all places with <code>18px</code> must be changed to <code>19px</code> (because reasons). Now we need to rename the variable from <code>$font-18</code> to <code>$font-19</code> then change the value of <code>$font-19</code> from <code>18px</code> to <code>19px</code>. And that’s before we finally update all places using <code>$font-18</code> to <code>$font-19</code>. This is almost like using raw CSS. Low score for maintainability.</p>
+
+
+
+<p>What about the animal kingdom?</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="862" height="332" src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/animal-variable-names.png?resize=862%2C332&#038;ssl=1" alt="" class="wp-image-343153" srcset="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/animal-variable-names.png?w=862&amp;ssl=1 862w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/animal-variable-names.png?resize=300%2C116&amp;ssl=1 300w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/animal-variable-names.png?resize=768%2C296&amp;ssl=1 768w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<p>Mother Nature has provided a myriad of species on this earth, which comes in handy in this situation. Imagine something like this:</p>
+
+
+
+<pre rel="SCSS" class="wp-block-csstricks-code-block language-scss" data-line=""><code markup="tt">$mouse: 12px;
+$dog: 16px;
+$hippo: 24px;</code></pre>
+
+
+
+<p>Need something smaller than a mouse? Use <code>$bee</code>, <code>$ant</code> or <code>$flea</code>. Larger than a bear? Try <code>$moose</code> or <code>$hippo</code>. Larger than an elephant? Well, you have the <code>$whale</code>, or heck, we can go prehistoric and use <code>$t-rex</code>. There’s always an animal to squeeze in here. Very versatile, very intuitive, also infinite (almost). And fun, too — I wouldn’t mind doing <code>font-size: $squirrel</code>. &#x1f929;</p>
+
+
+
+<p>But then again, even that might require needing to reference the variables, unless we know exactly which animals are contained in our zoo of font sizes. But maybe that’s not a big deal as long as it scales.</p>
+
+
+
+<h3 id="h-i-have-spent-way-too-much-time-pondering-this">I have spent way too much time pondering this</h3>
+
+
+
+<p>Or have I? The code base is where you spend your working hours. It’s your work environment, just like chairs and monitors. And the workplace should be a nice place.</p>
+
+
+
+<p>How do you handle your font size scales? Do you have one system for fonts and another for things like margins? Can anyone jump right into your code and understand how everything is organized? Please tell in the comments!</p>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/the-dilemma-of-naming-font-size-variables/">The Dilemma of Naming Font Size Variables</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </content:encoded>
+
+      <wfw:commentRss>https://css-tricks.com/the-dilemma-of-naming-font-size-variables/feed/</wfw:commentRss>
+      <slash:comments>30</slash:comments>
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">343149</post-id>
+    </item>
+    <item>
+      <title>Kubernetes Explained Simply: Containers, Pods and Images</title>
+      <link>https://css-tricks.com/kubernetes-explained-simply-containers-pods-and-images/</link>
+      <comments>https://css-tricks.com/kubernetes-explained-simply-containers-pods-and-images/#comments</comments>
+
+      <dc:creator><![CDATA[Lari Maza]]></dc:creator>
+      <pubDate>Mon, 05 Jul 2021 14:17:33 +0000</pubDate>
+      <category><![CDATA[Article]]></category>
+      <category><![CDATA[architecture]]></category>
+      <category><![CDATA[kubernates]]></category>
+      <guid isPermaLink="false">https://css-tricks.com/?p=343166</guid>
+
+      <description><![CDATA[<p>If you zone out every time someone mentions “Kubernetes,” “containers,” or “pods,” this article is for you. No complex diagrams involved!</p>
+<p>As a front-end developer, you don’t have to know how to configure an infrastructure from scratch. However, if you &#8230;</p>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/kubernetes-explained-simply-containers-pods-and-images/">Kubernetes Explained Simply: Containers, Pods and Images</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </description>
+      <content:encoded><![CDATA[
+<p>If you zone out every time someone mentions “Kubernetes,” “containers,” or “pods,” this article is for you. No complex diagrams involved!</p>
+
+
+
+<p>As a front-end developer, you don’t have to know how to configure an infrastructure from scratch. However, if you have a basic understanding of how it works, you can deploy and rollback your applications more independently while also being more informed during conversations about this topic.</p>
+
+
+
+<span id="more-343166"></span>
+
+
+
+<p>Let’s start with web searching what <a href="https://kubernetes.io/">Kubernetes</a> is.</p>
+
+
+
+<blockquote class="wp-block-quote is-style-large"><p>Kubernetes is an open-source container-orchestration system for automating computer application deployment, scaling, and management.</p><cite>—<a href="https://en.wikipedia.org/wiki/Kubernetes">Wikipedia</a></cite></blockquote>
+
+
+
+<p>OK, but what <em>is</em> a container?</p>
+
+
+
+<figure class="wp-block-image size-full is-resized"><img loading="lazy" src="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/container-sketch.jpg?resize=362%2C331&#038;ssl=1" alt="" class="wp-image-343490" width="362" height="331" srcset="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/container-sketch.jpg?w=723&amp;ssl=1 723w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/container-sketch.jpg?resize=300%2C274&amp;ssl=1 300w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<p>Simply put, a <strong>container</strong> is like a virtual computer that you can create, use, destroy and reboot remotely.</p>
+
+
+
+<p>Now imagine this computer is actually in a cloud, running alongside thousands of other virtual computers. And all of this runs in a real computer which is powerful as heck. Your computer is now a container in the cloud.</p>
+
+
+
+<figure class="wp-block-image size-full is-resized ticss-d40c8883"><img src="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622728346149_cloud.png?w=500&#038;ssl=1" alt="An illustrated cloud with five computers, each labeled “Container”." class="wp-image-343168" srcset="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622728346149_cloud.png?w=2790&amp;ssl=1 2790w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622728346149_cloud.png?resize=300%2C180&amp;ssl=1 300w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622728346149_cloud.png?resize=1024%2C614&amp;ssl=1 1024w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622728346149_cloud.png?resize=768%2C461&amp;ssl=1 768w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622728346149_cloud.png?resize=1536%2C922&amp;ssl=1 1536w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622728346149_cloud.png?resize=2048%2C1229&amp;ssl=1 2048w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622728346149_cloud.png?resize=1000%2C600&amp;ssl=1 1000w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<p>But wait — how will you create and control this virtual computer? How will it communicate with other computers in the same cloud? And how will it communicate with the world? Sounds like you need a way to <em>orchestrate</em> all of this. Hence: our maestro, <strong>Kubernetes</strong> (or K8s for short)!</p>
+
+
+
+<figure class="wp-block-image size-full is-resized ticss-90f88485"><img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622729315629_k8s.png?w=500&#038;ssl=1" alt="A cloud with five computers labeled “Container” and a maestro below it labeled “K8s”" class="wp-image-343169" srcset="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622729315629_k8s.png?w=2391&amp;ssl=1 2391w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622729315629_k8s.png?resize=300%2C262&amp;ssl=1 300w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622729315629_k8s.png?resize=1024%2C895&amp;ssl=1 1024w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622729315629_k8s.png?resize=768%2C671&amp;ssl=1 768w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622729315629_k8s.png?resize=1536%2C1342&amp;ssl=1 1536w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622729315629_k8s.png?resize=2048%2C1789&amp;ssl=1 2048w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622729315629_k8s.png?resize=1000%2C874&amp;ssl=1 1000w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<p>You may have also heard the term <strong>pods</strong>. What are those, and where do they fit here? Well, simply put, pods are groups of one or more containers. They are the smallest deployable unit in K8s, like an atom.</p>
+
+
+
+<p>Imagine you’re building a WordPress website and you need a computer running PHP and a MySQL database. Running both in the same computer might be too heavy; so you could instead create one container for PHP, one for MySQL, and K8s will help make them communicate.</p>
+
+
+
+<p>Then, you’d group these two containers in a pod, which represents the entire application. That means you can now start and kill an entire application through pods.</p>
+
+
+
+<figure class="wp-block-image size-full is-resized ticss-f4186c22"><img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622729897537_pod.png?w=500&#038;ssl=1" alt="Cloud with circle inside it labeled “Pod” and two computers inside it each labeled “PHP” and “MySQL”" class="wp-image-343170" srcset="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622729897537_pod.png?w=2388&amp;ssl=1 2388w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622729897537_pod.png?resize=300%2C262&amp;ssl=1 300w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622729897537_pod.png?resize=1024%2C894&amp;ssl=1 1024w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622729897537_pod.png?resize=768%2C671&amp;ssl=1 768w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622729897537_pod.png?resize=1536%2C1342&amp;ssl=1 1536w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622729897537_pod.png?resize=2048%2C1789&amp;ssl=1 2048w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622729897537_pod.png?resize=1000%2C874&amp;ssl=1 1000w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<p>You would likely not create just one pod alone to deploy an app in production, though — there‘s more that we don’t need to cover right now, but <a href="https://kubernetes.io/docs/concepts/workloads/pods/">you can read more about pods in the K8s documentation.</a></p>
+
+
+
+<p>Now’s a good time to ask: what happens when you deploy an app in this setup?</p>
+
+
+
+<p>K8s creates a new pod, redirects the traffic to it, and when it‘s sure everything‘s working, it kills the old pod. Again, more entities are involved to control and redirect requests, but we’re leaving that out today.</p>
+
+
+
+<p>However, sometimes the deploy breaks something and we have to rollback our application to the previous version. Imagine everything’s on fire, and we have to start all of those computers from scratch — install Linux, Node, Git, clone the repository, install dependencies, build the app… that would take forever! If only there was a faster way, like taking a snapshot from the past to quickly restore everything to…</p>
+
+
+
+<figure class="wp-block-image size-full is-resized ticss-15c9bc72"><img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622730888041_image1.png?w=500&#038;ssl=1" alt="USB flash drive labeled “June 15 2:45pm”" class="wp-image-343171" srcset="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622730888041_image1.png?w=1549&amp;ssl=1 1549w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622730888041_image1.png?resize=300%2C99&amp;ssl=1 300w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622730888041_image1.png?resize=1024%2C337&amp;ssl=1 1024w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622730888041_image1.png?resize=768%2C253&amp;ssl=1 768w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622730888041_image1.png?resize=1536%2C506&amp;ssl=1 1536w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622730888041_image1.png?resize=1000%2C329&amp;ssl=1 1000w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<p>Enter: <strong>images</strong>! You probably have heard this term a lot too. An image is like a backup of a container with everything already installed and configured. A new image is generated with your Continuous Integration (abbr&gt;CI) every time you push to the main branch of your repository, and it‘s then replicated into new containers when they’re created.</p>
+
+
+
+<p>And what are they good for? Well, mainly two things: the first one is restoring to the previous image quickly, like our example above. But they‘re also useful when your website has a bunch of traffic and just one computer won’t be able to handle it.</p>
+
+
+
+<p>When you have an image, you can create as many identical containers as you want and replicate that image across all of them, serving the exact same contents.</p>
+
+
+
+<figure class="wp-block-image size-full is-resized ticss-e5dcbc6b"><img src="https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622731390677_image_containers.png?w=500&#038;ssl=1" alt="Four computers all equally labeled “Commit d406cht”" class="wp-image-343172" srcset="https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622731390677_image_containers.png?w=2652&amp;ssl=1 2652w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622731390677_image_containers.png?resize=300%2C64&amp;ssl=1 300w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622731390677_image_containers.png?resize=1024%2C220&amp;ssl=1 1024w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622731390677_image_containers.png?resize=768%2C165&amp;ssl=1 768w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622731390677_image_containers.png?resize=1536%2C330&amp;ssl=1 1536w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622731390677_image_containers.png?resize=2048%2C440&amp;ssl=1 2048w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/06/s_78DA212E69DD41D45EFFAD146FFE9D7D4E1CF3C905D4716023C36EA9FD554BFD_1622731390677_image_containers.png?resize=1000%2C215&amp;ssl=1 1000w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<p>All done! We just covered the basics on how the infrastructure of an application works, and now hopefully you can extrapolate into whatever tools your project is using.</p>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<p><small>Many thanks to <a href="https://twitter.com/shiota">Eduardo Shiota</a> for enabling me to explain this!</small></p>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/kubernetes-explained-simply-containers-pods-and-images/">Kubernetes Explained Simply: Containers, Pods and Images</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </content:encoded>
+
+      <wfw:commentRss>https://css-tricks.com/kubernetes-explained-simply-containers-pods-and-images/feed/</wfw:commentRss>
+      <slash:comments>8</slash:comments>
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">343166</post-id>
+    </item>
+    <item>
+      <title>Trigonometry in CSS and JavaScript: Beyond Triangles</title>
+      <link>https://tympanus.net/codrops/2021/06/04/trigonometry-in-css-and-javascript-beyond-triangles/</link>
+
+      <dc:creator><![CDATA[Chris Coyier]]></dc:creator>
+      <pubDate>Mon, 05 Jul 2021 14:15:20 +0000</pubDate>
+      <category><![CDATA[Link]]></category>
+      <category><![CDATA[shapes]]></category>
+      <guid isPermaLink="false">https://css-tricks.com/?p=343671</guid>
+
+      <description><![CDATA[<p>Web design is such a rectangle-based design medium that literally <a href="https://css-tricks.com/creating-non-rectangular-headers/">any deviation</a> from it feels fresh. Michelle Barker <a href="https://tympanus.net/codrops/2021/06/04/trigonometry-in-css-and-javascript-beyond-triangles/">gets into</a> using math in various ways to programmatically draw lines, shapes, and animations that end up looking both beautiful and have &#8230;</p>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/trigonometry-in-css-and-javascript-beyond-triangles/">Trigonometry in CSS and JavaScript: Beyond Triangles</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </description>
+      <content:encoded><![CDATA[
+<p>Web design is such a rectangle-based design medium that literally <a href="https://css-tricks.com/creating-non-rectangular-headers/">any deviation</a> from it feels fresh. Michelle Barker <a href="https://tympanus.net/codrops/2021/06/04/trigonometry-in-css-and-javascript-beyond-triangles/">gets into</a> using math in various ways to programmatically draw lines, shapes, and animations that end up looking both beautiful and have that <em>&#8220;I could use this&#8221;</em> feel. </p>
+
+
+
+<span id="more-343671"></span>
+
+
+
+<div class="wp-block-cp-codepen-gutenberg-embed-block cp_embed_wrapper"><iframe id="cp_embed_0a5c0eeb056077413e08af06370a8bed" src="//codepen.io/anon/embed/0a5c0eeb056077413e08af06370a8bed?height=550&amp;theme-id=1&amp;slug-hash=0a5c0eeb056077413e08af06370a8bed&amp;default-tab=result" height="550" scrolling="no" frameborder="0" allowfullscreen allowpaymentrequest name="CodePen Embed 0a5c0eeb056077413e08af06370a8bed" title="CodePen Embed 0a5c0eeb056077413e08af06370a8bed" class="cp_embed_iframe" style="width:100%;overflow:hidden">CodePen Embed Fallback</iframe></div>
+<p><a href="https://tympanus.net/codrops/2021/06/04/trigonometry-in-css-and-javascript-beyond-triangles/" title="Direct link to featured article">Direct Link to Article</a> &#8212; <a href="https://css-tricks.com/trigonometry-in-css-and-javascript-beyond-triangles/">Permalink</a></p><hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/trigonometry-in-css-and-javascript-beyond-triangles/">Trigonometry in CSS and JavaScript: Beyond Triangles</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </content:encoded>
+
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">343671</post-id>
+    </item>
+    <item>
+      <title>The Fourteenth Fourth</title>
+      <link>https://css-tricks.com/the-fourteenth-fourth/</link>
+      <comments>https://css-tricks.com/the-fourteenth-fourth/#comments</comments>
+
+      <dc:creator><![CDATA[Chris Coyier]]></dc:creator>
+      <pubDate>Sun, 04 Jul 2021 13:29:01 +0000</pubDate>
+      <category><![CDATA[Article]]></category>
+      <category><![CDATA[birthday]]></category>
+      <guid isPermaLink="false">https://css-tricks.com/?p=343496</guid>
+
+      <description><![CDATA[<p>It&#8217;s CSS-Tricks birthday! Somehow that <a href="https://css-tricks.com/tag/birthday/">keeps coming around every year</a>. It&#8217;s that time where I reflect upon that past year. It&#8217;s like the annual vibe check. </p>
+<p>I&#8217;m writing this just days after my current home state of Oregon has &#8230;</p>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/the-fourteenth-fourth/">The Fourteenth Fourth</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </description>
+      <content:encoded><![CDATA[
+<p>It&#8217;s CSS-Tricks birthday! Somehow that <a href="https://css-tricks.com/tag/birthday/">keeps coming around every year</a>. It&#8217;s that time where I reflect upon that past year. It&#8217;s like the annual vibe check. </p>
+
+
+
+<span id="more-343496"></span>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="605" src="https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/shutterstock_194720687.jpg?resize=1024%2C605&#038;ssl=1" alt="" class="wp-image-343912" srcset="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/07/shutterstock_194720687-scaled.jpg?resize=1024%2C605&amp;ssl=1 1024w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/07/shutterstock_194720687-scaled.jpg?resize=300%2C177&amp;ssl=1 300w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/07/shutterstock_194720687-scaled.jpg?resize=768%2C454&amp;ssl=1 768w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/07/shutterstock_194720687-scaled.jpg?resize=1536%2C907&amp;ssl=1 1536w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/07/shutterstock_194720687-scaled.jpg?resize=2048%2C1210&amp;ssl=1 2048w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/07/shutterstock_194720687-scaled.jpg?resize=1000%2C591&amp;ssl=1 1000w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></figure>
+
+
+
+<p>I&#8217;m writing this just days after my current home state of Oregon has <a href="https://www.oregonlive.com/coronavirus/2021/06/oregon-is-officially-open-heres-whats-different.html">lifted most of the COVID restrictions</a>. Certainly a very weird feeling. We&#8217;re just hitting the state-wide 70% vaccinated level which is the big milestone covered <a href="https://www.oregonlive.com/coronavirus/2021/07/oregon-proclaims-it-hit-70-vaccination-goal-against-covid-19.html">in the news</a>. I thought our little local organic-heavy progressive grocery store would be the last place to go mask-less, but even in there, the vast majority of people are raw-facin&#8217; it, employees included. So it&#8217;s not just America&#8217;s birthday this year, but a real sign of changing times. Controversy in tow, as there is plenty of evidence the danger is far from over. Definitely gonna hit up some fireworks though. The kid loves &#8217;em.</p>
+
+
+
+<h3 id="h-well-oiled-machine">Well-Oiled Machine</h3>
+
+
+
+<p>I&#8217;d say that&#8217;s ^ the main vibe around here from my perspective. The site is in good shape all around. The tech behind it is stable and mostly satisfying. The editorial flow is flowing. The content idea bucket overfloweth. The newsletter goes out on time. The advertising and sponsorship demand is sound. Ain&#8217;t any squeaky wheels on this train. </p>
+
+
+
+<p>And did you know we have zero meetings? Just light Slack chatter, that&#8217;s it. This is a part-time gig for everyone, and we aren&#8217;t doing any life-saving work here, so no need to take up anyone&#8217;s time with meetings.</p>
+
+
+
+<p>Technologically, we&#8217;re leaning more and more into the WordPress block editor all the time and it feels like that is a good thing to do here in WordPress land. Every time we have a chance to get more into <em>any</em> current WordPress tech and take advantage of things WordPress does well, it tends to work out.</p>
+
+
+
+<p>This is all great because as far as hours-in-the-day go, most of my time is on and needs to be on <a href="https://codepen.io/">CodePen</a>. An incredible amount of work lays ahead there as we evolve it.</p>
+
+
+
+<h3 id="h-things-to-get-done">Things to Get Done</h3>
+
+
+
+<p>That&#8217;s not to say there isn&#8217;t work to be done. I&#8217;ve got some WordPress scrubbing to do, for one thing. There are a few too many places functionality code is being stored on the site. I&#8217;ve completed an audit, but now I need to do the coding work to get it clean again. Things change over the years, WordPress evolves, needs evolve, performance and accessibility considerations evolve, my own taste evolves. Code from 8 years ago needs to evolve too.</p>
+
+
+
+<p>One thing I&#8217;d really love to get done is to move all the content on the site that really should have been a Custom Post Type to actually be Custom Post Types. Namely <a href="https://css-tricks.com/video-screencasts/">screencasts</a> and <a href="https://css-tricks.com/almanac/">almanac</a> entries. Right now they are Pages instead, which was fine at the time as it lends itself to a hierarchical structure nicely. But the only reason they aren&#8217;t Custom Post Types is because those didn&#8217;t exist when I started them. In today&#8217;s WordPress, they really should be, and I think it would open doors to managing them better. I&#8217;m not sure I have the chops to pull off a conversion like that so I might have to hire out for it.</p>
+
+
+
+<p>I&#8217;d also like to evolve our eCommerce a bit. I think it&#8217;s been going great as we dipped our toes into selling things like <a href="https://css-tricks.com/product/css-flexbox-poster/">posters</a> and <a href="https://css-tricks.com/product/mvp-supporter/">MVP membership</a>, and now it&#8217;s time to make all that stuff better and more valuable since it&#8217;s a proven win. For example, I&#8217;m working on making sure the book is downloadable in proper eBook formats, that&#8217;ll be a value-add for members. I&#8217;ve started thinking about what more we can do with the <a href="https://css-tricks.com/newsletter/257-the-one-about-images/">newsletter</a> as well since those are so hot these days, and I&#8217;m a fan.</p>
+
+
+
+<h3 id="h-social-media-cards">Social Media Cards</h3>
+
+
+
+<p>While social media isn&#8217;t a major focus of ours, we do tend to make sure Twitter is in good shape, as we have that sweet handle <a href="https://twitter.com/css">@css</a>. I&#8217;m pretty hot on the idea that sites (content sites especially), should have nice social media images. Fortunately, thanks to <a href="https://socialimagegenerator.com/">Social Image Generator</a> and some custom code, ours are in good shape. I still smile looking at them as they are so damn distinct now. <a href="https://wptavern.com/create-per-post-social-media-images-with-the-social-image-generator-wordpress-plugin?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=create-per-post-social-media-images-with-the-social-image-generator-wordpress-plugin">WP Tavern did a nice writeup</a> on the plugin. </p>
+
+
+
+<p>There are five different possibilities for social cards now we can use. </p>
+
+
+
+<div class="wp-block-jetpack-slideshow aligncenter" data-effect="slide"><div class="wp-block-jetpack-slideshow_container swiper-container"><ul class="wp-block-jetpack-slideshow_swiper-wrapper swiper-wrapper"><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="1024" height="538" alt="" class="wp-block-jetpack-slideshow_image wp-image-343956" data-id="343956" src="https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/generator.jpg?resize=1024%2C538&#038;ssl=1" srcset="https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/generator.jpg?resize=1024%2C538&amp;ssl=1 1024w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/generator.jpg?resize=300%2C158&amp;ssl=1 300w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/generator.jpg?resize=768%2C403&amp;ssl=1 768w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/generator.jpg?resize=1000%2C525&amp;ssl=1 1000w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/generator.jpg?w=1200&amp;ssl=1 1200w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /><figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">This is the default. It defaults to the post title, but we can override that. </figcaption></figure></li><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="1024" height="538" alt="" class="wp-block-jetpack-slideshow_image wp-image-343952" data-id="343952" src="https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/generator-1.jpg?resize=1024%2C538&#038;ssl=1" srcset="https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/generator-1.jpg?resize=1024%2C538&amp;ssl=1 1024w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/generator-1.jpg?resize=300%2C158&amp;ssl=1 300w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/generator-1.jpg?resize=768%2C403&amp;ssl=1 768w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/generator-1.jpg?resize=1000%2C525&amp;ssl=1 1000w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/generator-1.jpg?w=1200&amp;ssl=1 1200w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /><figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">If the post has a featured image, it will be incorporated into the social media image like this.</figcaption></figure></li><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="1024" height="538" alt="" class="wp-block-jetpack-slideshow_image wp-image-343953" data-id="343953" src="https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/3.jpg?resize=1024%2C538&#038;ssl=1" srcset="https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/3.jpg?resize=1024%2C538&amp;ssl=1 1024w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/3.jpg?resize=300%2C158&amp;ssl=1 300w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/3.jpg?resize=768%2C403&amp;ssl=1 768w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/3.jpg?resize=1000%2C525&amp;ssl=1 1000w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/3.jpg?w=1200&amp;ssl=1 1200w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /><figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">If we add a quote to a meta field, we&#8217;ll get this special quote card design.</figcaption></figure></li><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="1024" height="512" alt="" class="wp-block-jetpack-slideshow_image wp-image-343955" data-id="343955" src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/07/table-mlb-teams.jpg?resize=1024%2C512&#038;ssl=1" srcset="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/07/table-mlb-teams.jpg?resize=1024%2C512&amp;ssl=1 1024w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/07/table-mlb-teams.jpg?resize=300%2C150&amp;ssl=1 300w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/07/table-mlb-teams.jpg?resize=768%2C384&amp;ssl=1 768w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/07/table-mlb-teams.jpg?resize=1000%2C500&amp;ssl=1 1000w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/07/table-mlb-teams.jpg?w=1200&amp;ssl=1 1200w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /><figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">We can turn off the generated social media card and have it just use the featured image as the card.</figcaption></figure></li><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="1024" height="536" alt="" class="wp-block-jetpack-slideshow_image wp-image-343954" data-id="343954" src="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/social-default.png?resize=1024%2C536&#038;ssl=1" srcset="https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/social-default.png?resize=1024%2C536&amp;ssl=1 1024w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/social-default.png?resize=300%2C157&amp;ssl=1 300w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/social-default.png?resize=768%2C402&amp;ssl=1 768w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/social-default.png?resize=1000%2C523&amp;ssl=1 1000w, https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/07/social-default.png?w=1200&amp;ssl=1 1200w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /><figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">If we turn off the generated social card and don&#8217;t have a featured image, it falls back to this generic card.</figcaption></figure></li></ul><a class="wp-block-jetpack-slideshow_button-prev swiper-button-prev swiper-button-white" role="button"></a><a class="wp-block-jetpack-slideshow_button-next swiper-button-next swiper-button-white" role="button"></a><a aria-label="Pause Slideshow" class="wp-block-jetpack-slideshow_button-pause" role="button"></a><div class="wp-block-jetpack-slideshow_pagination swiper-pagination swiper-pagination-white"></div></div></div>
+
+
+
+<h3 id="h-sponsors">Sponsors</h3>
+
+
+
+<p>I&#8217;m incredibly blessed that we have the same four major sponsors as we&#8217;ve had the last few years:</p>
+
+
+
+<ul><li><strong><a href="https://automattic.com/">Automattic</a></strong>: WordPress is at the heart of this whole site. I&#8217;m so pleased to get to have Automattic as a sponsor, who not only create all kinds of important software for WordPress that we use here, like <a href="https://css-tricks.com/jetpack/">Jetpack</a> and <a href="https://woocommerce.com/?aff=8638">WooCommerce</a>, but are big contributors to WordPress itself. I like that the site can be a living testament to what you can do with WordPress.</li><li><strong><a href="https://frontendmasters.com/?utm_source=css-tricks&amp;utm_medium=website&amp;utm_campaign=css-tricks-tags-sidebar">Frontend Masters</a></strong>: There is no A to Z learning path here on CSS-Tricks. If you want true curriculum to level up your skills, that&#8217;s what Frontend Masters is for. I couldn&#8217;t recommend any learning platform more, which is why I&#8217;m so happy to have them as our official learning partner and enthusiastically point people there.</li><li><strong><a href="https://www.netlify.com/">Netlify</a></strong>: The Jamstack is a good movement for the web and literally nobody does it better than Netlify. They have pioneered so many good ideas it&#8217;s incredible. It&#8217;s easy to look at the industry and see even huge companies scramble to do what they&#8217;ve been doing for years. </li><li><strong><a href="https://share.getf.ly/k96n2f">Flywheel</a></strong>: I&#8217;m a believer in <a href="https://css-tricks.com/the-differences-in-web-hosting-go-with-the-happy-path/">happy path web hosting</a>. Use hosts that specialize in what you&#8217;re doing. This site is WordPress and I don&#8217;t think there is a better hosting option for WordPress than Flywheel. And that&#8217;s without consider that they also make <a href="https://localwp.com/">Local</a>, of which there is no better local development story for WordPress. </li></ul>
+
+
+
+<h3>Design</h3>
+
+
+
+<p>We&#8217;re about <a href="https://css-tricks.com/design-v18/">a year and a half into v18</a>, and it has certainly evolved quite a bit since its launch. While it&#8217;s feeling solid now, I&#8217;ve started to get the redesign itch and have been saving design inspiration for v19. I imagine it&#8217;ll happen over the slower holiday season as it tends to. I have a feeling it&#8217;ll be a stripping-down sort of design heading back to less colors and more typography-driven approach that can support themes in a way I never have. But we&#8217;ll see! </p>
+
+
+
+<h3 id="h-analytics">Analytics</h3>
+
+
+
+<p>It&#8217;s largely the same story as the last 3-4 years. Always hovering just a smidge north of 8m page views a month. A perfectly healthy number for such a niche site. But also a constant reminder how difficult the content game is. You&#8217;d think a constant stream of content creation would grow traffic up and up over time, particularly since our technical content usually has a decent shelf-life. But at some point, you have to keep creating content and keep working on a site just to maintain what you have. Meaning older content slowly drives less traffic and new content needs to step up and fill the gap. At least that&#8217;s one interpretation of what&#8217;s going on—I&#8217;m sure the complete story is much more intricate (SEO, competition, saturation, content blockers affecting numbers, etc). </p>
+
+
+
+<h3 id="h-the-name">The name?</h3>
+
+
+
+<p>I ain&#8217;t gonna up and change anything, but the name &#8220;CSS-Tricks&#8221; has been so hokey for <em>so long</em>. Every time I see some other brand pull of a daring name change, I&#8217;m a little jealous. Would it be worth it for CSS-Tricks? The potential benfits being: a new name could usher in fresh interest in the site, be a catalyst for other change, and be less of a jarring mismatch between what we actually publish and what people might expect us to publish based on the name. I&#8217;d have to do a lot more thinking and research to be able to pull it off. If the domain changes, even with perfect redirects, are there still serious SEO implications? How could I minimize the confusion? Is there a chance in hell a change has more upsides than downsides? </p>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/the-fourteenth-fourth/">The Fourteenth Fourth</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </content:encoded>
+
+      <wfw:commentRss>https://css-tricks.com/the-fourteenth-fourth/feed/</wfw:commentRss>
+      <slash:comments>5</slash:comments>
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">343496</post-id>
+    </item>
+    <item>
+      <title>Zero-Width Space</title>
+      <link>https://css-tricks.com/zero-width-space/</link>
+      <comments>https://css-tricks.com/zero-width-space/#comments</comments>
+
+      <dc:creator><![CDATA[Chris Coyier]]></dc:creator>
+      <pubDate>Fri, 02 Jul 2021 20:39:04 +0000</pubDate>
+      <category><![CDATA[Article]]></category>
+      <category><![CDATA[HTML]]></category>
+      <category><![CDATA[unicode]]></category>
+      <guid isPermaLink="false">https://css-tricks.com/?p=343435</guid>
+
+      <description><![CDATA[<p>The name zero-width space is antithetical, but it&#8217;s not <a href="https://www.ptiglobal.com/2018/04/26/the-beauty-of-unicode-zero-width-characters/">without uses</a>. In text, maybe you&#8217;d use it around slashes because you want to be sure the words are treated individually but not have any physical space around the slash:&#8230;</p>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/zero-width-space/">Zero-Width Space</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </description>
+      <content:encoded><![CDATA[
+<p>The name zero-width space is antithetical, but it&#8217;s not <a href="https://www.ptiglobal.com/2018/04/26/the-beauty-of-unicode-zero-width-characters/">without uses</a>. In text, maybe you&#8217;d use it around slashes because you want to be sure the words are treated individually but not have any physical space around the slash:</p>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img loading="lazy" src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/Screen-Shot-2021-06-30-at-3.22.31-PM.png?resize=325%2C81&#038;ssl=1" alt="" class="wp-image-343605" width="325" height="81" srcset="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/Screen-Shot-2021-06-30-at-3.22.31-PM.png?w=650&amp;ssl=1 650w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/06/Screen-Shot-2021-06-30-at-3.22.31-PM.png?resize=300%2C75&amp;ssl=1 300w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /><figcaption>That&#8217;s an image. WordPress was being weird about it and not escaping it even when in a code block.</figcaption></figure>
+
+
+
+<p>That&#8217;s pretty theoretical though—I&#8217;ve never once needed to do that. It might be useful in a long word to suggest that it can be broken there&#8230; but that&#8217;s also rare as we have the soft-hyphen (<code>&amp;shy;</code>) which is designed for that and leaves a typically appropriate hyphen at the break. </p>
+
+
+
+<span id="more-343435"></span>
+
+
+
+<p>What I <em>have</em> needed to do is exactly the opposite: trick a system into thinking a single word is two words. Like on Twitter, if I @username or #hashtag in the text of a tweet, those will be linked up respectively. But I don&#8217;t always want that. On CSS Twitter, I might want to refer to a @media query or show an #id-selector. Toss a zero-width space between the symbols and the text and I&#8217;m all set.</p>
+
+
+
+<h3 id="h-get-a-zero-width-space-on-your-clipboard">Get a zero-width space on your clipboard</h3>
+
+
+
+<p>Here&#8217;s a Pen I created ages ago that will help you do that:</p>
+
+
+
+<div class="wp-block-cp-codepen-gutenberg-embed-block cp_embed_wrapper"><iframe id="cp_embed_iLKwm" src="//codepen.io/anon/embed/iLKwm?height=550&amp;theme-id=1&amp;slug-hash=iLKwm&amp;default-tab=result" height="550" scrolling="no" frameborder="0" allowfullscreen allowpaymentrequest name="CodePen Embed iLKwm" title="CodePen Embed iLKwm" class="cp_embed_iframe" style="width:100%;overflow:hidden">CodePen Embed Fallback</iframe></div>
+
+
+
+<p>There is also a quick trick for doing it from the browser console:</p>
+
+
+
+<pre rel="Console" class="wp-block-csstricks-code-block language-javascript" data-line=""><code markup="tt">copy('u{200B}')</code></pre>
+
+
+
+<p>via:</p>
+
+
+
+<figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">
+<blockquote class="twitter-tweet" data-width="500" data-dnt="true"><p lang="en" dir="ltr">Twitter tip: To prevent usernames and URLs from being converted to links, interrupt them with a zero-width space.<br><br>e.g. @​markdalgleish instead of <a href="https://twitter.com/markdalgleish?ref_src=twsrc%5Etfw">@markdalgleish</a>.<br><br>You can add a zero-width space to your clipboard by running this snippet in your browser console:<br><br>copy(&#39;\u{200B}&#39;)</p>&mdash; 🧁🍨 Mark Dalgleish (@markdalgleish) <a href="https://twitter.com/markdalgleish/status/1338323521647169536?ref_src=twsrc%5Etfw">December 14, 2020</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div></figure>
+
+
+
+<p>And for yet another way that may appeal to you, a bookmarklet!</p>
+
+
+
+<div class="wp-block-cp-codepen-gutenberg-embed-block cp_embed_wrapper"><iframe id="cp_embed_QWNeGRL" src="//codepen.io/anon/embed/QWNeGRL?height=450&amp;theme-id=1&amp;slug-hash=QWNeGRL&amp;default-tab=result" height="450" scrolling="no" frameborder="0" allowfullscreen allowpaymentrequest name="CodePen Embed QWNeGRL" title="CodePen Embed QWNeGRL" class="cp_embed_iframe" style="width:100%;overflow:hidden">CodePen Embed Fallback</iframe></div>
+
+
+
+<h3 id="h-copy-paste-concern">Copy &amp; Paste concern</h3>
+
+
+
+<p>The danger with the zero-width space is, well, you can&#8217;t see it. If someone were to, for example, copy your <code>@media</code> query using the zero-width space trick from a tweet, it won&#8217;t work in their code editor (because it will invalidate the rule) and it might be <em>extremely</em> confusing. For that reason, it&#8217;s probably good to avoid using it in anything that might be copied as a code example, but probably fine when explicitly trying to not autolink something.</p>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/zero-width-space/">Zero-Width Space</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </content:encoded>
+
+      <wfw:commentRss>https://css-tricks.com/zero-width-space/feed/</wfw:commentRss>
+      <slash:comments>21</slash:comments>
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">343435</post-id>
+    </item>
+    <item>
+      <title>Good Meetings</title>
+      <link>https://css-tricks.com/good-meetings/</link>
+      <comments>https://css-tricks.com/good-meetings/#respond</comments>
+
+      <dc:creator><![CDATA[Sarah Drasner]]></dc:creator>
+      <pubDate>Fri, 02 Jul 2021 14:41:26 +0000</pubDate>
+      <category><![CDATA[Article]]></category>
+      <category><![CDATA[management]]></category>
+      <guid isPermaLink="false">https://css-tricks.com/?p=342995</guid>
+
+      <description><![CDATA[<p>Like it or not, meetings are essential to a good working environment and communication. Therefore, it’s crucial that we work on making them as productive as possible. Today we’ll explore myriad ways to keep meetings coordinated, well documented, and talk &#8230;</p>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/good-meetings/">Good Meetings</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </description>
+      <content:encoded><![CDATA[
+<p>Like it or not, meetings are essential to a good working environment and communication. Therefore, it’s crucial that we work on making them as productive as possible. Today we’ll explore myriad ways to keep meetings coordinated, well documented, and talk about how to recognize and steer away from anti-patterns.</p>
+
+
+
+<p>I’m timid to write this because I have not always hosted good meetings. I have, however, hosted thousands of them, so I’ve learned both from some mistakes and successes. In all likelihood, if you do any kind of management or lead work for a while, you’ll also see your own <em>spectrum</em> of meetings: meetings with different types of agendas and purposes, meetings with varying levels of awkwardness, meetings that didn’t have a formal outcome. We’ll dive into all of these in this article, as well as some tips for each.</p>
+
+
+
+<p>The truth is, a meeting by its nature can almost never be perfect because it is by definition a group of people. That group of people will consist of <em>different people:</em> with different tastes, different opinions, different priorities, and different values. There’s a high chance that not everyone will agree on what a great meeting is. So half of the journey is aligning on <em>that</em>.</p>
+
+
+
+<h3 id="h-the-good-the-bad"><strong>The Good, The Bad</strong></h3>
+
+
+
+<p>One thing’s for sure: we can agree on what a <em>bad</em> meeting is. So let’s start by using that as a ballast:</p>
+
+
+
+<ul><li>There’s no clear purpose or direction</li><li>It feels chaotic</li><li>The wrong people are there</li><li>People are generally disrespectful of one another</li><li>Everyone feels it’s a waste of time</li></ul>
+
+
+
+<p>From those assertions, we can then derive what a good meeting is:</p>
+
+
+
+<ul><li>The purpose of the meeting is clear</li><li>There’s an agenda (we’ll dive in to the complexity of this in a moment)</li><li>There are the right people in the room. <strong>Not too many where communication is overly complicated, not too few where the people you need to move forward aren’t there.</strong></li><li>There’s some order. People aren’t dropping in and out, talking over each other, or being generally inconsiderate</li><li>There’s a clear decision, outcome, and next steps at the end</li></ul>
+
+
+
+<h3 id="h-purpose-of-the-meeting-and-direction"><strong>Purpose of the Meeting and Direction</strong></h3>
+
+
+
+<p>The first point and the last are connected: to have a good meeting, there is a core. You’ve all come for a unique purpose, and the end of the meeting should encapsulate what you’ve learned about that purpose and what the next steps are. Thus, the beginning and end of the meeting might sound a little similar:</p>
+
+
+
+<p class="ticss-13433ab1 speech-thing">We’re all here today to discuss how we’re going to support the next version of framework X. I have some new data to show you that frames the direction, Hassan and Jenna are here to talk about some of the details of the implementation, and Angela, we’d love to coordinate with you on a rollout process because it affects your team.</p>
+
+
+
+<p>And at the end:</p>
+
+
+
+<p class="speech-thing">OK, so we decided we’re going in Y direction. Angela, your team seems comfortable doing Z, is that correct? And the rollout timeline we’ve agreed on is 5 weeks. The next steps are to explore the impacts of A, B, and C and reconvene in a week on our findings and process.</p>
+
+
+
+<p>This is just an example—it’s not important to model this precisely. But you should be aligning at the beginning and end of the meeting to make sure that nothing major is missing and everyone is on the same page. If you haven’t come to a decision by the end of the meeting, then your next steps may be either to figure out who will make the decision and inform everyone or roll over to a new meeting.</p>
+
+
+
+<p>Ideally these sentences are encapsulating information everyone needs:</p>
+
+
+
+<ul><li>The shared purpose</li><li>What you’re doing about getting to that outcome</li><li>Who is owning what</li><li>How</li><li>When, what are the timelines</li></ul>
+
+
+
+<p>If there are people there who do not need to know this information, they probably shouldn’t have been at the meeting in the first place.</p>
+
+
+
+<h3 id="h-the-agenda"><strong>The Agenda</strong></h3>
+
+
+
+<p>Beyond deciding that a meeting should have an agenda, there are so many ways and means an agenda can be used. Strangely enough, an agenda can also be a way to <em>not</em> have a good meeting, so let’s explore that, too.</p>
+
+
+
+<p>An agenda should ideally always state the purpose of the meeting. I personally love to then include some bullets as talking points, as well as space to take notes right in the document during the meeting.</p>
+
+
+
+<p>Sometimes people use an agenda to write thoughts down before the meeting, and I would strongly suggest you steer clear of this—there’s nothing wrong with a person keeping notes for themselves for the meeting but if you come to a meeting where an agenda is locked top to bottom with material, it can sometimes shut down the collaborative aspect of the meeting—which means it shouldn’t be a meeting at all, it should just be a shared doc, to be consumed async. Part of the purpose of the meeting is the discussion itself. Again, louder:</p>
+
+
+
+<p class="ticss-3b09ec02"><em>Part of the purpose of the meeting is the discussion itself.</em></p>
+
+
+
+<h3 id="h-not-all-meetings-are-the-same"><strong>Not all meetings are the same</strong></h3>
+
+
+
+<p>There are also <em>different kinds</em> of meetings. Let’s go over what type of agenda you might use for each:</p>
+
+
+
+<p><strong>Brainstorming session</strong>: perhaps you don’t want a full agenda, just the purpose and a notes section, or even a Miro board or other whiteboarding tool to use for capturing people’s thoughts, with small areas stubbed out.</p>
+
+
+
+<p><strong>Weekly discussion or daily standup</strong>: I typically have folks add whatever they like to ours, prefacing their contribution with their name and a small category, for instance, <strong>RD</strong> for rapid decision, <strong>D</strong> for discussion, and <strong>P</strong> for process. Here’s an example:</p>
+
+
+
+<pre rel="" class="wp-block-csstricks-code-block language-none" data-line=""><code markup="tt">- [Sarah, RD] should we block off 4 hours to triage our iceboxed issues?</code></pre>
+
+
+
+<p>Our team uses a kanban board during the standup and people take turns talking about what they’re doing for that time period. It’s nice how it helps solidify the tasks and priorities for the week, and allows for some course correction if there’s accidental misalignment before the work is done.</p>
+
+
+
+<p>We also talk about what was done or shipped in the previous week so we can celebrate a little. Especially on tasks we know took the person a long time or took a lot of effort.</p>
+
+
+
+<p>We found through trial and error that twice a week check-ins suited us: once on Monday to kick the week off, and again on Wednesday to keep us aligned and the momentum going.</p>
+
+
+
+<p><strong>Cross-Functional meetings</strong>: This is one where a more formal agenda with some preparation can be really helpful, so that all parties have enough information about the purpose and what’s being discussed. If you have a lot of information, though, I would suggest creating a one-sheeter and sharing that ahead of time instead of adding everything to an agenda. Sometimes if I know everyone is too busy to read everything async, I will give the first 5 minutes to the group to read through the one-sheeter on the call so we’re all on the same page. People usually appreciate this. YMMV.</p>
+
+
+
+<p>All this said, agendas are very useful, but I’ve seen strange culture arise from making strict rules around them. The point of the agenda and meeting is to collaborate on something. That point is nullified if folks are putting process ahead of that impetus.</p>
+
+
+
+<p>The best cultures I’ve worked at use both meetings and agendas as tools for working together effectively- tools that everyone <em>equally</em> feels responsible for making useful.</p>
+
+
+
+<h3 id="h-all-kinds-of-awkward"><strong>All Kinds of Awkward</strong></h3>
+
+
+
+<p>OK, you led a meeting! You gave people purpose, you set direction and timelines. But why was it so awkward?!</p>
+
+
+
+<p>Not all forms of awkward are bad, really. There are different kinds of awkward, and some are quite natural, some are more harmful. Let&#8217;s analyze this for a moment, starting from most innocuous to something more insidious.</p>
+
+
+
+<h4 id="h-you-all-didn-t-know-each-other-well"><strong>You all didn’t know each other well</strong></h4>
+
+
+
+<p>The team I got to work with at Netlify was some of the silliest, most collaborative, and trustworthy groups I’ve ever had the pleasure of working with. We actively cultivated this culture and it was great fun. Every meeting started with goofing off and chatter. Then, when we got to business.</p>
+
+
+
+<p>The meeting would flow effortlessly because we were all comfortable together. One time a friend in the People department asked <em>“what do you do to break the ice with your team”</em>, and I jokingly responded “<em>ice? Our team? No… we don’t need that… maybe we should be frozen?”</em></p>
+
+
+
+<p>Not all conversations are going to be like this. We knew each other fairly well and actively worked to have vulnerability together. If your meetings with other groups you don’t know well have awkward moments, that’s actually pretty natural, and nothing to be too concerned with. You can try to make conversation and that can help, but trying to force it too much can also feel a bit stilted, so just <strong>ease up on the guilt for this one</strong>. There’s nothing wrong with you, I promise.</p>
+
+
+
+<h4 id="h-there-were-too-many-people"><strong>There were too many people</strong></h4>
+
+
+
+<p>During the pandemic, my husband and I would sometimes try to replace in-person dinner parties with zoom versions of the same. What we learned was they didn’t quite work at scale. When you have an in-person party with 12 or more people, everyone doesn’t really stay in one huddle together, they break off to smaller conversations. When we started hosting the zoom parties with smaller groups, the calls became more fluid, relaxed and comfortable.</p>
+
+
+
+<p>There’s a certain scale at which conversation begins to feel performative because there are so many eyes on a person when they’re speaking. Meetings are very much the same. <strong>Try not to invite too many people to a meeting.</strong> If you are worried folks might not feel included unless you invite them, you can either mark them as optional or let them know you’ll be sure to tell them the outcome.</p>
+
+
+
+<p>If you’re inviting too many people because there’s a company culture that everyone should be involved in every decision, that might be a sign of a wider issue that needs some solving. Companies at a certain scale start to have issues functioning if there is no clear understanding of ownership. <strong>If you’re inviting everyone out of fear of hurt feelings often, it’s likely not a problem with your meetings, and more a sign that you need some clarity.</strong> See the <strong>DRI</strong> section at the end of this chapter for more information on how to mitigate this.</p>
+
+
+
+<h4 id="h-there-s-something-people-aren-t-saying"><strong>There’s something people aren’t saying</strong></h4>
+
+
+
+<p>This kind of awkward is probably the most harmful. If the meeting is awkward because people don’t feel comfortable telling the truth, or there’s an elephant in the room, or there’s a smell that needs to be dealt with. Elephant smells? Ok, moving on.</p>
+
+
+
+<p>We should watch out for this and try to do something about it. Personally, I’m a “walk towards the fire to put it out” kind of person, and will actually just <em>acknowledge that it’s awkward</em> because it doesn’t feel like we’re being transparent with one another. I’ll state what I know from my perspective and then ask if other folks are feeling the same.&nbsp;</p>
+
+
+
+<p>If you do this, you’ll usually have to wait a beat or two. People will likely be a bit shocked that you came right out and said it. It will take them a couple of seconds to adjust and consider what will happen if they tell the truth, too. It’s crucial that you not speak to fill the silence in these moments. It will feel very uncomfortable, but I promise, you have to let the silence hang for a bit before someone speaks up. Typically from there, people will all start speaking, and you can actually dig into the problems.</p>
+
+
+
+<h3 id="h-conflicts"><strong>Conflicts</strong></h3>
+
+
+
+<p>There’s an entire chapter devoted to conflicts because the topic is big and nuanced enough to warrant its own time and space, but let’s apply some of the principles here, because there is an intersection of good meetings and dealing with conflicts directly.</p>
+
+
+
+<p>The most important piece here is that conflicts are not something to be avoided. It’s not bad that people feel passionate about their work, it’s great. Not all conflicts are negative- the point of the meeting may be to bring to light where folks aren’t aligned. There probably is some base premise or problem they are all trying to solve, but they see the solution differently. It can help to find the alignment there so the ideas can be fleshed out without being attached to a particular person’s identity.</p>
+
+
+
+<p>&nbsp;The identity thing can be a pitfall, because if you have two people discussing <em>their</em> idea instead of <em>an</em> idea, it can feel to them like someone is rejecting <em>them</em> rather than <em>a concept</em>.&nbsp;</p>
+
+
+
+<p>We want to try to guide towards an approach where it doesn’t feel like anyone is attacking one another, and also manage actively against people being disrespectful to one another. <strong>It’s the job of a manager to disambiguate healthy conflict from attack so that respectful discourse is encouraged.</strong> If folks are putting out ad hominem attacks, it’s on you to reel that in and move the conversation towards the work instead. Otherwise, it really is hard for the conversation to stay productive.</p>
+
+
+
+<p>Typically I’d say it’s good to hear people out, and then reign things back in by discussing what you think you’re hearing and tying it back to a shared purpose. Then we find where we have common ground. Here’s an example:</p>
+
+
+
+<div class="wp-block-group speech-thing"><div class="wp-block-group__inner-container">
+<p><em>“What I’m hearing is that Rashida feels that team X is migrating a system that affects her team while they are trying to release a big feature. Is that correct? And that Jerome feels that it’s crucial that team X be able to migrate the system soon for stability purposes. Is that correct?</em></p>
+
+
+
+<p><em>“OK, well, it sounds like we have a shared goal of making sure the company can ship features with some stability. Perhaps we can talk through what timelines are immovable and which are not so that we can stay coordinated?</em></p>
+
+
+
+<p><em>“I’m sure we all want to be able to ship said feature without any hiccups and also get the new system up and going”</em></p>
+</div></div>
+
+
+
+<p>Here, we stated what we thought we were hearing, which allows for the person to either feel heard or correct us if we’re mistaken and there’s a miscommunication. (Sometimes there is!)</p>
+
+
+
+<p>Then we stated the <em>shared goal from both parties</em>, as well as risks and constraints that may play a part in some of the conflicts that need to be ironed out.</p>
+
+
+
+<p>You’ll note in the last sentence, we try to tie a knot for a vision of stability that addresses both of their understandable needs.</p>
+
+
+
+<p>A couple of things to note: I’m giving an example here and you absolutely don’t have to do it like me. The most important thing is that folks feel heard and that you all agree on <strong>what the conflict is</strong>. And that you remain open to that discussion, while finding the base premise of why you’re even talking about it.</p>
+
+
+
+<p><strong>It’s also way easier said than done</strong>. If you have a conversation that goes off the rails, I’d suggest spending a bit of time after you’re off the call to write down what you think happened.</p>
+
+
+
+<p>I tend to give myself a section to just talk through the <strong>facts</strong> of what happened, and then another to talk through my <strong>feelings</strong> of what went poorly and what could have been better. It helps to check in with the facts separately because our human brains can sometimes try to protect us and see a particular version of an event. Hard to do, but checking in with just the facts helps ground that a bit.</p>
+
+
+
+<p>There can be times where a strong conflict happens during a meeting and you’re at an impasse, and you need to give folks time to regroup. I’d suggest calling another meeting in a week as a follow up, and try to hear people out individually in the meantime. Sometimes people need a little distance from a matter, or they’re having a hard day, and that’s totally ok.</p>
+
+
+
+<h3 id="h-the-dri"><strong>The DRI</strong></h3>
+
+
+
+<p>The DRI stands for <strong>“Directly Responsible Individual”</strong> and is one of the most important pieces that we haven’t covered yet. A good meeting must have a DRI, and it is not necessarily the person who called the meeting. It might not be you. But you must designate who owns the project and ultimately makes decisions when there’s one to be made.</p>
+
+
+
+<p>Why do you need a DRI? Well, as much as you do want to hear input from everyone, eventually you have to make a decision, and there are plenty of things in software development that don’t necessarily have one true answer.</p>
+
+
+
+<p>Note that the phrasing is not PWMD (Person Who Makes Decisions) though that acronym looks pretty hardcore. Instead, we use Directly <strong><em>Responsible</em></strong> Individual because that’s also core to deciding who this person is. <em>They are the person who is going to own the outcome.</em></p>
+
+
+
+<p>That’s part of why not everyone can get equal say- if it’s your project and you are on the line for the outcome of whatever decisions are made, you can see how you would also need to own decision making. And likewise, if people who have no skin in the game decide things, they might not understand all the moving parts or invest as much in the gravity of the matter.</p>
+
+
+
+<p>The appointment of the DRI not only unlocks the groups to make final decisions and move forward, but also places the responsibility on the party that will carry the weight.</p>
+
+
+
+<p>There are several systems of ownership you can explore, such as DACI, which separates out Driver, Approver, Contributors, and Informed so that everyone knows their roles, and several others such as RACI and RAPID. Use whichever system makes the most sense for your organization.</p>
+
+
+
+<p>I find it best to identify this person early on in a project and make sure it is restated at the start of a meeting (it can be included on the agenda as well), as it helps greatly if you find yourself at a crossroads. This person can unblock you and help the group move forward.</p>
+
+
+
+<h3 id="h-moving-forward">Moving Forward</h3>
+
+
+
+<p>It may at times feel like meetings are a drag on a software engineering process, but it doesn’t always have to feel this way. There’s something special about collaborating with a group of people who are respectful and working towards a common purpose. Good meetings can provide clarity and save people hours and days of work when they’re headed in the wrong direction. Having clear ownership, documentation, and only the right people in the room can keep many teams in lockstep, even when problems are complex.</p>
+
+
+
+<h3 id="h-buy-the-book">Buy the Book</h3>
+
+
+
+<p>This is just a sample of the kind of content from my latest book coming out soon&#8230;</p>
+
+
+
+<div class="wp-block-buttons">
+<div class="wp-block-button"><a class="wp-block-button__link" href="https://www.engmanagement.dev/" rel="https://www.engmanagement.dev/">Join the list!</a></div>
+</div>
+
+
+
+<figure class="wp-block-image size-large is-resized"><a href="https://www.engmanagement.dev/"><img loading="lazy" src="https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/06/card@2x.png?resize=768%2C402&#038;ssl=1" alt="" class="wp-image-343037" width="768" height="402" srcset="https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/06/card@2x.png?resize=1024%2C536&amp;ssl=1 1024w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/06/card@2x.png?resize=300%2C157&amp;ssl=1 300w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/06/card@2x.png?resize=768%2C402&amp;ssl=1 768w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/06/card@2x.png?resize=1000%2C523&amp;ssl=1 1000w, https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/06/card@2x.png?w=1200&amp;ssl=1 1200w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></a></figure>
+<hr />
+<p><small>The post <a rel="nofollow" href="https://css-tricks.com/good-meetings/">Good Meetings</a> appeared first on <a rel="nofollow" href="https://css-tricks.com">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href="https://css-tricks.com/product/mvp-supporter/">MVP Supporter</a>.</small></p>
+]]>      </content:encoded>
+
+      <wfw:commentRss>https://css-tricks.com/good-meetings/feed/</wfw:commentRss>
+      <slash:comments>0</slash:comments>
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">342995</post-id>
+    </item>
+  </channel>
+</rss>

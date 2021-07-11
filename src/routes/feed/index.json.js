@@ -1,7 +1,10 @@
-import fetch from 'node-fetch';
 import Parser from 'rss-parser';
 import { parseContent } from './parse.js';
-let parser = new Parser();
+let parser = new Parser({
+  customFields: {
+    item: ['enclosure']
+  }
+});
 
 const baseUrl = 'https://css-tricks.com/feed/';
 

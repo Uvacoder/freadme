@@ -63,6 +63,10 @@ body {
   color: var(--light);
   display: grid;
   grid-template-columns: 25vw 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 
+    "header header"
+    "sidebar feed";
   min-height: 100vh;
   background: var(--dark);
   line-height: 1.5;
@@ -194,6 +198,34 @@ li {
 .post figure,
 .post figure + * {
   --flow-space: var(--size-900);
+}
+
+.focused-only {
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.focused-only:focus {
+  width: unset;
+  height: unset;
+  clip-path: unset;
+  white-space: unset;
+  clip-path: unset;
+}
+
+.button {
+  display: block;
+  padding: 0.5rem;
+  line-height: 1;
+  background: var(--primary);
+  color: var(--light);
+  text-decoration: none;
+  font-size: var(--size-600);
+  font-weight: 600;
 }
 
 @media (min-width: 45em) {

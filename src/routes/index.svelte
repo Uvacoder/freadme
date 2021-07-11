@@ -23,7 +23,6 @@
 
 </script>
 <script>
-  import {onMount} from 'svelte';
   import Post from '../lib/components/Post.svelte';
   export let data;
   const feed = [...data.items];
