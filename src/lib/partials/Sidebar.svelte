@@ -14,7 +14,7 @@
 #sidebar {
   order: 1;
   height: 100%;
-  border-inline-end: 1px solid rgb(var(--primary-rgb), 0.3);
+  border-inline-start: 1px solid rgb(var(--primary-rgb), 0.3);
   display: flex;
   flex-direction: column;
 }
@@ -44,6 +44,8 @@
   cursor: pointer;
   border-radius: 0 0.125rem 0.125rem 0;
   outline-offset: 0;
+  border: 1px solid rgb(var(--primary-rgb), 0.5);
+  border-inline-start: none;
 }
 .subscribe-submit:hover {
   background: var(--primary-light);

@@ -65,11 +65,11 @@ body {
   font-family: var(--body);
   color: var(--light);
   display: grid;
-  grid-template-columns: 25vw 1fr;
+  grid-template-columns: 1fr 25vw;
   grid-template-rows: auto 1fr;
   grid-template-areas: 
     "header header"
-    "sidebar feed";
+    "feed sidebar";
   min-height: 100vh;
   background: var(--dark);
   line-height: 1.5;
@@ -78,13 +78,8 @@ body {
 input[type="text"] {
   font-size: 1rem;
   padding: 0.5rem;
-  border: 1px solid rgb(var(--primary-rgb), 0.4);
+  border: 1px solid rgb(var(--primary-rgb), 0.5);
 }
-
-/* input:focus, input[type="size"]:focus {
-  outline: rgb(var(--primary-rgb), 0.8) 2px solid;
-  /* outline-offset: 2px; */
-} */
 
 button, input[type="submit"] {
   padding: 0.5rem;
@@ -230,11 +225,11 @@ li {
   clip-path: unset;
 }
 
-.button {
+.button, button {
   display: block;
   padding: 0.5rem;
   line-height: 1;
-  background: var(--primary);
+  background: rgb(var(--primary-rgb), 0.2);
   color: var(--light);
   text-decoration: none;
   font-size: var(--size-600);
