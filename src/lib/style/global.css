@@ -54,11 +54,15 @@
   --light-rgb: 230, 249, 255;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+* {
   margin: 0;
   padding: 0;
-  /* line-height: 1; */
 }
 
 body {
@@ -178,6 +182,41 @@ hr {
   border: none;
   color: rgb(var(--primary-rgb), 0.5);
   border-top: 1px solid rgb(var(--primary-rgb), 0.5);
+}
+
+/* Select styling - thanks to Stephanie Eckles at https://twitter.com/5t3ph/ */
+/* article: https://moderncss.dev/custom-select-styles-with-pure-css/ */
+
+select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  width: 100%;
+  min-width: 15ch;
+  max-width: 30ch;
+  border: 1px solid rgb(var(--primary-rgb), 0.7);
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: var(--size-600);
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: var(--dark);
+  color: var(--light);
 }
 
 ::selection {
