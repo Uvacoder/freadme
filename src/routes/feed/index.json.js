@@ -1,5 +1,6 @@
 import Parser from 'rss-parser';
 import { parseContent } from './parse.js';
+
 let parser = new Parser({
   customFields: {
     item: ['enclosure']
@@ -10,16 +11,9 @@ let parser = new Parser({
 const baseUrl = 'https://www.a11yproject.com/feed/feed.xml';
 
 export async function getFeed(address) {
-  const feed = await parser.parseURL(address);
-  
-  feed.items.map((item) => {
-    return {...item, ["content:encodedSnippet"]: parseContent(item["content:encodedSnippet"])};
-  })
-    
-    return feed;
+    return await parser.parseURL(address);
 }
-export const get = async() => {
-  const feed = await getFeed(baseUrl);
 
-  return {body: feed};
+export const get = async() => {
+  return {body: await getFeed(baseUrl)};
 };
