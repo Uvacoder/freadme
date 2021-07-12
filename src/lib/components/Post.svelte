@@ -1,9 +1,15 @@
 <script>
+  import { onMount } from 'svelte';
+  import { headDown } from '../utils/headDown.js';
   export let post;
   export let feedTitle;
   export let feedDescription;
   export let feedLink;
   export let feedImage;
+
+  onMount(() => {
+    headDown(post["content:encoded"] || post.content);
+  });
 </script>
 
 
