@@ -203,9 +203,6 @@ select:focus {
   outline: none;
 }
 
-.focus {
-}
-
 select:focus + .focus {
   width: 100%;
   height: 100%;
