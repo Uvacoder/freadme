@@ -9,11 +9,19 @@
   export let feedImage;
   let cleanedContent;
   let DOMContent;
+  // let parser;
+
+  // function strToHTML(htmlString) {
+  //   const doc = parser.parseFromString(htmlString, 'text/html');
+  //   console.log(doc.body);
+  // return doc.body;
+  // }
 
   onMount(() => {
+    // parser = new DOMParser();
     cleanedContent = headDown(post["content:encoded"] || post.content);
-    // DOMContent = strToHTML(cleanedContent);
-    console.log(cleanedContent);
+    DOMContent = strToHTML(cleanedContent);
+    console.log(DOMContent);
   });
 </script>
 
