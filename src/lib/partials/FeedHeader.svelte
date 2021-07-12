@@ -11,6 +11,7 @@
       <option value="read">Read Posts</option>
       <option value="favorites">Favorite Posts</option>
     </select>
+    <span class="focus"></span>
   </div>
 </header>
 

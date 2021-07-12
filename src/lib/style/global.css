@@ -199,7 +199,26 @@ select {
   cursor: inherit;
   line-height: inherit;
 }
+select:focus {
+  outline: none;
+}
 
+.focus {
+}
+
+select:focus + .focus {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid var(--accent-primary);
+  border-radius: inherit;
+  background: none;
+  /* outline: 2px solid var(--accent-primary); */
+}
 select::-ms-expand {
   display: none;
 }
@@ -220,6 +239,7 @@ select::-ms-expand {
   /* grid-template-columns: 1fr auto; */
   grid-template-areas: "select";
   align-items: center;
+  position: relative;
 }
 
 .select option, .select > *, select * {
