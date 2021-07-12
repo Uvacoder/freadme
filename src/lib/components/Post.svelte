@@ -1,15 +1,18 @@
 <script>
   import { onMount } from 'svelte';
   import { headDown } from '../utils/headDown.js';
+  // import { strToHTML } from '../utils/strToHTML.js';
   export let post;
   export let feedTitle;
   export let feedDescription;
   export let feedLink;
   export let feedImage;
   let cleanedContent;
+  // let DOMContent;
 
   onMount(() => {
     cleanedContent = headDown(post["content:encoded"] || post.content);
+    // DOMContent = strToHTML(cleanedContent);
     console.log(cleanedContent);
   });
 </script>

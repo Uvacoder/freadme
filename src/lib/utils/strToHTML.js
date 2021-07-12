@@ -1,6 +1,6 @@
 const support = (function() {
-  if(!window. DOMParser) return false;
-  const parser = new DOMParser();
+  if(!window.DOMParser) return false;
+  const parser = new window.DOMParser();
   try {
     parser.parseFromString('x', 'text/html');
   } catch(error) {
@@ -9,9 +9,9 @@ const support = (function() {
   return true;
 })();
 
-function strToHTML(htmlString) {
+export function strToHTML(htmlString) {
   if(support) {
-    const parser = new DomParser();
+    const parser = new window.DomParser();
     const doc = parser.parseFromString(htmlString, 'text/html');
     return doc.body;
   }

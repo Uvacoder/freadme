@@ -23,9 +23,10 @@
 
 </script>
 <script>
+  import { sortByPubDate } from '../lib/utils/sortByPubDate.js';
   import Post from '../lib/components/Post.svelte';
   export let data;
-  const feed = [...data.items];
+  const feed = sortByPubDate([...data.items]);
 
 </script>
     {#each feed as post}
