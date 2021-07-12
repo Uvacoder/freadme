@@ -1,5 +1,5 @@
-export function headDown(html) {
-  return html
+export function headDown(htmlString) {
+  return htmlString
     .replace(/h5/ig, 'h6')
     .replace(/h4/ig, 'h5')
     .replace(/h3/ig, 'h4')
