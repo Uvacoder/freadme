@@ -6,7 +6,8 @@ let parser = new Parser({
   }
 });
 
-const baseUrl = 'https://css-tricks.com/feed/';
+// const baseUrl = 'https://css-tricks.com/feed/';
+const baseUrl = 'https://www.a11yproject.com/feed/feed.xml';
 
 export async function getFeed(address) {
   const feed = await parser.parseURL(address);

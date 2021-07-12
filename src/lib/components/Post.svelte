@@ -8,21 +8,30 @@
 
 
 <details class="post">
-  <section class="content flow" tabindex="0">{@html post["content:encoded"]}</section>
-  <summary class="post-header" aria-label="{post.title}. Press space or click to open content. Then press tab to navigate to content.">
+  <summary 
+    class="post-header" 
+    aria-label="{post.title || ''}. Press space or click to open content."
+  >
     <div class="post-header-control">
       <!-- <a href="#post-{post.guid}" class="button focused-only post-skip-content">Skip to Post Content</a> -->
-      <h2 class="post-title"><a href="{post.link}" tabindex="-1">{post.title}</a></h2>
+      <h2 class="post-title"><a href="{post.link || ''}" tabindex="0">{post.title || ''}</a></h2>
     </div>
-    <section class="post-info">
-      <section class="post-image">
-        <a href={feedLink} tabindex="-1">
-          <img src="{feedImage.url}" alt="{feedTitle}" class="feed-image" tabindex="-1">
+    <div class="post-info">
+      <div class="post-image">
+        {#if post.image}
+        <a href={feedLink || ''} tabindex="-1">
+          <img src="{feedImage.url || ''}" alt="{feedTitle || ''}" class="feed-image" tabindex="-1">
         </a>
-      </section>
-      <section class="post-meta"><a href="{feedLink}" tabindex="-1">{feedTitle}</a>: <time>{new Date(post.pubDate).toLocaleString()}</time></section>
-    </section>
+        {/if}
+      </div>
+      <div class="post-meta"><a href="{feedLink || ''}" tabindex="-1">{feedTitle || ''}</a>: <time>{new Date(post.pubDate).toLocaleString()}</time></div>
+    </div>
   </summary>
+  {#if post["content:encoded"]}
+  <section class="content flow" tabindex="0">{@html post["content:encoded"]}</section>
+  {:else}
+  <section class="content flow" tabindex="0">{@html post.content}</section>
+  {/if}
 </details>
 
 <style>
