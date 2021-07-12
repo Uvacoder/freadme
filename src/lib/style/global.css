@@ -238,18 +238,13 @@ select::-ms-expand {
   align-items: center;
   position: relative;
 }
+.select:focus-within {
+  border-color: transparent;
+}
 
 .select option, .select > *, select * {
   color: var(--light);
   background-color: var(--dark);
-}
-
-.select::after {
-  content: "";
-  width: 0.8em;
-  height: 0.5em;
-  background-color: var(--primary);
-  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
 }
 
 select, .select:after {
