@@ -117,24 +117,28 @@ h2 {
 }
 
 h1 {
-  font-size: var(--size-800);
+  font-size: var(--size-900);
   /* max-width: 15ch; */
 }
 
 h2 {
-  font-size: var(--size-700);
+  font-size: var(--size-800);
   /* max-width: 25ch; */
 }
 
 h3 {
-  font-size: var(--size-600);
+  font-size: var(--size-700);
   font-weight: 800;
   /* max-width: 25ch; */
 }
 
 h4 {
-  font-size: var(--size-500);
+  font-size: var(--size-600);
   font-weight: 700;
+}
+h5 {
+  font-size: var(--size-600);
+  font-weight: 600;
 }
 
 a:not([class]) {

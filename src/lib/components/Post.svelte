@@ -6,9 +6,11 @@
   export let feedDescription;
   export let feedLink;
   export let feedImage;
+  let cleanedContent;
 
   onMount(() => {
-    headDown(post["content:encoded"] || post.content);
+    cleanedContent = headDown(post["content:encoded"] || post.content);
+    console.log(cleanedContent);
   });
 </script>
 
@@ -36,7 +38,7 @@
   {#if post["content:encoded"]}
   <section class="content flow" tabindex="0">{@html post["content:encoded"]}</section>
   {:else}
-  <section class="content flow" tabindex="0">{@html post.content}</section>
+  <section class="content flow" tabindex="0">{@html cleanedContent}</section>
   {/if}
 </details>
 
@@ -125,5 +127,12 @@
     summary a:hover {
     text-decoration: underline;
     color: var(--primary-light-hover);
+  }
+
+  :global(.post ul li) {
+    margin-inline-start: 1rem;
+  }
+  :global(.post ul li li) {
+    margin-inline-start: 2rem;
   }
 </style>
