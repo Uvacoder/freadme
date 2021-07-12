@@ -133,10 +133,10 @@
     color: var(--primary-light-hover);
   }
 
-  :global(.post ul li) {
+  :global(.post ul li), :global(.post ol li) {
     margin-inline-start: 1rem;
   }
-  :global(.post ul li li) {
+  :global(.post ul li li), :global(.post ol li li) {
     margin-inline-start: 2rem;
   }
 </style>
