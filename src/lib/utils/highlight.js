@@ -1,5 +1,6 @@
 import {strToHTML} from './strToHTML.js';
-// import hljs from 'hljs';
+import Prism from 'prismjs';
+
 
 export function highlight(htmlList) {
   const nodes = Array.from(htmlList);
@@ -19,5 +20,5 @@ export function highlight(htmlList) {
 }
 
 function applyHighlights(node) {
-  return node;
+  return Prism.highlight(node);
 }
