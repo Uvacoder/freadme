@@ -1,14 +1,14 @@
 <script>
   import { onMount } from 'svelte';
   import { headDown } from '../utils/headDown.js';
-  // import { strToHTML } from '../utils/strToHTML.js';
+  import { strToHTML } from '../utils/strToHTML.js';
   export let post;
   export let feedTitle;
   export let feedDescription;
   export let feedLink;
   export let feedImage;
   let cleanedContent;
-  // let DOMContent;
+  let DOMContent;
 
   onMount(() => {
     cleanedContent = headDown(post["content:encoded"] || post.content);
@@ -39,9 +39,9 @@
     </div>
   </summary>
   {#if post["content:encoded"]}
-  <section class="content flow" tabindex="0">{@html post["content:encoded"]}</section>
+  <section class="content flow" tabindex="0">{@html DOMContent}</section>
   {:else}
-  <section class="content flow" tabindex="0">{@html cleanedContent}</section>
+  <section class="content flow" tabindex="0">{@html DOMContent}</section>
   {/if}
 </details>
 
