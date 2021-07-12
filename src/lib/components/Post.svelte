@@ -1,27 +1,22 @@
 <script>
   import { onMount } from 'svelte';
   import { headDown } from '../utils/headDown.js';
+  import { highlight } from '../utils/highlight.js'
   import { strToHTML } from '../utils/strToHTML.js';
   export let post;
   export let feedTitle;
   export let feedDescription;
   export let feedLink;
   export let feedImage;
-  let cleanedContent;
-  let DOMContent;
-  // let parser;
-
-  // function strToHTML(htmlString) {
-  //   const doc = parser.parseFromString(htmlString, 'text/html');
-  //   console.log(doc.body);
-  // return doc.body;
-  // }
+  let highlightedContent;
 
   onMount(() => {
     // parser = new DOMParser();
-    cleanedContent = headDown(post["content:encoded"] || post.content);
-    DOMContent = strToHTML(cleanedContent);
-    console.log(DOMContent);
+    const cleanedContent = headDown(post["content:encoded"] || post.content);
+    const DOMContent = strToHTML(cleanedContent);
+    // console.log('DOMContent: ', DOMContent.childNodes);
+    const highlighted = highlight(DOMContent.childNodes);
+    highlightedContent = highlighted.innerHTML;
   });
 </script>
 
@@ -33,7 +28,9 @@
   >
     <div class="post-header-control">
       <!-- <a href="#post-{post.guid}" class="button focused-only post-skip-content">Skip to Post Content</a> -->
-      <h2 class="post-title"><a href="{post.link || ''}" tabindex="0">{post.title || ''}</a></h2>
+      <h2 class="post-title">
+        <a href="{post.link || ''}" tabindex="0">{post.title || ''}</a>
+      </h2>
     </div>
     <div class="post-info">
       <div class="post-image">
@@ -46,11 +43,7 @@
       <div class="post-meta"><a href="{feedLink || ''}" tabindex="-1">{feedTitle || ''}</a>: <time>{new Date(post.pubDate).toLocaleString()}</time></div>
     </div>
   </summary>
-  {#if post["content:encoded"]}
-  <section class="content flow" tabindex="0">{@html DOMContent}</section>
-  {:else}
-  <section class="content flow" tabindex="0">{@html DOMContent}</section>
-  {/if}
+  <section class="content flow" tabindex="0">{@html highlightedContent}</section>
 </details>
 
 <style>

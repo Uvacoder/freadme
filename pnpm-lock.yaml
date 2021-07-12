@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@sveltejs/kit': next
+  hljs: ^6.2.3
   mdsvex: ^0.9.7
   node-fetch: ^2.6.1
   prettier: ~2.2.1
@@ -12,6 +13,7 @@ specifiers:
   svelte: ^3.34.0
 
 dependencies:
+  hljs: 6.2.3
   node-fetch: 2.6.1
   rehype: 11.0.0
   rehype-highlight: 4.1.0
@@ -232,6 +234,10 @@ packages:
 
   /highlight.js/10.7.3:
     resolution: {integrity: sha512-tzcUFauisWKNHaRkN4Wjl/ZA07gENAjFl3J/c480dprkGTg5EQstgaNFqBfUqCq54kZRIEcreTsAgF/m2quD7A==}
+    dev: false
+
+  /hljs/6.2.3:
+    resolution: {integrity: sha1-1NYgj6KoTylJVrxQ8sgS6cvUm8w=}
     dev: false
 
   /html-void-elements/1.0.5:
