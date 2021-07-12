@@ -17,7 +17,7 @@
 <style>
   #feed-header {
     display: flex;
-    gap: 2rem;
+    justify-content: end;
     padding: 0.5rem 2rem ;
     border-bottom: 1px solid rgb(var(--primary-rgb), 0.5);
   }
