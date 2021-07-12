@@ -198,7 +198,6 @@ select {
   font-size: inherit;
   cursor: inherit;
   line-height: inherit;
-  outline: none;
 }
 
 select::-ms-expand {
@@ -210,13 +209,37 @@ select::-ms-expand {
   min-width: 15ch;
   max-width: 30ch;
   border: 1px solid rgb(var(--primary-rgb), 0.7);
-  border-radius: 0.25rem;
-  padding: 0.25rem 0.5rem;
-  font-size: var(--size-600);
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
   cursor: pointer;
   line-height: 1.1;
   background-color: var(--dark);
   color: var(--light);
+  display: grid;
+  /* grid-template-columns: 1fr auto; */
+  grid-template-areas: "select";
+  align-items: center;
+}
+
+.select option, .select > *, select * {
+  color: var(--light);
+  background-color: var(--dark);
+}
+
+.select::after {
+  content: "";
+  width: 0.8em;
+  height: 0.5em;
+  background-color: var(--primary);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+
+select, .select:after {
+  grid-area: select;
+}
+.select:after {
+  justify-self: end;
 }
 
 ::selection {
