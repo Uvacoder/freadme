@@ -1,27 +1,19 @@
 <script>
-  import { onMount } from 'svelte';
-  import { headDown } from '../utils/headDown.js';
-  import { highlight } from '../utils/highlight.js'
-  import { strToHTML } from '../utils/strToHTML.js';
+  import PostContent from './PostContent.svelte';
   export let post;
   export let feedTitle;
   export let feedDescription;
   export let feedLink;
   export let feedImage;
-  let highlightedContent;
+  let open = false;
 
-  onMount(() => {
-    // parser = new DOMParser();
-    const cleanedContent = headDown(post["content:encoded"] || post.content);
-    const DOMContent = strToHTML(cleanedContent);
-    // console.log('DOMContent: ', DOMContent.childNodes);
-    const highlighted = highlight(DOMContent.childNodes);
-    highlightedContent = highlighted.innerHTML;
-  });
+  function handleToggle(event) {
+    open = event.target.open;
+  }
 </script>
 
 
-<details class="post">
+<details class="post" on:toggle={handleToggle}>
   <summary 
     class="post-header" 
     aria-label="{post.title || ''}. Press space or click to open content."
@@ -43,7 +35,9 @@
       <div class="post-meta"><a href="{feedLink || ''}" tabindex="-1">{feedTitle || ''}</a>: <time>{new Date(post.pubDate).toLocaleString()}</time></div>
     </div>
   </summary>
-  <section class="content flow" tabindex="0">{@html highlightedContent}</section>
+  {#if open}
+  <PostContent content={post["content:encoded"] || post.content} />
+  {/if}
 </details>
 
 <style>
@@ -98,7 +92,7 @@
     font-weight: 600;
     letter-spacing: 0.125rem;
   }
-  .post-title, .content {
+  .post-title {
     margin-inline: 2.33rem;
   }
   .post-title {
@@ -106,11 +100,6 @@
     font-size: var(--size-600);
     margin-top: 0;
     line-height: 1.5;
-  }
-  .content {
-    order: 2;
-    padding: 1rem;
-    border-top: 1px solid rgb(var(--primary-rgb), 0.5);
   }
   time {
     font-family: var(--sans);

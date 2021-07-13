@@ -17,7 +17,6 @@
     const bigFeed = [];
 
     allData.forEach((feed) => {
-      console.log(feed.title);
       feed.items.forEach((item) => {
         bigFeed.push({
           ...item,

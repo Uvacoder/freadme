@@ -1,8 +1,5 @@
 <script>
   import '../lib/style/global.css';
-  import '../lib/style/prism-atom-dark.css';
-  // import '../lib/style/prism-a11y-dark.css';
-  // import '../lib/style/prism-vscode-dark.css';
 
   import Sidebar from '../lib/partials/Sidebar.svelte';
   import Header from '../lib/partials/Header.svelte';
