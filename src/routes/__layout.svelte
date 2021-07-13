@@ -1,6 +1,5 @@
 <script>
   import '../lib/style/global.css';
-
   import Sidebar from '../lib/partials/Sidebar.svelte';
   import Header from '../lib/partials/Header.svelte';
   import FeedHeader from '../lib/partials/FeedHeader.svelte';

@@ -1,5 +1,6 @@
 <script context="module">
-
+  import Parser from 'rss-parser';
+  
   export const load = async ({fetch}) => {
     const response = await fetch('/feed.json');
     const allFeedsResponse = await fetch('/allfeeds.json');
