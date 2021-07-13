@@ -34,9 +34,9 @@
     </div>
     <div class="post-info">
       <div class="post-image">
-        {#if post.image}
+        {#if feedImage}
         <a href={feedLink || ''} tabindex="-1">
-          <img src="{feedImage.url || ''}" alt="{feedTitle || ''}" class="feed-image" tabindex="-1">
+          <img src="{feedImage || ''}" alt="{feedTitle || ''}" class="feed-image" tabindex="-1">
         </a>
         {/if}
       </div>

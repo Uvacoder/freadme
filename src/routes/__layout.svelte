@@ -12,16 +12,25 @@
 
 <Header />
 
-<main id="main-content" class="posts" tabindex="0" aria-label="All Posts" role="main">
-  <FeedHeader />
-  <slot></slot>
-</main>
-
-<Sidebar />
+<section class="app">
+  <main id="main-content" class="posts" tabindex="0" aria-label="All Posts" role="main">
+    <FeedHeader />
+    <slot></slot>
+  </main>
+  <Sidebar />
+</section>
 
 <style>
+  .app {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+  }
   main {
-    order: 1;
+    order: 2;
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 50%;
   }
   #main-content:focus, #main-content:focus-within {
     outline: 2px solid var(--darkdark);

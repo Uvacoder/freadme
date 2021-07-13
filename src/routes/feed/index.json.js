@@ -1,5 +1,4 @@
 import Parser from 'rss-parser';
-import { parseContent } from './parse.js';
 
 let parser = new Parser({
   customFields: {

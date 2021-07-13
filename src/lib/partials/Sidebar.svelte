@@ -13,18 +13,18 @@
 <style>
 #sidebar {
   order: 1;
-  height: 100%;
-  border-inline-start: 1px solid rgb(var(--primary-rgb), 0.3);
+  border-inline-end: 1px solid rgb(var(--primary-rgb), 0.3);
   display: flex;
   flex-direction: column;
+  flex-basis: 20rem;
+  flex-grow: 1;
 }
 
 .sidebar-header {
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-areas: "subscribe-input subscribe-submit";
-  /* grid-gap: 0.5rem; */
-  padding: 1rem;
+  padding: 0.5rem;
   border-block-end: 1px solid rgb(var(--primary-rgb), 0.3);
   overflow: visible;
 }
@@ -34,13 +34,15 @@
   background-color: rgb(var(--primary-rgb), 0.1);
   outline-offset: 0;
   color: var(--light);
+  padding: 0.25rem 0.5rem;
+  font-size: 1.25rem;
 }
 
 .subscribe-submit {
   grid-area: subscribe-submit;
-  padding: 0.5rem;
-  font-weight: 600;
-  letter-spacing: 0.125rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
   cursor: pointer;
   border-radius: 0 0.125rem 0.125rem 0;
   outline-offset: 0;

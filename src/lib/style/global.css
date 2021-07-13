@@ -68,12 +68,6 @@
 body {
   font-family: var(--body);
   color: var(--light);
-  display: grid;
-  grid-template-columns: 1fr 25vw;
-  grid-template-rows: auto 1fr;
-  grid-template-areas: 
-    "header header"
-    "feed sidebar";
   min-height: 100vh;
   background: var(--dark);
   line-height: 1.5;
@@ -81,12 +75,12 @@ body {
 
 input[type="text"] {
   font-size: 1rem;
-  padding: 0.5rem;
+  padding: 0.25rem 0.5rem;
   border: 1px solid rgb(var(--primary-rgb), 0.5);
 }
 
 button, input[type="submit"] {
-  padding: 0.5rem;
+  padding: 0.25rem;
   font-weight: 500;
 }
 
