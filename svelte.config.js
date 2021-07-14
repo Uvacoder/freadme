@@ -16,6 +16,7 @@ const config = {
                     '$utils': '/src/lib/utils',
                     '$data': '/src/lib/data',
                     '$services': '/src/lib/services',
+                    '$stores': '/src/lib/stores',
                 }
             }
         }),

@@ -21,9 +21,16 @@
   $: feedObject = {};
   $: slug = '';
   $: feed = [];
+
   const feedData = JSON.parse(window.localStorage.getItem('savedAddresses'));
   
   function updateFeedObject() {
+    if(slug === '' || slug === undefined) {
+      const location = window.location.toString();
+      const split = location.split('/');
+      slug = split[split.length - 1];
+    }
+
     feedObject = {...feedData.filter((obj) => obj.slug === slug)[0]};
     name = feedObject.name;
     feedUrl = feedObject.url;
@@ -31,17 +38,17 @@
   }
 
   async function getFeed() {
-    console.log('getFeed!');
-    const response = await fetch('/feed/{slug}');
-    console.log(response);
+    const response = await fetch(`/feed/${slug}`);
+    
     if(!response.ok) {
       return {
         error: new Error(`Could not get feed at ${slug}`), 
         status: response.status
       }
+    } else {
+      const data = await response.text();
+      console.log(data);
     }
-    // const data = await response.json();
-    // console.log(data);
   }
   
   onMount(() => {
@@ -49,7 +56,8 @@
     getFeed();
   });
   window.addEventListener('sveltekit:navigation-start', (event) =>{
-    
+    updateFeedObject();
+    getFeed();
   });
   
   window.addEventListener('sveltekit:navigation-end', (event) =>{

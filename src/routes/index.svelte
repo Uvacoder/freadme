@@ -3,6 +3,7 @@
 </script>
 <script>
   import { onMount } from 'svelte';
+  import { feeds } from '$stores/feeds.store.js';
   import PostList from '$lib/components/PostList.svelte';
   import { sortByPubDate } from '$utils/sortByPubDate.js';
   import Post from '$lib/components/Post.svelte';
@@ -42,7 +43,6 @@
 
   onMount(async () => {
     getFeeds();
-    console.log(bigFeed);
   });
 
   // const feed = bigFeed ? sortByPubDate(bigFeed) : [];

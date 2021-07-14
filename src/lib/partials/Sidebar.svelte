@@ -1,7 +1,10 @@
 <script>
   import Button from '$lib/components/Button.svelte';
+  import { feeds } from '$stores/feeds.store.js';
   const storage = window.localStorage;
   const savedAddresses = JSON.parse(storage.getItem('savedAddresses')) || [];
+
+  $feeds = 'Whatever';
 </script>
 
 <aside id="sidebar">
