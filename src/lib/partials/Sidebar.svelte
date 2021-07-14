@@ -11,7 +11,7 @@
     <li><a href="/">All Feeds</a></li>
     {#each savedAddresses as address}
       <!-- <li><a href="/fuck">{address.name}</a></li> -->
-      <li><a href="/feed/{address.name.toLowerCase().replace(' ', '-')}">{address.name}</a></li>
+      <li><a href="/feed/{address.slug}">{address.name}</a></li>
       <!-- <li><a href="/feed/[{encodeURIComponent(address.url)}]">{address.name}</a></li> -->
     {/each}
   </ul>
