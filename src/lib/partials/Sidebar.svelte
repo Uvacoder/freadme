@@ -1,4 +1,5 @@
 <script>
+  import Button from '$lib/components/Button.svelte';
   const storage = window.localStorage;
   const savedAddresses = JSON.parse(storage.getItem('savedAddresses')) || [];
 </script>
@@ -6,6 +7,14 @@
 <aside id="sidebar">
   <div class="sidebar-header">
     <a href="/settings/feeds">Edit Feeds</a>
+    <button class="button-icon">
+      <Button 
+        buttonStyle="iconText"
+        buttonType="button"
+        title="Add Feed"
+        iconName="plus"
+      />
+    </button>
   </div>
   <ul class="sidebar-menu">
     <li><a href="/">All Feeds</a></li>
@@ -31,12 +40,17 @@
 }
 
 .sidebar-header {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-areas: "subscribe-input subscribe-submit";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 0.5rem;
   border-block-end: 1px solid rgb(var(--primary-rgb), 0.3);
   overflow: visible;
+}
+
+.button-icon {
+  padding: 0;
+  background: transparent;
 }
 
 .subscribe-input {
