@@ -14,8 +14,14 @@ const savedAddresses = [
   'https://cprss.s3.amazonaws.com/javascriptweekly.com.xml',
 ];
 
+async function getFeed(address) {
+  const response = await parser.parseURL(address);
+  // console.log(response);
+}
+
 async function getAllFeeds(addresses) {
   const allFeeds = addresses.map(async (address) => {
+    getFeed(address);
     return await parser.parseURL(address);
   });
   return Promise.allSettled(allFeeds);

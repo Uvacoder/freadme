@@ -6,10 +6,21 @@ const config = {
 
     kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
-		target: 'body'
+		target: 'body',
+        ssr: false,
+        vite: () => ({
+            resolve: {
+                alias: {
+                    '$style': '/src/lib/style',
+                    '$components': '/src/lib/components',
+                    '$utils': '/src/lib/utils',
+                    '$data': '/src/lib/data',
+                    '$services': '/src/lib/services',
+                }
+            }
+        }),
 	},
-
-    preprocess: [mdsvex(mdsvexConfig)]
+    preprocess: [mdsvex(mdsvexConfig)],
 };
 
 export default config;

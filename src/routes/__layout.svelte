@@ -7,7 +7,6 @@
 </script>
 
 <Header />
-
 <section class="app">
   <main id="main-content" class="posts" tabindex="0" aria-label="All Posts" role="main">
     <FeedHeader />

@@ -1,9 +1,15 @@
 <script context="module">
-  import Parser from 'rss-parser';
-  
-  export const load = async ({fetch}) => {
-    const response = await fetch('/feed.json');
-    const allFeedsResponse = await fetch('/allfeeds.json');
+
+</script>
+<script>
+  import { onMount } from 'svelte';
+  import { sortByPubDate } from '$utils/sortByPubDate.js';
+  import Post from '$lib/components/Post.svelte';
+
+  $: bigFeed = [];
+
+  const getFeeds = async() => {
+    const response = await fetch('/allfeeds.json');
 
     if(!response.ok) {
       return {
@@ -13,13 +19,12 @@
     }
 
     const data = await response.json();
-    const allData = await allFeedsResponse.json();
-    
-    const bigFeed = [];
 
-    allData.forEach((feed) => {
+    let currentFeed = [];
+
+    data.forEach((feed) => {
       feed.items.forEach((item) => {
-        bigFeed.push({
+        currentFeed.push({
           ...item,
           feedDescription: feed.description,
           feedTitle: feed.title,
@@ -30,28 +35,29 @@
       })
     });
 
-    return {
-      props: {
-        bigFeed: bigFeed
-        // data
-      }
-    };
-  };
+    bigFeed = [...currentFeed];
+    
+  }
 
-</script>
-<script>
-  import { sortByPubDate } from '../lib/utils/sortByPubDate.js';
-  import Post from '../lib/components/Post.svelte';
-  // export let data;
-  export let bigFeed;
-  // const feed = sortByPubDate([...data.items]);
-  const feed = sortByPubDate(bigFeed);
+  onMount(async () => {
+    getFeeds();
+    console.log(bigFeed);
+  });
 
+  // const feed = bigFeed ? sortByPubDate(bigFeed) : [];
 </script>
-    {#each feed as post}
-      <!-- <Post {post} feedDescription={data.description} feedImage={data.image} feedTitle={data.title} feedLink={data.link} /> -->
-      <Post {post} feedDescription={post.feedDescription} feedImage={post.feedImage} feedTitle={post.feedTitle} feedLink={post.feedLink} />
-    {/each}
+  {#if bigFeed.length < 1}
+    <div class="loading"><h2>Loading</h2></div>
+  {:else}
+  {#each bigFeed as post}
+    <Post {post} feedDescription={post.feedDescription} feedImage={post.feedImage} feedTitle={post.feedTitle} feedLink={post.feedLink} />
+  {/each}
+  {/if}
 
 <style>
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 </style>

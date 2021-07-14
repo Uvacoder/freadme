@@ -1,13 +1,20 @@
 <script>
-
+  const storage = window.localStorage;
+  const savedAddresses = JSON.parse(storage.getItem('savedAddresses')) || [];
 </script>
 
 <aside id="sidebar">
-  <header class="sidebar-header">
-    <input type="text" aria-label="New Feed URL" class="subscribe-input" id="subscribe-input">
-    <label id="subscribe-label" for="subscribe-input" class=sr-only>New Feed URL</label>
-    <button type="button" class="subscribe-submit">Save</button>
-  </header>
+  <div class="sidebar-header">
+    <a href="/settings/feeds">Edit Feeds</a>
+  </div>
+  <ul class="sidebar-menu">
+    <li><a href="/">All Feeds</a></li>
+    {#each savedAddresses as address}
+      <!-- <li><a href="/fuck">{address.name}</a></li> -->
+      <li><a href="/feed/{address.name.toLowerCase().replace(' ', '-')}">{address.name}</a></li>
+      <!-- <li><a href="/feed/[{encodeURIComponent(address.url)}]">{address.name}</a></li> -->
+    {/each}
+  </ul>
 </aside>
 
 <style>
@@ -18,6 +25,9 @@
   flex-direction: column;
   flex-basis: 20rem;
   flex-grow: 1;
+}
+.sidebar-menu {
+
 }
 
 .sidebar-header {
