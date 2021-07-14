@@ -47,9 +47,11 @@
       }
     } else {
       const data = await response.text();
-      console.log(data);
+      // console.log(data);
     }
   }
+
+  console.log($page.query);
   
   onMount(() => {
     updateFeedObject();
