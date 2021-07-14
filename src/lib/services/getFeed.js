@@ -6,7 +6,7 @@ const parser = new Parser({
   }
 });
 
-export const getFeed = async(address) {
+export const getFeed = async(address) => {
   const response = await parser.parseURL(address);
   if(!response.ok) {
     return { 
@@ -14,4 +14,6 @@ export const getFeed = async(address) {
       error: new Error(`${address} returned an error.`)
     }
   }
+
+  return response;
 } 

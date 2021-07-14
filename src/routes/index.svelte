@@ -3,6 +3,7 @@
 </script>
 <script>
   import { onMount } from 'svelte';
+  import PostList from '$lib/components/PostList.svelte';
   import { sortByPubDate } from '$utils/sortByPubDate.js';
   import Post from '$lib/components/Post.svelte';
 
@@ -49,9 +50,7 @@
   {#if bigFeed.length < 1}
     <div class="loading"><h2>Loading</h2></div>
   {:else}
-  {#each bigFeed as post}
-    <Post {post} feedDescription={post.feedDescription} feedImage={post.feedImage} feedTitle={post.feedTitle} feedLink={post.feedLink} />
-  {/each}
+  <PostList feed={bigFeed} />
   {/if}
 
 <style>
