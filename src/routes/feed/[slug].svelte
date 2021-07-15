@@ -28,11 +28,6 @@
       }
     }
   }
-
-  function getFeedInfo(slug) {
-    console.log('feeds', feeds);
-    return feeds.filter((feed) => feed.slug === slug)[0];
-  }
 </script>
 
 <script>
