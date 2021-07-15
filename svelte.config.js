@@ -7,7 +7,10 @@ const config = {
     kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: 'body',
-        ssr: false,
+        // ssr: false,
+        files: { 
+            hooks: '/src/hooks/index.js',
+        },
         vite: () => ({
             resolve: {
                 alias: {
