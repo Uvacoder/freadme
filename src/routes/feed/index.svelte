@@ -1,4 +1,5 @@
 <script context="module">
+  export const ssr = false;
   import { feeds } from '$data/feeds.js';
 
   export const load = async({page, fetch, session, context}) => {
@@ -30,7 +31,7 @@
 </script>
 
 <script>
-  import { PostList } from '../../lib/components/PostList.svelte';
+  // import { PostList } from '$lib/components/PostList.svelte';
 
   export let feed;
   export let feedName;
@@ -44,6 +45,5 @@
       {feedName}
     </a>
   </h2>
-  <PostList {feed} />
   
 </section>
