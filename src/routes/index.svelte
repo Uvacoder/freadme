@@ -1,62 +1,56 @@
 <script context="module">
+  import { feeds } from '$data/feeds.js';
+  
+  export const load = ({page, fetch, session, context}) => {
 
-</script>
-<script>
-  import { onMount } from 'svelte';
-  import { feeds } from '$stores/feeds.store.js';
-  import PostList from '$lib/components/PostList.svelte';
-  import { sortByPubDate } from '$utils/sortByPubDate.js';
-  import Post from '$lib/components/Post.svelte';
+    console.log(context);
 
-  $: bigFeed = [];
 
-  const getFeeds = async() => {
-    const response = await fetch('/allfeeds.json');
-
-    if(!response.ok) {
-      return {
-        status: response.status,
-        error: new Error(`Could not find a proper feed...`),
-      };
+    return { 
+      props: { 
+        feeds: feeds || []
+      }
     }
-
-    const data = await response.json();
-
-    let currentFeed = [];
-
-    data.forEach((feed) => {
-      feed.items.forEach((item) => {
-        currentFeed.push({
-          ...item,
-          feedDescription: feed.description,
-          feedTitle: feed.title,
-          feedImage: feed.image?.url,
-          feedImageTitle: feed.image?.title,
-          feedLink: feed.link,
-        });
-      })
-    });
-
-    bigFeed = [...currentFeed];
-    
   }
-
-  onMount(async () => {
-    getFeeds();
-  });
-
-  // const feed = bigFeed ? sortByPubDate(bigFeed) : [];
 </script>
-  {#if bigFeed.length < 1}
-    <div class="loading"><h2>Loading</h2></div>
-  {:else}
-  <PostList feed={bigFeed} />
-  {/if}
+
+<script>
+  export let feeds;
+</script>
+
+<h2>All Your Feeds</h2>
+<section class="main-feeds">
+  {#each feeds as feed}
+  <a href="/feed/{feed.slug}">
+    <article class="feed-card">
+      <header>
+        <h3>{feed.name}</h3>
+      </header>
+      <section class="feed-card-content">
+        <p>Something should definitely go here.</p>
+      </section>
+    </article>
+  </a>
+  {/each}
+</section>
 
 <style>
-  .loading {
+  .main-feeds {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: var(--space-500);
+    padding: var(--space-500);
+  }
+
+  .feed-card {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(var(--primary-rgb), 0.1);
+    box-shadow: 10px 10px 5px rgb(var(--darkdark-rgb), 0.5);
+    border-radius: 1em;
+  }
+  .feed-card * {
+    padding: 0.5rem;
   }
 </style>

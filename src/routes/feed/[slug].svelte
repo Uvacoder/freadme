@@ -1,76 +1,53 @@
 <script context="module">
+  import { feeds } from '$data/feeds.js';
+
   export const load = async({page, fetch, session, context}) => {
-    
     const slug = page.params.slug;
+
+    const apiURL = `${slug}.json`
+
+    const feedInfo = feeds.filter((feedObject) => feedObject.slug === slug)[0];
+
+    const response = await fetch(apiURL);
+
+    if(!response.ok) {
+      return {
+        status: response.status,
+        error: new Error(`Could not find a feed at ${apiURL}`)
+      }
+    }
+
+    const data = await response.json();
+    const feed = data.feed || [];
     
     return {
       props: {
-        slug,
+        feedName: feedInfo?.name,
+        feedUrl: feedInfo?.url,
+        feed
       }
     }
+  }
+
+  function getFeedInfo(slug) {
+    console.log('feeds', feeds);
+    return feeds.filter((feed) => feed.slug === slug)[0];
   }
 </script>
 
 <script>
-  import { page, navigating } from '$app/stores';
-  import { onMount } from 'svelte';
+  import { PostList } from '$lib/components/PostList.svelte';
 
-  export let slug;
-  $: name = '';
-  $: feedUrl = '';
-  $: feedObject = {};
-  $: slug = '';
-  $: feed = [];
-
-  const feedData = JSON.parse(window.localStorage.getItem('savedAddresses'));
-  
-  function updateFeedObject() {
-    if(slug === '' || slug === undefined) {
-      const location = window.location.toString();
-      const split = location.split('/');
-      slug = split[split.length - 1];
-    }
-
-    feedObject = {...feedData.filter((obj) => obj.slug === slug)[0]};
-    name = feedObject.name;
-    feedUrl = feedObject.url;
-    slug = feedObject.slug;
-  }
-
-  async function getFeed() {
-    const response = await fetch(`/feed/${slug}`);
-    
-    if(!response.ok) {
-      return {
-        error: new Error(`Could not get feed at ${slug}`), 
-        status: response.status
-      }
-    } else {
-      const data = await response.text();
-      // console.log(data);
-    }
-  }
-
-  console.log($page.query);
-  
-  onMount(() => {
-    updateFeedObject();
-    getFeed();
-  });
-  window.addEventListener('sveltekit:navigation-start', (event) =>{
-    updateFeedObject();
-    getFeed();
-  });
-  
-  window.addEventListener('sveltekit:navigation-end', (event) =>{
-    updateFeedObject();
-    getFeed();
-  });
+  export let feed;
+  export let feedName;
+  export let feedUrl;
 </script>
 
 <section tabindex="0">
-  <h2 aria-label="Feed list: {name}">{name}</h2>
-  <a href="{feedUrl}">
-    <h3>{feedObject?.url}</h3>
-  </a>
+  <h2>
+    <a href="{feedUrl}">
+      {feedName}
+    </a>
+  </h2>
+  <PostList {feed} />
 </section>

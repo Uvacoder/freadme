@@ -1,10 +1,6 @@
 <script>
+  import { feeds } from '$data/feeds.js';
   import Button from '$lib/components/Button.svelte';
-  import { feeds } from '$stores/feeds.store.js';
-  const storage = window.localStorage;
-  const savedAddresses = JSON.parse(storage.getItem('savedAddresses')) || [];
-
-  $feeds = 'Whatever';
 </script>
 
 <aside id="sidebar">
@@ -21,10 +17,8 @@
   </div>
   <ul class="sidebar-menu">
     <li><a href="/">All Feeds</a></li>
-    {#each savedAddresses as address}
-      <!-- <li><a href="/fuck">{address.name}</a></li> -->
-      <li><a href="/feed/{address.slug}">{address.name}</a></li>
-      <!-- <li><a href="/feed/[{encodeURIComponent(address.url)}]">{address.name}</a></li> -->
+    {#each feeds as feed}
+      <li><a href="/feed/{feed.slug}">{feed.name}</a></li>
     {/each}
   </ul>
 </aside>

@@ -18,13 +18,19 @@
   --size-800: calc(var(--size-700) * var(--scale-up));
   --size-900: calc(var(--size-800) * var(--scale-up));
 
-  /* Responsive size Sizes */
+  /* Responsive General Sizes */
+  --space-500: clamp(1rem, 2vw, 2rem);
+  --space-600: clamp(2rem, 3vw, 3rem);
+  --space-700: clamp(3rem, 5vw, 4rem);
+
+  /* Responsive font Sizes */
   --font-0: clamp(var(--size-300), 1vw, var(--size-400));
   --font-1: clamp(var(--size-400), 2vw, var(--size-500));
   --font-2: clamp(var(--font-500), 2.5vw, var(--size-600));
   --font-3: clamp(var(--font-600), 3vw, var(--size-700)); 
   --font-4: clamp(var(--font-700), 3.5vw, var(--size-800)); 
   --font-5: clamp(var(--font-800), 4vw, var(--size-900)); 
+
   /* Colors */
 
   --accent-primary: #EF476F;
@@ -99,6 +105,7 @@ button {
   overflow: hidden;
 }
 
+/* Headings */
 h1,
 h2,
 h3,
@@ -137,22 +144,9 @@ h5 {
   font-weight: 600;
 }
 
-a:not([class]) {
-  color: var(--primary);
-}
-
-:focus {
-  outline: 2px solid;
-  outline-offset: -2px;
-  outline-color: var(--accent-primary);
-}
-
-a:focus {
-  outline-offset: 2px;
-}
-
-main:focus, body:focus {
-  outline: none;
+/* Links */
+[href], [href]:visited {
+  color: var(--primary-light);
 }
 
 [href]:hover {
@@ -160,11 +154,27 @@ main:focus, body:focus {
   color: var(--primary-light-hover);
 }
 
+[href]:focus {
+  outline-offset: 2px;
+}
+
+/* Focus */
+:focus {
+  outline: 2px solid;
+  outline-offset: -2px;
+  outline-color: var(--accent-primary);
+}
+
+main:focus, body:focus {
+  outline: none;
+}
+
 img, video{
   width: min(60rem, 100%);
   height: min(60rem, 100%);
 }
 
+/* Misc */
 figcaption {
   font-size: var(--size-300);
   font-style: italic;
@@ -183,6 +193,7 @@ hr {
   color: rgb(var(--primary-rgb), 0.5);
   border-top: 1px solid rgb(var(--primary-rgb), 0.5);
 }
+
 
 /* Select styling - thanks to Stephanie Eckles at https://twitter.com/5t3ph/ */
 /* article: https://moderncss.dev/custom-select-styles-with-pure-css/ */
@@ -268,9 +279,6 @@ li {
   max-width: 70ch;
 }
 
-/* .post > * + * {
-  margin-top: 1rem;
-} */
 .post :is(h2, h3) {
   --flow-space: var(--size-900);
 }
