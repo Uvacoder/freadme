@@ -1,9 +1,9 @@
 <script>
   import Post from './Post.svelte';
-  export let feed = [];
+  export let feed;
 </script>
 
 
 {#each feed as post}
-  <Post {post} feedDescription={post.feedDescription} feedImage={post.feedImage} feedTitle={post.feedTitle} feedLink={post.feedLink} />
+  <Post {post} feedImage={feed.image.link}/>
 {/each}

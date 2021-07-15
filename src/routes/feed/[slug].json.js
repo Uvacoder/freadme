@@ -1,4 +1,3 @@
-import { getFeed } from '$services/getFeed.js';
 import { feeds } from '$data/feeds.js';
 import Parser from 'rss-parser';
 

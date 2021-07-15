@@ -1,4 +1,5 @@
 <script context="module">
+  export const ssr = false;
   import { feeds } from '$data/feeds.js';
 
   export const load = async({page, fetch, session, context}) => {
@@ -23,7 +24,6 @@
     return {
       props: {
         feedName: feedInfo?.name,
-        feedUrl: feedInfo?.url,
         feed
       }
     }
@@ -31,18 +31,19 @@
 </script>
 
 <script>
-  import { PostList } from '$lib/components/PostList.svelte';
+  // import { PostList } from '$lib/components/PostList.svelte';
 
   export let feed;
   export let feedName;
-  export let feedUrl;
+
+  console.log(feed);
 </script>
 
 <section tabindex="0">
   <h2>
-    <a href="{feedUrl}">
+    <a href="{feed.link}">
       {feedName}
     </a>
   </h2>
-  <PostList {feed} />
+  
 </section>

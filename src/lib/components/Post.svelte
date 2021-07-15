@@ -1,10 +1,6 @@
 <script>
   import PostContent from './PostContent.svelte';
   export let post;
-  export let feedTitle;
-  export let feedDescription;
-  export let feedLink;
-  export let feedImage;
   let open = false;
 
   function handleToggle(event) {

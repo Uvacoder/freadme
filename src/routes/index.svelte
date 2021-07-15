@@ -2,10 +2,6 @@
   import { feeds } from '$data/feeds.js';
   
   export const load = ({page, fetch, session, context}) => {
-
-    console.log(context);
-
-
     return { 
       props: { 
         feeds: feeds || []
