@@ -80,6 +80,11 @@ body {
   min-height: 100vh;
   background: var(--dark);
   line-height: 1.5;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header"
+    "app"
 }
 
 input[type="text"] {

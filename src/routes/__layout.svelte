@@ -17,6 +17,7 @@
   .app {
     display: flex;
     flex-wrap: wrap;
+    grid-area: app;
   }
   main {
     position: relative;

@@ -64,6 +64,7 @@
     justify-content: space-between;
     border-bottom: 1px solid rgb(var(--primary-rgb), 0.5);
     height: var(--ui-header-height);
+    overflow: hidden;
   }
   .main-section, .sidebar-section {
     padding: 0.5rem;
