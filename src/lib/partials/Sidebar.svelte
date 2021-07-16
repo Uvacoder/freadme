@@ -26,7 +26,7 @@
 <style>
 #sidebar {
   order: 1;
-  border-inline-end: 1px solid rgb(var(--primary-rgb), 0.3);
+  border-inline-end: 1px solid rgb(var(--primary-rgb), 0.5);
   display: flex;
   flex-direction: column;
   flex-basis: 20rem;
@@ -41,8 +41,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
-  border-block-end: 1px solid rgb(var(--primary-rgb), 0.3);
+  border-bottom: 1px solid rgb(var(--primary-rgb), 0.5);
   overflow: visible;
+  height: var(--ui-header-height);
 }
 
 .button-icon {
