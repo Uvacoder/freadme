@@ -2,21 +2,24 @@
   import '$style/prism-atom-dark.css';
   import { onMount } from 'svelte';
   import { headDown } from '../utils/headDown.js';
-  import { highlight } from '../utils/highlight.js'
   import { strToHTML } from '../utils/strToHTML.js';
   export let content;
-  let highlightedContent;
+  let stringContent;
 
-  onMount(() => {
+  function prepareContent() {  
     const cleanedContent = headDown(content);
     const DOMContent = strToHTML(cleanedContent);
-    const highlighted = highlight(DOMContent.childNodes);
-    highlightedContent = highlighted.innerHTML;
+    stringContent = DOMContent.innerHTML;
+  }
+  onMount(() => {
+    prepareContent();
   });
 </script>
-
+<svelte:head>
+  <script src="js/prism.js" defer></script>
+</svelte:head>
 <section class="content flow" tabindex="0">
-  {@html highlightedContent}
+  {@html stringContent}
 </section>
 
 <style>

@@ -29,10 +29,10 @@
     overflow-y: scroll;
   }
   #main-content:focus, #main-content:focus-within {
-    outline: 2px solid var(--darkdark);
+    outline: 2px solid rgb(var(--primary-rgb), 0.5);
   }
   .posts:focus, .posts:focus-within {
-    background: rgb(var(--darkdark-rgb), 0.5);
+    background: rgb(var(--darkdark-rgb), 0.6);
   }
   
   .posts:focus {
