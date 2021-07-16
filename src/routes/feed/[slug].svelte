@@ -23,7 +23,6 @@
   const getAllFeeds = async() => {
     const response = await fetch(`http://localhost:8080/feeds/${slug}`);
 
-    console.log(response);
     if(response.ok) {
       
       const feedPosts = [];
@@ -46,44 +45,24 @@
     }
   };
 
-  const getFeedName = async () => {
-    const response = await fetch(`http://localhost:8080/subscriptions/${slug}`);
-
-    if(response.ok) {
-      const data = await response.json();
-      return data.name;
-    } else {
-      throw new Error(response);
-    }
-  };
-
   let promise;
-  let namePromise;
-  onMount(() => {
-    promise = getAllFeeds();
-    namePromise = getFeedName();
-  });
+  
   
   window.addEventListener('sveltekit:navigation-end', (event) => {
     promise = getAllFeeds();
-    namePromise = getFeedName();
   });
 </script>
 
-{#await namePromise}
-<FeedHeader title="&nbsp;" />
-{:then name}
-<FeedHeader title={name} />
-{:catch error}
-<FeedHeader title="{error}"/>
-{/await}
-
 {#await promise}
-<h3>Loading...</h3>
+<div class="center">
+  <h3>Loading...</h3>
+</div>
 {:then posts}
   <PostList {posts} />
 {:catch error}
+<div class="center">
   <p>{error}</p>
+</div>
 {/await}
 
 <style>

@@ -8,9 +8,6 @@
   import FeedHeader from '$lib/partials/FeedHeader.svelte';
   import PostList from '$components/PostList.svelte';
 
-
-  // $: posts = [];
-
   // api reqs here
   const getAllFeeds = async() => {
     const response = await fetch('http://localhost:8080/feeds');
@@ -45,32 +42,17 @@
   });
 </script>
 
-<FeedHeader title="All Posts" />
-
 {#await promise}
-<h3>Loading...</h3>
+<div class="center">
+  <h3>Loading...</h3>
+</div>
 {:then posts}
   <PostList {posts} />
 {:catch error}
-<p>{error}</p>
+<div class="center">
+  <p>{error}</p>
+</div>
 {/await}
 <style>
-  /* .main-feeds {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    grid-gap: var(--space-500);
-    padding: var(--space-500);
-  } */
 
-  .feed-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: rgb(var(--primary-rgb), 0.1);
-    box-shadow: 10px 10px 5px rgb(var(--darkdark-rgb), 0.5);
-    border-radius: 1em;
-  }
-  .feed-card * {
-    padding: 0.5rem;
-  }
 </style>

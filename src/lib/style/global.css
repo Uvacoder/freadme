@@ -277,6 +277,14 @@ select, .select:after {
   margin-top: var(--flow-space, 1em);
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
 p,
 li {
   max-width: 70ch;

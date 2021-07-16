@@ -42,7 +42,6 @@ app.get('/feeds', async (request, reply) => {
   });
   const data =  await Promise.allSettled(allFeedsPromise);
   const allFeeds = data.map((feed) => feed.value);
-  console.log(allFeeds);
   return allFeeds;
 });
 

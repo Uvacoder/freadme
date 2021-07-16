@@ -2,7 +2,6 @@
   import '../lib/style/global.css';
   import Sidebar from '../lib/partials/Sidebar.svelte';
   import Header from '../lib/partials/Header.svelte';
-  import FeedHeader from '../lib/partials/FeedHeader.svelte';
 
 </script>
 
@@ -18,13 +17,15 @@
   .app {
     display: flex;
     flex-wrap: wrap;
-    height: 100vh;
   }
   main {
+    position: relative;
     order: 2;
     flex-basis: 0;
     flex-grow: 999;
     min-width: 50%;
+    max-height: 100%;
+    overflow-y: scroll;
   }
   #main-content:focus, #main-content:focus-within {
     outline: 2px solid var(--darkdark);

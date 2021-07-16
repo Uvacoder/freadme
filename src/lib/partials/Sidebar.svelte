@@ -4,21 +4,10 @@
 </script>
 
 <aside id="sidebar">
-  <div class="sidebar-header">
-    <a href="/settings/feeds">Edit Feeds</a>
-    <button class="button-icon">
-      <Button 
-        buttonStyle="iconText"
-        buttonType="button"
-        title="Add Feed"
-        iconName="plus"
-      />
-    </button>
-  </div>
   <ul class="sidebar-menu">
-    <li><a href="/">All Feeds</a></li>
+    <li class="sidebar-menu-item"><a href="/">All Posts</a></li>
     {#each feeds as feed}
-      <li><a href="/feed/{feed.slug}">{feed.name}</a></li>
+      <li class="sidebar-menu-item"><a href="/feed/{feed.slug}">{feed.name}</a></li>
     {/each}
   </ul>
 </aside>
@@ -31,11 +20,16 @@
   flex-direction: column;
   flex-basis: 20rem;
   flex-grow: 1;
+  min-height: 100%;
 }
 .sidebar-menu {
-
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
-
+.sidebar-menu-item {
+  padding: 0.5rem;
+}
 .sidebar-header {
   display: flex;
   justify-content: space-between;
