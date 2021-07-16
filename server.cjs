@@ -31,7 +31,7 @@ const parser = new Parser();
 const app = fastify();
 
 app.register(require('fastify-cors'), {
-  origin: false
+  origin: true
 });
 
 
