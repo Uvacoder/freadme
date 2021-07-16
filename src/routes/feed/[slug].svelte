@@ -45,20 +45,40 @@
     }
   };
 
+  const getFeedName = async () => {
+    const response = await fetch(`http://localhost:8080/subscriptions/${slug}`);
+
+    if(response.ok) {
+      const data = await response.json();
+      return data.name;
+    } else {
+      throw new Error(response);
+    }
+  };
+
   let promise;
+  let namePromise;
   onMount(() => {
     promise = getAllFeeds();
+    namePromise = getFeedName();
   });
-
+  
   window.addEventListener('sveltekit:navigation-end', (event) => {
     promise = getAllFeeds();
+    namePromise = getFeedName();
   });
 </script>
 
-<h2>All Your Feeds</h2>
+{#await namePromise}
+&nbsp;
+{:then name}
+<h2>{name}</h2>
+{:catch error}
+<p>{error}</p>
+{/await}
 
 {#await promise}
-  <h3>Loading...</h3>
+<h3>Loading...</h3>
 {:then posts}
   <PostList {posts} />
 {:catch error}
