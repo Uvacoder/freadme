@@ -47,7 +47,7 @@ app.get('/feeds', async (request, reply) => {
 });
 
 app.get('/feeds/:slug', async (request, reply) => {
-  const url = subscriptions.filter((subscription) => subscription.slug === request.params.slug);
+  const url = subscriptions.filter((subscription) => subscription.slug === request.params.slug)[0].url;
   return await parser.parseURL(url);
 });
 
