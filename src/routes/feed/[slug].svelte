@@ -16,6 +16,7 @@
   import { onMount } from 'svelte';
   import { sortByPubDate } from '$lib/utils/sortByPubDate.js';
   import PostList from '$components/PostList.svelte';
+  import FeedHeader from '$lib/partials/FeedHeader.svelte';
   export let slug;
 
   // api reqs here
@@ -70,11 +71,11 @@
 </script>
 
 {#await namePromise}
-&nbsp;
+<FeedHeader title="&nbsp;" />
 {:then name}
-<h2>{name}</h2>
+<FeedHeader title={name} />
 {:catch error}
-<p>{error}</p>
+<FeedHeader title="{error}"/>
 {/await}
 
 {#await promise}

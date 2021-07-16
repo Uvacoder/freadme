@@ -5,7 +5,9 @@
 <script>
   import { onMount } from 'svelte';
   import { sortByPubDate } from '$lib/utils/sortByPubDate.js';
+  import FeedHeader from '$lib/partials/FeedHeader.svelte';
   import PostList from '$components/PostList.svelte';
+
 
   // $: posts = [];
 
@@ -43,7 +45,7 @@
   });
 </script>
 
-<h2>All Your Feeds</h2>
+<FeedHeader title="All Posts" />
 
 {#await promise}
 <h3>Loading...</h3>
