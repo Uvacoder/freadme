@@ -22,13 +22,13 @@
     </div>
     <div class="post-info">
       <div class="post-image">
-        {#if feedImage}
-        <a href={feedLink || ''} tabindex="-1">
-          <img src="{feedImage || ''}" alt="{feedTitle || ''}" class="feed-image" tabindex="-1">
+        {#if post.feedImage}
+        <a href={post.feedLink || ''} tabindex="-1">
+          <img src="{post.feedImage || ''}" alt="{post.feedTitle || ''}" class="feed-image" tabindex="-1">
         </a>
         {/if}
       </div>
-      <div class="post-meta"><a href="{feedLink || ''}" tabindex="-1">{feedTitle || ''}</a>: <time>{new Date(post.pubDate).toLocaleString()}</time></div>
+      <div class="post-meta"><a href="{post.feedLink || ''}" tabindex="-1">{post.feedTitle || ''}</a>: <time>{new Date(post.pubDate).toLocaleString()}</time></div>
     </div>
   </summary>
   {#if open}

@@ -1,42 +1,64 @@
 <script context="module">
-  import { feeds } from '$data/feeds.js';
-  
-  export const load = ({page, fetch, session, context}) => {
-    return { 
-      props: { 
-        feeds: feeds || []
-      }
-    }
-  }
+  export const ssr = false;
 </script>
 
 <script>
-  export let feeds;
+  import { onMount } from 'svelte';
+  import { sortByPubDate } from '$lib/utils/sortByPubDate.js';
+  import PostList from '$components/PostList.svelte';
+
+  // $: posts = [];
+
+  // api reqs here
+  const getAllFeeds = async() => {
+    const response = await fetch('http://localhost:8080/feeds');
+
+    if(response.ok) {
+      
+      const feedPosts = [];
+      const data = await response.json();
+      
+      data.forEach((feed) => {
+        feed.items.forEach((item) => {
+          const postItem = {
+            ...item,
+            feedImage: feed.image?.url || '',
+            feedLink: feed.link,
+            feedTitle: feed.title,
+          }
+
+          feedPosts.push(postItem);
+        });
+      });
+
+      return sortByPubDate(feedPosts);
+    } else {
+      throw new Error(response);
+    }
+  };
+
+  let promise;
+  onMount(() => {
+    promise = getAllFeeds();
+  });
 </script>
 
 <h2>All Your Feeds</h2>
-<section class="main-feeds">
-  {#each feeds as feed}
-  <a href="/feed/{feed.slug}">
-    <article class="feed-card">
-      <header>
-        <h3>{feed.name}</h3>
-      </header>
-      <section class="feed-card-content">
-        <p>Something should definitely go here.</p>
-      </section>
-    </article>
-  </a>
-  {/each}
-</section>
 
+{#await promise}
+<h3>Loading...</h3>
+{:then posts}
+  <PostList {posts} />
+{:catch error}
+<p>{error}</p>
+{/await}
 <style>
-  .main-feeds {
+  /* .main-feeds {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     grid-gap: var(--space-500);
     padding: var(--space-500);
-  }
+  } */
 
   .feed-card {
     display: flex;
