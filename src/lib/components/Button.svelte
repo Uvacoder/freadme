@@ -13,6 +13,7 @@
   export let title = '';
   export let iconName;
   export let href;
+  export let order = 'reversed';
 
 </script>
 
@@ -22,8 +23,12 @@
       {#if buttonStyle === 'icon'}
         <Icon name={iconName} />
       {:else if buttonStyle === 'iconText'}
+      <span class="text" style="{order === 'reversed' ? 2 : 1}">
         {title}
+      </span>
+      <div class="icon" style="order:{order === 'reversed' ? 1 : 2}">
         <Icon name={iconName} />
+      </div>
       {:else}
         {title}
       {/if}
@@ -35,8 +40,12 @@
       {#if buttonStyle === 'icon'}
         <Icon name={iconName} />
       {:else if buttonStyle === 'iconText'}
+      <span class="text" style="{order === 'reversed' ? 2 : 1}">
         {title}
+      </span>
+      <div class="icon" style="order:{order === 'reversed' ? 1 : 2}">
         <Icon name={iconName} />
+      </div>
       {:else}
         {title}
       {/if}

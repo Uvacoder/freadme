@@ -5,9 +5,13 @@
 
 <aside id="sidebar">
   <ul class="sidebar-menu">
-    <li class="sidebar-menu-item"><a href="/">All Posts</a></li>
+    <li class="sidebar-menu-item">
+      <Button buttonType="link" buttonStyle="iconText" iconName="plus" href="/" title="All Posts" /> 
+    </li>
     {#each feeds as feed}
-      <li class="sidebar-menu-item"><a href="/feed/{feed.slug}">{feed.name}</a></li>
+      <li class="sidebar-menu-item">
+        <Button buttonType="link" buttonStyle="iconText" iconName="plus" href="/feed/{feed.slug}" title={feed.name} /> 
+      </li>
     {/each}
   </ul>
 </aside>
