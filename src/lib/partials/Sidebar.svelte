@@ -10,7 +10,7 @@
     </li>
     {#each feeds as feed}
       <li class="sidebar-menu-item">
-        <Button buttonType="link" buttonStyle="iconText" iconName="plus" href="/feed/{feed.slug}" title={feed.name} /> 
+        <Button buttonType="link" buttonStyle="imageText"  imgUrl={feed.image.link}  href="/feed/{feed.slug}" title={feed.name} /> 
       </li>
     {/each}
   </ul>
