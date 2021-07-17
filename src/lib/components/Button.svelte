@@ -14,7 +14,6 @@
   export let iconName;
   export let href;
   export let order = 'reversed';
-  export let imgUrl = '';
 
 </script>
 
@@ -30,13 +29,6 @@
       <div class="icon" style="order:{order === 'reversed' ? 1 : 2}">
         <Icon name={iconName} />
       </div>
-      {:else if buttonStyle === 'imageText'}
-      <div class="icon" style="order:{order === 'reversed' ? 1 : 2}">
-        <img src={imgUrl} class="button-image" alt={title}>
-      </div>
-      <span class="text" style="{order === 'reversed' ? 2 : 1}">
-        {title}
-      </span>
       {:else}
         {title}
       {/if}
@@ -54,13 +46,6 @@
       <div class="icon" style="order:{order === 'reversed' ? 1 : 2}">
         <Icon name={iconName} />
       </div>
-      {:else if buttonStyle === 'imageText'}
-      <div class="icon" style="order:{order === 'reversed' ? 1 : 2}">
-        <img src={imgUrl} class="button-image" alt={title}>
-      </div>
-      <span class="text" style="{order === 'reversed' ? 2 : 1}">
-        {title}
-      </span>
       {:else}
         {title}
       {/if}
