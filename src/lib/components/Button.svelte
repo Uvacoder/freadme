@@ -8,12 +8,15 @@
   //buttonStyle:
   // 'icon': just the icon, no text,
   // 'iconText': icon and text
+  // 'imageText': image and text
   // 'text': just the text
   export let buttonStyle = 'text';
+
   export let title = '';
   export let iconName;
   export let href;
   export let order = 'reversed';
+  export let image;
 
 </script>
 
@@ -29,6 +32,13 @@
       <div class="icon" style="order:{order === 'reversed' ? 1 : 2}">
         <Icon name={iconName} />
       </div>
+      {:else if buttonStyle === 'imageText'}
+        <span class="text" style="{order === 'reversed' ? 2 : 1}">
+          {title}
+        </span>
+        <div class="icon" style="order:{order === 'reversed' ? 1 : 2}">
+          <img src={image} alt={title}>
+        </div>
       {:else}
         {title}
       {/if}
@@ -46,6 +56,13 @@
       <div class="icon" style="order:{order === 'reversed' ? 1 : 2}">
         <Icon name={iconName} />
       </div>
+      {:else if buttonStyle === 'imageText'}
+        <span class="text" style="{order === 'reversed' ? 2 : 1}">
+          {title}
+        </span>
+        <div class="icon" style="order:{order === 'reversed' ? 1 : 2}">
+          <img src={image} alt={title}>
+        </div>
       {:else}
         {title}
       {/if}
@@ -57,7 +74,12 @@
   .button-inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 1em;
     color: currentColor;
+  }
+  img {
+    width: 1em;
+    height: 1em;
   }
 </style>

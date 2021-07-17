@@ -6,11 +6,11 @@
 <aside id="sidebar">
   <ul class="sidebar-menu">
     <li class="sidebar-menu-item">
-      <Button buttonType="link" buttonStyle="iconText" iconName="plus" href="/" title="All Posts" /> 
+      <Button buttonType="link" buttonStyle="iconText" iconName="feed" href="/" title="All Posts" /> 
     </li>
     {#each feeds as feed}
       <li class="sidebar-menu-item">
-        <Button buttonType="link" buttonStyle="iconText" iconName="plus" href="/feed/{feed.slug}" title={feed.name} /> 
+        <Button buttonType="link" buttonStyle={feed.image ? 'imageText' : 'text'} image={feed.image ? feed.image : ''} href="/feed/{feed.slug}" title={feed.name} /> 
       </li>
     {/each}
   </ul>
