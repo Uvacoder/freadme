@@ -5,7 +5,6 @@
 <script>
   import { onMount } from 'svelte';
   import { sortByPubDate } from '$lib/utils/sortByPubDate.js';
-  import FeedHeader from '$lib/partials/FeedHeader.svelte';
   import PostList from '$components/PostList.svelte';
 
   // api reqs here

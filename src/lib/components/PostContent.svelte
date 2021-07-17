@@ -1,5 +1,5 @@
 <script>
-  import '$style/prism-atom-dark.css';
+  import '$style/prism-feedme-dark.css';
   import { onMount } from 'svelte';
   import { headDown } from '../utils/headDown.js';
   import { strToHTML } from '../utils/strToHTML.js';

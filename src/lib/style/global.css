@@ -93,18 +93,23 @@ input[type="text"] {
   border: 1px solid rgb(var(--primary-rgb), 0.5);
 }
 
-button, input[type="submit"] {
-  padding: 0.25rem;
+.button, input[type="submit"], button {
+  border: none;
+  letter-spacing: 0.1rem;
+  display: block;
+  padding: 0.5rem;
+  line-height: 1;
+  background: rgb(var(--primary-rgb), 0.2);
+  color: var(--light);
+  text-decoration: none;
+  font-size: var(--size-500);
   font-weight: 500;
-  cursor: pointer;
 }
 
-button {
-  background: var(--primary);
-  border: none;
-  color: var(--light);
-  letter-spacing: 0.1rem;
-  cursor: pointer;
+button:hover,
+input[type="submit"]:hover,
+.button:hover {
+  background:rgb(var(--accent-primary-rgb), 0.5);
 }
 
 .sr-only {
@@ -321,17 +326,6 @@ li {
   clip-path: unset;
   white-space: unset;
   clip-path: unset;
-}
-
-.button, button {
-  display: block;
-  padding: 0.5rem;
-  line-height: 1;
-  background: rgb(var(--primary-rgb), 0.2);
-  color: var(--light);
-  text-decoration: none;
-  font-size: var(--size-500);
-  font-weight: 500;
 }
 
 @media (min-width: 45em) {
