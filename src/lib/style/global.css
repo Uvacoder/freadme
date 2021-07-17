@@ -88,11 +88,29 @@ body {
     "app"
 }
 
-input[type="text"], input[type="email"] {
+
+input[type="text"], 
+input[type="email"] {
   font-size: var(--font-3);
   padding: 0.25rem 0.5rem;
   border: 1px solid rgb(var(--primary-rgb), 0.5);
   background: var(--input-background);
+}
+
+input[type="email"]:focus, 
+input[type="text"]:focus{
+  outline-color: var(--primary-light);
+  color: var(--light);
+}
+
+input[type="email"]:invalid {
+  background-color: rgb(var(--accent-primary-rgb), 0.4);
+  color: var(--accent-primary);
+  outline-color: var(--accent-primary);
+}
+
+input[type="email"]:valid {
+  background-color: var(--input-background);
   color: var(--light);
 }
 
