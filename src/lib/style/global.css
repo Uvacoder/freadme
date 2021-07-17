@@ -26,10 +26,10 @@
   /* Responsive font Sizes */
   --font-0: clamp(var(--size-300), 1vw, var(--size-400));
   --font-1: clamp(var(--size-400), 2vw, var(--size-500));
-  --font-2: clamp(var(--font-500), 2.5vw, var(--size-600));
-  --font-3: clamp(var(--font-600), 3vw, var(--size-700)); 
-  --font-4: clamp(var(--font-700), 3.5vw, var(--size-800)); 
-  --font-5: clamp(var(--font-800), 4vw, var(--size-900)); 
+  --font-2: clamp(var(--size-500), 2.5vw, var(--size-600));
+  --font-3: clamp(var(--size-600), 3vw, var(--size-700)); 
+  --font-4: clamp(var(--size-700), 3.5vw, var(--size-800)); 
+  --font-5: clamp(var(--size-800), 4vw, var(--size-900)); 
 
   /* Colors */
 
@@ -61,6 +61,7 @@
 
   /* Level-2 Variables */
   --ui-header-height: 3rem;
+  --input-background: var(--dark);
 }
 
 *,
@@ -87,10 +88,12 @@ body {
     "app"
 }
 
-input[type="text"] {
-  font-size: 1rem;
+input[type="text"], input[type="email"] {
+  font-size: var(--font-3);
   padding: 0.25rem 0.5rem;
   border: 1px solid rgb(var(--primary-rgb), 0.5);
+  background: var(--input-background);
+  color: var(--light);
 }
 
 .button, input[type="submit"], button {

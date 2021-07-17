@@ -21,14 +21,15 @@
     if($page.path !== '/') {
       namePromise = getFeedName();
     }
+    
+    window.addEventListener('sveltekit:navigation-end', (event) => {
+      console.log($page.path);
+      if($page.path !== '/') {
+        namePromise = getFeedName();
+      }
+    });
   });
 
-  window.addEventListener('sveltekit:navigation-end', (event) => {
-    console.log($page.path);
-    if($page.path !== '/') {
-      namePromise = getFeedName();
-    }
-  });
 </script>
 
 <header>

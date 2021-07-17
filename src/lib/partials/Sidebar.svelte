@@ -1,10 +1,24 @@
+<script context="module">
+  export const ssr = false;
+</script>
 <script>
   import { feeds } from '$data/feeds.js';
+  import { authed } from '$lib/stores/user.store.js';
   import Button from '$lib/components/Button.svelte';
 </script>
 
 <aside id="sidebar">
   <ul class="sidebar-menu">
+    {#if $authed}
+    <li class="sidebar-menu-item">
+      <Button buttonType="link" buttonStyle="iconText" iconName="listSettings" href="/settings" title="Customize Feed" />
+    </li>
+    {:else}
+    <li class="sidebar-menu-item">
+      <Button buttonType="link" buttonStyle="iconText" iconName="bolt" href="/signup" title="Sign Up" />
+    </li>
+    {/if}
+
     <li class="sidebar-menu-item">
       <Button buttonType="link" buttonStyle="iconText" iconName="feed" href="/" title="All Posts" /> 
     </li>
