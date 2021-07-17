@@ -130,13 +130,29 @@ input[type="email"]:valid {
 button:hover,
 input[type="submit"]:hover,
 .button:hover {
-  background:rgb(var(--accent-primary-rgb), 0.5);
+  background:rgb(var(--primary-rgb), 0.5);
 }
 
 .sr-only {
   width: 0;
   height: 0;
   overflow: hidden;
+}
+
+/* Focus */
+:focus {
+  outline: 2px solid;
+  outline-offset: -2px;
+  outline-color: var(--primary-light);
+}
+
+main:focus, body:focus {
+  outline: none;
+}
+
+img, video{
+  width: min(60rem, 100%);
+  height: min(60rem, 100%);
 }
 
 /* Headings */
@@ -190,22 +206,6 @@ h5 {
 
 [href]:focus {
   outline-offset: 2px;
-}
-
-/* Focus */
-:focus {
-  outline: 2px solid;
-  outline-offset: -2px;
-  outline-color: var(--accent-primary);
-}
-
-main:focus, body:focus {
-  outline: none;
-}
-
-img, video{
-  width: min(60rem, 100%);
-  height: min(60rem, 100%);
 }
 
 /* Misc */
@@ -301,7 +301,8 @@ select, .select:after {
 
 ::selection {
   color: var(--light);
-  background: var(--accent-primary);
+  background: var(--primary-light);
+  color: var(--darkdark);
 }
 
 .flow > * + * {
