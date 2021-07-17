@@ -1,6 +1,7 @@
 <script>
   import { authed } from '$lib/stores/user.store.js';
-  import Button from '$lib/components/Button.svelte';
+  import Logo from '$lib/components/Logo.svelte';
+
 
   async function handleSignup() {
     $authed = !$authed;
@@ -8,15 +9,7 @@
 </script>
 
 <section id="sign-up">
-  <svg
-    class="c"
-    viewBox="0 0 24 24"
-    fill-rule="evenodd"
-    clip-rule="evenodd"
-  >
-    <path fill="none" d="M0 0h24v24H0z"/>
-    <path d="M13 9h8L11 24v-9H4l9-15v9zm-2 2V7.22L7.532 13H13v4.394L17.263 11H11z"/>
-  </svg>
+  <Logo scale={2} />
   {#if !$authed}
   <div class="input-group">
     <label for="sign-up-input">Enter an email address to sign up.</label>
