@@ -15,7 +15,7 @@
     </li>
     {:else}
     <li class="sidebar-menu-item">
-      <Button buttonType="link" buttonStyle="iconText" iconName="bolt" href="/signup" title="Sign Up" />
+      <Button buttonType="link" buttonStyle="iconText" iconName="bolt" href="/login" title="Login" />
     </li>
     {/if}
 

@@ -90,15 +90,18 @@ body {
 
 
 input[type="text"], 
-input[type="email"] {
+input[type="email"],
+input[type="password"] {
   font-size: var(--font-3);
   padding: 0.25rem 0.5rem;
   border: 1px solid rgb(var(--primary-rgb), 0.5);
   background: var(--input-background);
+  color: var(--light);
 }
 
 input[type="email"]:focus, 
-input[type="text"]:focus{
+input[type="text"]:focus,
+input[type="password"]:focus {
   outline-color: var(--primary-light);
   color: var(--light);
 }

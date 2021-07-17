@@ -1,9 +1,9 @@
 <script>
-  export let scale = 1;
+  export let scale = 2;
 </script>
 
-<div class="logo" style="transform: scale({scale})">
-  <svg viewBox="0 0 667 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+<div class="logo" style="height: {scale}rem">
+  <svg viewBox="0 0 667 113" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-height: {scale}rem">
     <g class="letters">
 
       <path d="M124.04 111V18.264H198.2V43.32H158.888V51.672H192.728V77.592H158.888V111H124.04Z" fill="#118AB2"/>
@@ -22,11 +22,4 @@
 </div>
 
 <style>
-  .logo {
-    transform-origin: center center;
-  }
-  .logo, svg {
-    max-height: var(--size-700);
-  }
-
 </style>
