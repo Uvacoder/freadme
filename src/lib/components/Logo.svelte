@@ -1,8 +1,8 @@
 <script>
-
+  export let scale = 1;
 </script>
 
-<div class="logo">
+<div class="logo" style="transform: scale({scale})">
   <svg viewBox="0 0 667 113" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g class="letters">
 
@@ -22,6 +22,9 @@
 </div>
 
 <style>
+  .logo {
+    transform-origin: center center;
+  }
   .logo, svg {
     max-height: var(--size-700);
   }
