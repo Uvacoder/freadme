@@ -1,5 +1,5 @@
 {
-	"name": "~TODO~",
+	"name": "feedme",
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "concurrently \"svelte-kit dev --host\" \"nodemon server.cjs\"",
