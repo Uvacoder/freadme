@@ -5,5 +5,3 @@
 <script>
   // Something should go here
 </script>
-
-<h2>Settings</h2>

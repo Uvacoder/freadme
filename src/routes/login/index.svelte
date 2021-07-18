@@ -1,50 +1,82 @@
 <script>
   import { onMount } from 'svelte';
+  import { session } from '$app/stores';
   import { authed } from '$lib/stores/user.store.js';
   import supabase from '$lib/db.js';
   import Logo from '$lib/components/Logo.svelte';
+
   let email = '';
   let password = '';
-  let session = supabase.auth.session();
-  let user = supabase.auth.user();
-
+  let errorMessage;
+  let successMessage;
 
   async function handleSignup() {
-    const { user, session, error } = await supabase.auth.signUp({
+    const { user, session: supaBaseSession, error } = await supabase.auth.signUp({
       email: email,
       password: password
     })
 
-    console.log('error', error);
-    $authed = !$authed;
+    if(error) {
+      errorMessage = error.message;
+    } else {
+      successMessage = "Success! Your account was created!";
+      $authed = true;
+    }
+    
   }
-  onMount(() => {
-    console.log('user: ', user);
-    console.log('session: ', session);
-  })
 
+  async function handleSignin() {
+    const { user, session: supaBaseSession, error } = await supabase.auth.signIn({
+      email: email,
+      password: password
+    });
+
+    if(error) {
+      errorMessage = error.message;
+    } else {
+      successMessage = "Success! You're logged in!";
+      $authed = true;
+    }
+  }
+
+  function resetFormValues() {
+    email = '';
+    password = '';
+  }
 </script>
 
 <section id="sign-in">
   <Logo scale={4} />
   <div class="form">
     <div class="input-group">
-      <label for="sign-in-email" id="email-label">Enter an email address</label>
+      <label for="sign-in-email" id="email-label">Email</label>
       <input type="email" id="sign-in-email" placeholder="Email" bind:value={email}>
     </div>
     <div class="input-group">
-      <label for="sign-in-password" id="password-label">Enter a password</label>
+      <label for="sign-in-password" id="password-label">Password</label>
       <input type="password" id="sign-in-password" placeholder="Password" bind:value={password}>
     </div>
-    <button on:click={handleSignup}>Sign In</button>
+    <div class="button-row">
+      <button on:click={handleSignup}>Create Account</button>
+        <span>or</span>
+      <button on:click={handleSignin}>Sign In</button>
+    </div>
   </div>
+
+  {#if errorMessage}
+  <h3 class="error">{errorMessage}</h3>
+  {/if}
+  
+  {#if successMessage}
+  <h3 class="success">{successMessage}</h3>
+  {/if}
 </section>
 
 <style>
   #sign-in {
     display: flex;
     flex-direction: column;
-    gap: var(--space-700);
+    gap: var(--space-600);
     align-items: center;
     min-height: 100%;
     margin-top: var(--space-700);
@@ -55,24 +87,35 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: var(--space-600);
+    gap: var(--space-500);
   }
   .input-group {
     display: flex;
     flex-direction: column;
-    gap: var(--size-500);
+    gap: 0.5rem;
   }
-  button {
-    order: 5;
+  .input-group label {
+    font-size: var(--font-2);
+  }
+  .button-row {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  button, input[type="submit"] {
     font-size: var(--font-3);
   }
 
-  .input-group input {
-    order: 1;
+  .error, .success {
+    font-size: var(--font-2);
   }
-  .input-group label {
-    order: 2;
-    font-size: var(--font-3);
+
+  .error {
+    color: var(--accent-primary);
+  }
+
+  .success {
+    color: var(--accent-secondary);
   }
 
 </style>

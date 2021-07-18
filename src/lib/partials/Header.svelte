@@ -3,12 +3,14 @@
   import { onMount } from 'svelte';
   import Logo from '../components/Logo.svelte';
   let namePromise;
-
+  
   const getFeedName = async () => {
     const pathArray = $page.path.split('/');
     const slug = pathArray[pathArray.length - 1];
-    const response = await fetch(`http://localhost:8080/subscriptions/${slug}`);
+    console.log('slug: ', slug);
 
+    const response = await fetch(`http://localhost:8080/subscriptions/${slug}`);
+      
     if(response.ok) {
       const data = await response.json();
       return data.name;
@@ -21,7 +23,7 @@
     if($page.path !== '/') {
       namePromise = getFeedName();
     }
-    
+
     window.addEventListener('sveltekit:navigation-end', (event) => {
       console.log($page.path);
       if($page.path !== '/') {
@@ -38,16 +40,20 @@
       <a href="#main-content" class="button focused-only" id="skip-link">Skip to Content</a>
       <h1 class="sr-only" id="page-label">FreedMe - The Easy Feed Reader</h1>
     </div>
-    {#if $page.path !== '/'}
+    {#if $page.path === '/'}
+    <h2>All Posts</h2>
+    {:else if $page.path === '/settings'}
+    <h2>Settings</h2>
+    {:else if $page.path === '/login'}
+    <h2>Log In</h2>
+    {:else}
     {#await namePromise}
       <h2>&nbsp;</h2>
       {:then name}
       <h2>{name}</h2>
       {:catch error}
       <h2>{error.message}</h2>
-      {/await}
-    {:else}
-    <h2>All Posts</h2>
+    {/await}
     {/if}
   </div>
   <div class="sidebar-section">

@@ -1,7 +1,27 @@
 <script>
+  import { browser } from '$app/env';
+  import { session } from '$app/stores';
+  import { authed } from '$lib/stores/user.store.js';
   import '../lib/style/global.css';
+  import supabase from '$lib/db.js';
   import Sidebar from '../lib/partials/Sidebar.svelte';
   import Header from '../lib/partials/Header.svelte';
+
+  if(browser) {
+    $session = supabase.auth.session();
+
+    supabase.auth.onAuthStateChange((event, supaBaseSession) => {
+      $session = supaBaseSession;
+    });
+
+    if($session.user.aud === 'authenticated') {
+      $authed = true;
+    } else {
+      $authed = false;
+    }
+    
+    console.log($session);
+  }
 
 </script>
 
