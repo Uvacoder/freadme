@@ -28,6 +28,7 @@
 </script>
 
 <Header />
+
 <section class="app">
   <main id="main-content" class="posts" tabindex="0" aria-label="All Posts" role="main">
     <slot></slot>
@@ -46,24 +47,28 @@
   }
   main {
     position: absolute;
-    top: calc(var(--ui-header-height) * 2);
+    top: calc(var(--ui-header-height) * 3);
     left: 0;
     right: 0;
     bottom: 0;
+    /* z-index: -1; */
   }
 
   #sidebar {
-    position: absolute;
-    top: calc(var(--ui-header-height) * 2);
+    position: fixed;
+    top: calc((var(--ui-header-height) * 2) - 0.75rem);
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--dark);
+    /* width: 100vw; */
     order: 1;
     border-inline-end: 1px solid rgb(var(--primary-rgb), 0.5);
     display: flex;
     flex-direction: column;
-    transform: translateX(-100%);
+    z-index: 100;
+    /* pointer-events: none; */
+  }
+
+  :global(#sidebar > .sidebar-menu), :global(#sidebar > .menu-button) {
+    pointer-events: all;
   }
   #main-content:focus, #main-content:focus-within {
     outline: 2px solid rgb(var(--primary-rgb), 0.5);
@@ -96,6 +101,7 @@
       flex-basis: 20rem;
       flex-grow: 1;
       transform: unset;
+      margin-top: var(--ui-header-height);
     }
   }
 </style>

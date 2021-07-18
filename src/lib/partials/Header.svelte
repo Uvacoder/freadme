@@ -148,7 +148,6 @@
     display: flex;
     gap: 1rem;
   }
-
   @media screen and (min-width: 768px) {
     header {
       /* position: relative; */
