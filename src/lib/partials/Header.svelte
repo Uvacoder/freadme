@@ -2,6 +2,7 @@
   import { getStores, navigating, page, session } from '$app/stores';
   import { onMount } from 'svelte';
   import Logo from '../components/Logo.svelte';
+  import Button from '$lib/components/Button.svelte';
   let namePromise;
   
   const getFeedName = async () => {
@@ -40,27 +41,41 @@
       <a href="#main-content" class="button focused-only" id="skip-link">Skip to Content</a>
       <h1 class="sr-only" id="page-label">FreedMe - The Easy Feed Reader</h1>
     </div>
-    {#if $page.path === '/'}
-    <h2>All Posts</h2>
-    {:else if $page.path === '/settings'}
-    <h2>Settings</h2>
-    {:else if $page.path === '/login'}
-    <h2>Log In</h2>
-    {:else}
-    {#await namePromise}
+
+    <div class="title">
+      {#if $page.path === '/'}
+      <h2>All Posts</h2>
+      {:else if $page.path === '/settings'}
+      <h2>Settings</h2>
+      {:else if $page.path === '/login'}
+      <h2>Log In</h2>
+      {:else}
+      {#await namePromise}
       <h2>&nbsp;</h2>
       {:then name}
       <h2>{name}</h2>
       {:catch error}
       <h2>{error.message}</h2>
-    {/await}
-    {/if}
+      {/await}
+      {/if}
+    </div>
+
+    <div class="control">
+      <div class="header-button">
+        <Button title="Log Out" buttonType="button" buttonStyle="iconText" iconName="logOut" />
+      </div>
+      <div class="header-button">
+        <Button title="Settings" buttonType="button" buttonStyle="iconText" iconName="settings" />
+      </div>
+    </div>
   </div>
+
   <div class="sidebar-section">
     <a href="/" aria-labelledby="page-label" id="brand">
       <Logo />
     </a>
   </div>
+
 </header>
 
 <style>
@@ -73,29 +88,39 @@
     height: var(--ui-header-height);
     overflow: hidden;
   }
+
+  header > * {
+    align-items: center;
+  }
   .main-section, .sidebar-section {
     padding: 0.5rem;
   }
   .main-section {
     display: flex;
     order: 2;
+    justify-content: space-between;
     flex-basis: 0;
     flex-grow: 999;
     min-width: 50%;
+    padding-inline: 1rem;
   }
   .sidebar-section {
+    display: flex;
+    align-items: flex-start;
     order: 1;
     flex-basis: 20rem;
     flex-grow: 1;
     border-right: 1px solid rgb(var(--primary-rgb), 0.5);
   }
-  .skip-section {
-    order: 2;
-  }
   .title {
     order: 1;
   }
-  nav {
+  .skip-section {
+    order: 2;
+  }
+  .control {
     order: 3;
+    display: flex;
+    gap: 1rem;
   }
 </style>
