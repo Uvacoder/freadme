@@ -58,12 +58,12 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--darkdark);
+    background: var(--dark);
     order: 1;
     border-inline-end: 1px solid rgb(var(--primary-rgb), 0.5);
     display: flex;
     flex-direction: column;
-    transform: translateX(-100%);
+    /* transform: translateX(-100%); */
   }
   #main-content:focus, #main-content:focus-within {
     outline: 2px solid rgb(var(--primary-rgb), 0.5);
@@ -89,6 +89,7 @@
       flex-grow: 999;
       min-width: 50%;
       max-height: 100%;
+      margin-top: var(--ui-header-height);
     }
     #sidebar {
       position: unset;

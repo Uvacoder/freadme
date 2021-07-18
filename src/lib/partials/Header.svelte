@@ -151,7 +151,7 @@
 
   @media screen and (min-width: 768px) {
     header {
-      position: relative;
+      /* position: relative; */
       height: var(--ui-header-height);
       grid-area: header;
       flex-direction: row;
