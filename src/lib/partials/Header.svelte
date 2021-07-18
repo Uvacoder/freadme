@@ -1,5 +1,6 @@
 <script>
   import { getStores, navigating, page, session } from '$app/stores';
+  import { goto } from '$app/navigation';
   import { authed } from '$lib/stores/user.store.js';
   import supabase from '$lib/db.js';
   import { onMount } from 'svelte';
@@ -23,7 +24,13 @@
   };
 
   const signOut = async () => {
-    const { errr } = await supabase.auth.signOut();
+    const { error } = await supabase.auth.signOut();
+    if(error) {
+      console.log(error);
+    } else {
+      $authed = false;
+    }
+    goto('/');
   }
 
   onMount(() => {

@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import { session } from '$app/stores';
+  import { goto } from '$app/navigation';
   import { authed } from '$lib/stores/user.store.js';
   import supabase from '$lib/db.js';
   import Logo from '$lib/components/Logo.svelte';
@@ -22,7 +23,7 @@
       successMessage = "Success! Your account was created!";
       $authed = true;
     }
-    
+    goto('/');
   }
 
   async function handleSignin() {
@@ -37,6 +38,7 @@
       successMessage = "Success! You're logged in!";
       $authed = true;
     }
+    goto('/');
   }
 
   function resetFormValues() {

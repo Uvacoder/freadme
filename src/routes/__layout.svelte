@@ -1,6 +1,7 @@
 <script>
   import { browser } from '$app/env';
   import { session } from '$app/stores';
+  import { goto } from '$app/navigation';
   import { authed } from '$lib/stores/user.store.js';
   import '../lib/style/global.css';
   import supabase from '$lib/db.js';
@@ -20,6 +21,7 @@
       $authed = false;
     }
     
+    goto('/');
     console.log($session);
   }
 
