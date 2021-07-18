@@ -126,7 +126,6 @@
     flex-basis: 0;
     flex-grow: 999;
     min-width: 50%;
-    padding-inline: 1rem;
   }
   .sidebar-section {
     display: flex;
@@ -138,7 +137,7 @@
     order: 1;
   }
   .title h2 {
-    font-size: var(--font-3);
+    font-size: var(--font-1);
   }
   .skip-section {
     order: 2;
