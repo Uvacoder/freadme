@@ -41,7 +41,7 @@
     --flow-space: var(--size-700);
     display: flex;
     flex-direction: column;
-    padding: var(--space-500);
+    /* padding: var(--space-500); */
   }
   .post:focus-within, .post:focus {
     outline-color: transparent;

@@ -10,7 +10,7 @@
 
   // api reqs here
   const getAllFeeds = async() => {
-    const response = await fetch('http://localhost:8080/feeds');
+    const response = await fetch('http://192.168.0.3:8080/feeds');
 
     if(response.ok) {
       

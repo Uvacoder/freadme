@@ -1,4 +1,5 @@
 const fastify = require('fastify');
+const cors = require('cors');
 const Parser = require('rss-parser');
 
 /* Dummy feed addresses until we setup some sort of DB */
@@ -33,14 +34,16 @@ const subscriptions = [
 const parser = new Parser();
 
 const app = fastify();
+// const app = express();
 
-app.register(require('fastify-cors'), {
-  origin: true
-});
+// app.use(cors({orogin: true}));
+
+app.register(require('fastify-cors'), {origin: true});
 
 
 /* GET Requests */
 app.get('/feeds', async (request, reply) => {
+  console.log('headers: ', request.headers);
   const allFeedsPromise = subscriptions.map( async(subscription) => {
     return await parser.parseURL(subscription.url);
   });
@@ -70,4 +73,4 @@ app.get('/subscriptions/:slug', (request, reply) => {
 
 /* DELETE requests */
 
-app.listen(8080).then(() => console.log("Server listening at http://localhost:8080\n\n:rocket: LET'S GOOOO :rocket:"));
+app.listen(8080, '0.0.0.0').then((address) => console.log(`Server listening at ${address}\n\n🚀 LET'S GOOOO 🚀`));

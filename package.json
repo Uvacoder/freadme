@@ -2,23 +2,26 @@
 	"name": "feedme",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "concurrently \"svelte-kit dev --host\" \"nodemon server.cjs\"",
+		"dev": "svelte-kit dev --host",
+		"dev:server": "concurrently \"svelte-kit dev --host\" \"nodemon server.cjs\"",
 		"build": "svelte-kit build",
 		"preview": "svelte-kit preview",
 		"lint": "prettier --check --plugin-search-dir=. .",
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
+		"@supabase/supabase-js": "^1.8.0",
 		"@sveltejs/kit": "next",
 		"mdsvex": "^0.9.7",
 		"prettier": "~2.2.1",
 		"prettier-plugin-svelte": "^2.2.0",
-		"svelte": "^3.34.0",
-		"@supabase/supabase-js": "^1.8.0"
+		"svelte": "^3.34.0"
 	},
 	"type": "module",
 	"dependencies": {
 		"concurrently": "^6.2.0",
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
 		"fastify": "^3.19.1",
 		"fastify-cors": "^6.0.2",
 		"hljs": "^6.2.3",

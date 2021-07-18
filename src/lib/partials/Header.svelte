@@ -13,7 +13,7 @@
     const slug = pathArray[pathArray.length - 1];
     console.log('slug: ', slug);
 
-    const response = await fetch(`http://localhost:8080/subscriptions/${slug}`);
+    const response = await fetch(`http://192.168.0.3:8080/subscriptions/${slug}`);
       
     if(response.ok) {
       const data = await response.json();
@@ -137,7 +137,7 @@
     order: 1;
   }
   .title h2 {
-    font-size: var(--font-1);
+    font-size: var(--font-2);
   }
   .skip-section {
     order: 2;

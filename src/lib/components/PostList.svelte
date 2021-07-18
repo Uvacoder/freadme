@@ -12,4 +12,10 @@
   :global(.post-list details:nth-child(2n)) {
     background-color: var(--darkdark);
   }
+  :global(.post-list details:nth-child(2n):hover) {
+    background-color: rgb(var(--primary-rgb), 0.1);
+  }
+  :global(.post-list details:nth-child(2n+1):hover) {
+    background-color: rgb(var(--primary-rgb), 0.1);
+  }
 </style>
