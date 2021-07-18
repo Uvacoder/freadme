@@ -39,19 +39,20 @@
 <style>
    .post {
     --flow-space: var(--size-700);
-    border-bottom: 1px solid rgb(var(--primary-rgb), 0.5);
     display: flex;
     flex-direction: column;
-    padding: var(--spzce-500);
+    padding: var(--space-500);
   }
   .post:focus-within, .post:focus {
-    /* background: rgb(var(--darkdark-rgb), 0.5); */
     outline-color: transparent;
   }
   .post *:focus {
-    /* background: rgb(var(--darkdark-rgb), 0.7); */
     outline: 2px solid var(--accent-primary);
     outline-offset: -2px;
+  }
+
+  .post  * {
+    background: transparent;
   }
 
   .post-header {
