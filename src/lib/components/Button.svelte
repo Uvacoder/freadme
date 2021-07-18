@@ -78,6 +78,9 @@
     gap: 1em;
     color: currentColor;
   }
+  .button:visited {
+    color: var(--light);
+  }
   img {
     width: 1em;
     height: 1em;

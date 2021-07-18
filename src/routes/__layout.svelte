@@ -14,7 +14,7 @@
       $session = supaBaseSession;
     });
 
-    if($session.user.aud === 'authenticated') {
+    if($session?.user.aud === 'authenticated') {
       $authed = true;
     } else {
       $authed = false;

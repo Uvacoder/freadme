@@ -1,5 +1,7 @@
 <script>
   import { getStores, navigating, page, session } from '$app/stores';
+  import { authed } from '$lib/stores/user.store.js';
+  import supabase from '$lib/db.js';
   import { onMount } from 'svelte';
   import Logo from '../components/Logo.svelte';
   import Button from '$lib/components/Button.svelte';
@@ -19,6 +21,10 @@
       throw new Error(response);
     }
   };
+
+  const signOut = async () => {
+    const { errr } = await supabase.auth.signOut();
+  }
 
   onMount(() => {
     if($page.path !== '/') {
@@ -61,13 +67,20 @@
     </div>
 
     <div class="control">
-      <div class="header-button">
+      {#if $authed}
+      <div class="header-button" on:click={signOut}>
         <Button title="Log Out" buttonType="button" buttonStyle="iconText" iconName="logOut" />
       </div>
       <div class="header-button">
-        <Button title="Settings" buttonType="button" buttonStyle="iconText" iconName="settings" />
+        <Button title="Settings" buttonType="link" href="/settings" buttonStyle="iconText" iconName="settings" />
       </div>
+      {:else}
+      <div class="header-button" on:click={signOut}>
+        <Button title="Log In" buttonType="link" href="/login" buttonStyle="iconText" iconName="logIn" />
+      </div>
+      {/if}
     </div>
+
   </div>
 
   <div class="sidebar-section">
