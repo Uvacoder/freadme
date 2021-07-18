@@ -19,9 +19,10 @@
   --size-900: calc(var(--size-800) * var(--scale-up));
 
   /* Responsive General Sizes */
-  --space-500: clamp(1rem, 2vw, 2rem);
-  --space-600: clamp(2rem, 3vw, 3rem);
-  --space-700: clamp(3rem, 5vw, 4rem);
+  --space-500: clamp(var(--size-500), 2vw, var(--size-600));
+  --space-600: clamp(var(--size-600), 3vw, var(--size-700));
+  --space-700: clamp(var(--size-700), 5vw, var(--size-800));
+  --space-800: clamp(var(--size-800), 7vw, var(--size-900));
 
   /* Responsive font Sizes */
   --font-0: clamp(var(--size-300), 1vw, var(--size-400));
@@ -76,16 +77,16 @@
 }
 
 body {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header"
+    "app";
   font-family: var(--body);
   color: var(--light);
   min-height: 100vh;
   background: var(--dark);
   line-height: 1.5;
-  display: grid;
-  grid-template-rows: auto 1fr;
-  grid-template-areas:
-    "header"
-    "app"
 }
 
 
@@ -126,7 +127,7 @@ input[type="email"]:valid {
   background: rgb(var(--primary-rgb), 0.2);
   color: var(--light);
   text-decoration: none;
-  font-size: var(--size-500);
+  font-size: var(--font-1);
   font-weight: 500;
   cursor: pointer;
 }
@@ -174,27 +175,27 @@ h2 {
 }
 
 h1 {
-  font-size: var(--size-900);
+  font-size: var(--font-5);
   /* max-width: 15ch; */
 }
 
 h2 {
-  font-size: var(--size-800);
+  font-size: var(--font-4);
   /* max-width: 25ch; */
 }
 
 h3 {
-  font-size: var(--size-700);
+  font-size: var(--font-3);
   font-weight: 800;
   /* max-width: 25ch; */
 }
 
 h4 {
-  font-size: var(--size-600);
+  font-size: var(--font-2);
   font-weight: 700;
 }
 h5 {
-  font-size: var(--size-600);
+  font-size: var(--font-1);
   font-weight: 600;
 }
 

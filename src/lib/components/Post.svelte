@@ -42,14 +42,14 @@
     border-bottom: 1px solid rgb(var(--primary-rgb), 0.5);
     display: flex;
     flex-direction: column;
-    padding: 0.5rem 0 0.5rem 1rem;
+    padding: var(--spzce-500);
   }
   .post:focus-within, .post:focus {
-    background: rgb(var(--darkdark-rgb), 0.5);
+    /* background: rgb(var(--darkdark-rgb), 0.5); */
     outline-color: transparent;
   }
   .post *:focus {
-    background: rgb(var(--darkdark-rgb), 0.7);
+    /* background: rgb(var(--darkdark-rgb), 0.7); */
     outline: 2px solid var(--accent-primary);
     outline-offset: -2px;
   }
@@ -73,13 +73,17 @@
     display: flex;
     gap: 1rem;
     align-items: center;
+    font-size: var(--font-1);
+    width: 0;
+    height: 0;
+    overflow: hidden;
   }
   .feed-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1.33rem;
-    height: 1.33rem;
+    width: var(--space-500);
+    height: var(--space-500);
   }
   .post-meta {
     display: flex;
@@ -89,11 +93,8 @@
     letter-spacing: 0.125rem;
   }
   .post-title {
-    margin-inline: 2.33rem;
-  }
-  .post-title {
     order: 1;
-    font-size: var(--size-600);
+    font-size: var(--font-2);
     margin-top: 0;
     line-height: 1.5;
   }
@@ -123,5 +124,16 @@
   }
   :global(.post ul li li), :global(.post ol li li) {
     margin-inline-start: 2rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    .post {
+      padding: 0.5rem 0 0.5rem 1rem;
+    }
+    .post-info {
+      width: unset;
+      height: unset;
+      overflow: auto;
+    }
   }
 </style>

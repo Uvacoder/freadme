@@ -12,6 +12,7 @@
   let successMessage;
 
   async function handleSignup() {
+    clearMessages();
     const { user, session: supaBaseSession, error } = await supabase.auth.signUp({
       email: email,
       password: password
@@ -23,10 +24,13 @@
       successMessage = "Success! Your account was created!";
       $authed = true;
     }
-    goto('/');
+    setTimeout(() => {
+      goto('/');
+    }, 500);
   }
 
   async function handleSignin() {
+    clearMessages();
     const { user, session: supaBaseSession, error } = await supabase.auth.signIn({
       email: email,
       password: password
@@ -38,7 +42,14 @@
       successMessage = "Success! You're logged in!";
       $authed = true;
     }
-    goto('/');
+    setTimeout(() => {
+      goto('/');
+    }, 500);
+  }
+
+  function clearMessages() {
+    errorMessage = '';
+    successMessage = '';
   }
 
   function resetFormValues() {

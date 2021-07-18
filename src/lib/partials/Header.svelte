@@ -100,13 +100,17 @@
 
 <style>
   header {
-    grid-area: header;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     border-bottom: 1px solid rgb(var(--primary-rgb), 0.5);
-    height: var(--ui-header-height);
     overflow: hidden;
+    background-color: var(--dark);
   }
 
   header > * {
@@ -130,10 +134,13 @@
     order: 1;
     flex-basis: 20rem;
     flex-grow: 1;
-    border-right: 1px solid rgb(var(--primary-rgb), 0.5);
+    border-bottom: 1px solid rgb(var(--primary-rgb), 0.5);
   }
   .title {
     order: 1;
+  }
+  .title h2 {
+    font-size: var(--font-3);
   }
   .skip-section {
     order: 2;
@@ -142,5 +149,17 @@
     order: 3;
     display: flex;
     gap: 1rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    header {
+      position: relative;
+      height: var(--ui-header-height);
+      grid-area: header;
+    }
+    .sidebar-section {
+      border-bottom: none;
+      border-right: 1px solid rgb(var(--primary-rgb), 0.5);
+    }
   }
 </style>

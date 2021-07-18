@@ -27,7 +27,7 @@
     order: 2;
     padding: 1rem;
     border-top: 1px solid rgb(var(--primary-rgb), 0.5);
-    min-height: 30rem;
-    overflow: hidden;
+    max-width: 98vw;
+    overflow: auto;
   }
 </style>

@@ -32,23 +32,38 @@
   <main id="main-content" class="posts" tabindex="0" aria-label="All Posts" role="main">
     <slot></slot>
   </main>
-  <Sidebar />
+  <aside id="sidebar">
+    <Sidebar />
+  </aside>
 </section>
 
 <style>
   .app {
-    display: flex;
-    flex-wrap: wrap;
     grid-area: app;
+    position: relative;
+    /* display: flex;
+    flex-direction: column; */
   }
   main {
-    position: relative;
-    order: 2;
-    flex-basis: 0;
-    flex-grow: 999;
-    min-width: 50%;
-    max-height: 100%;
-    overflow-y: scroll;
+    position: absolute;
+    top: calc(var(--ui-header-height) * 2);
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  #sidebar {
+    position: absolute;
+    top: calc(var(--ui-header-height) * 2);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--darkdark);
+    order: 1;
+    border-inline-end: 1px solid rgb(var(--primary-rgb), 0.5);
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
   }
   #main-content:focus, #main-content:focus-within {
     outline: 2px solid rgb(var(--primary-rgb), 0.5);
@@ -60,5 +75,26 @@
   .posts:focus {
     /* outline: 2px solid var(--accent-primary); */
     outline-offset: -2px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .app {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    main {
+      position: unset;
+      order: 2;
+      flex-basis: 0;
+      flex-grow: 999;
+      min-width: 50%;
+      max-height: 100%;
+    }
+    #sidebar {
+      position: unset;
+      flex-basis: 20rem;
+      flex-grow: 1;
+      transform: unset;
+    }
   }
 </style>

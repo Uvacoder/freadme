@@ -3,7 +3,10 @@
   export let posts = [];
 </script>
 
-
-{#each posts as post}
+  {#each posts as post}
   <Post {post} />
-{/each}
+  {/each}
+
+<style>
+
+</style>
