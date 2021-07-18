@@ -63,7 +63,7 @@
     border-inline-end: 1px solid rgb(var(--primary-rgb), 0.5);
     display: flex;
     flex-direction: column;
-    /* transform: translateX(-100%); */
+    transform: translateX(-100%);
   }
   #main-content:focus, #main-content:focus-within {
     outline: 2px solid rgb(var(--primary-rgb), 0.5);
