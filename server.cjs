@@ -67,27 +67,27 @@ app.get('/subscriptions/:slug', (request, reply) => {
 
 app.post('/feeds', async (request, reply) => {
   // console.log(request.body.url);
-  const feedResponse = await parser.parseURL(request.body.url);
-  // console.log(feedResponse);
+  try {
 
-  if(!feedResponse.ok) {
+    const feedResponse = await parser.parseURL(request.body.url);
+    
     return {
-      ok: false,
-      error: new Error(feedResponse.error)
+      name: feedResponse.title,
+      image: feedResponse?.image?.link,
+      description: feedResponse?.description,
+      link: feedResponse?.link,
+      categories: feedResponse?.entries,
+      slug: feedResponse.title.toLowerCase().replace(' ', '-')
+    };
+    
+  } catch(error) {
+    if(!feedResponse.ok) {
+      return {
+        ok: false,
+        error: new Error(feedResponse.error)
+      }
     }
   }
-
-  const feedInfo = {
-    name: feedResponse.title,
-    image: feedResponse?.image?.link,
-    description: feedResponse?.description,
-    link: feedResponse?.link,
-    categories: feedResponse?.entries,
-    slug: feedResponse.title.toLowerCase().replace(' ', '-')
-  };
-
-  console.log(feedInfo);
-  return feedInfo;
 });
 
 /* POST requests */
