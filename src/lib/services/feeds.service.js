@@ -1,16 +1,21 @@
 import supabase from '../db.js';
 
 export const addFeed = async (feedInfo) => {
+
   const { data, error } = await supabase()
     .from('feeds')
-    .upsert(feed);
-
+    .insert(feedInfo);
+  
+  console.table(data);
+  
   if(error) {
+    console.error(error.message);
     return {
       ok: false,
-      error: new Error(error.message)
+      error
     }
   }
+  
   return data;
 };
 

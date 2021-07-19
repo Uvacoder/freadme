@@ -22,7 +22,8 @@
       }); 
       // console.log(response);
       const data = await response.json();
-      console.log(data);
+      
+      addFeed(data);
     } catch(error) {
       console.error(error);
       error = error?.message;
