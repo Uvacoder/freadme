@@ -29,6 +29,7 @@
 
   onMount(async() => {
     const feedResponse = await getFeeds();
+    console.log(feedResponse);
     if(!feedResponse) {
       // goto('/login');
       const subResponse = await fetch('http://localhost:8080/subscriptions');

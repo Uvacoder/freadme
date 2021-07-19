@@ -70,10 +70,11 @@ app.post('/feeds', async (request, reply) => {
   try {
 
     const feedResponse = await parser.parseURL(request.body.url);
+    const name = request.body.name !== '' || request.body.name !== undefined ? request.body.name : feedResponse.name;
     
     return {
-      name: feedResponse.title,
-      image: feedResponse?.image?.link,
+      name: name,
+      image: feedResponse.image?.url,
       description: feedResponse?.description,
       link: feedResponse?.link,
       categories: feedResponse?.entries,

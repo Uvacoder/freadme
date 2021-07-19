@@ -14,13 +14,15 @@ export const addFeed = async (feedInfo) => {
 
   console.log('newFeed: ', newFeed);
 
-  const { data, error } = await supabase().from('feeds').insert([newFeed], {returning: 'minimal'});
+  const { data, error } = await supabase
+    .from('feeds')
+    .insert(newFeed, {upsert: true});
   
-  // console.log(data);
+  console.log(data);
   
-  // if(error) throw error;
+  if(error) throw error;
   
-  // return data;
+  return data;
 };
 
 export const getFeeds = async () => {
@@ -28,7 +30,7 @@ export const getFeeds = async () => {
 
   if(error) {
     if(error.status === 'Invalid authentication credentials') {
-      
+
     }
   }
 
