@@ -11,9 +11,8 @@
   const getFeedName = async () => {
     const pathArray = $page.path.split('/');
     const slug = pathArray[pathArray.length - 1];
-    console.log('slug: ', slug);
 
-    const response = await fetch(`http://192.168.0.3:8080/subscriptions/${slug}`);
+    const response = await fetch(`http://localhost:8080/subscriptions/${slug}`);
       
     if(response.ok) {
       const data = await response.json();

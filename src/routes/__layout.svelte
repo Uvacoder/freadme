@@ -1,10 +1,13 @@
 <script>
+  import { onMount } from 'svelte';
   import { browser } from '$app/env';
   import { session } from '$app/stores';
   import { goto } from '$app/navigation';
   import { authed } from '$lib/stores/user.store.js';
+  import { feeds } from '$lib/stores/feeds.store.js';
   import '../lib/style/global.css';
   import supabase from '$lib/db.js';
+  import { getFeeds } from '$lib/services/feeds.service.js';
   import Sidebar from '../lib/partials/Sidebar.svelte';
   import Header from '../lib/partials/Header.svelte';
 
@@ -22,8 +25,13 @@
     }
     
     goto('/');
-    console.log($session);
+    // console.log($session);
   }
+
+  onMount(async() => {
+    $feeds = await getFeeds();
+    console.log($feeds);
+  });
 
 </script>
 

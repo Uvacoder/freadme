@@ -2,7 +2,7 @@
   export const ssr = false;
 </script>
 <script>
-  import { feeds } from '$data/feeds.js';
+  import { feeds } from '$lib/stores/feeds.store.js';
   import { authed } from '$lib/stores/user.store.js';
   import Button from '$lib/components/Button.svelte';
 </script>
@@ -14,7 +14,7 @@
   <ul class="sidebar-menu">
     {#if $authed}
     <li class="sidebar-menu-item">
-      <Button buttonType="link" buttonStyle="iconText" iconName="listSettings" href="/settings" title="Customize Feed" />
+      <Button buttonType="link" buttonStyle="iconText" iconName="listSettings" href="/settings" title="Customize Feeds" />
     </li>
     {:else}
     <li class="sidebar-menu-item">
@@ -25,7 +25,7 @@
     <li class="sidebar-menu-item">
       <Button buttonType="link" buttonStyle="iconText" iconName="feed" href="/" title="All Posts" /> 
     </li>
-    {#each feeds as feed}
+    {#each $feeds as feed}
       <li class="sidebar-menu-item">
         <Button buttonType="link" buttonStyle={feed.image ? 'imageText' : 'text'} image={feed.image ? feed.image : ''} href="/feed/{feed.slug}" title={feed.name} /> 
       </li>
@@ -80,7 +80,7 @@
 
 :global(.sidebar-menu-item > *) {
   /* height: var(--ui-header-height); */
-  font-size: var(--font-600);
+  font-size: var(--font-2);
   /* display: flex; */
   /* align-items: center; */
   /* justify-content: space-between; */
@@ -91,7 +91,6 @@
     position: unset;
     width: unset;
   }
-
   .menu-button {
     width: 0;
     height: 0;

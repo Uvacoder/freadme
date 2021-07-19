@@ -65,6 +65,28 @@ app.get('/subscriptions/:slug', (request, reply) => {
   return subscriptions.filter((subscription) => subscription.slug === request.params.slug)[0];
 });
 
+app.post('/feeds', async (request, reply) => {
+  console.log(request.body.url);
+  const feedResponse = await parser.parseURL(request.params.url);
+
+  if(!feedResponse.ok) {
+    return {
+      ok: false,
+      error: new Error(feedResponse.error)
+    }
+  }
+  const feedInfo = {
+    name: feed.title,
+    image: image?.link,
+    description: feed?.description,
+    link: feed?.link,
+    categories: feed?.entries,
+    slug: feed.title.toLowerCase().replace(' ', '-')
+  };
+
+  return feedInfo;
+});
+
 /* POST requests */
 
 
