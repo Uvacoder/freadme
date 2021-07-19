@@ -66,8 +66,9 @@ app.get('/subscriptions/:slug', (request, reply) => {
 });
 
 app.post('/feeds', async (request, reply) => {
-  console.log(request.body.url);
-  const feedResponse = await parser.parseURL(request.params.url);
+  // console.log(request.body.url);
+  const feedResponse = await parser.parseURL(request.body.url);
+  // console.log(feedResponse);
 
   if(!feedResponse.ok) {
     return {
@@ -75,15 +76,17 @@ app.post('/feeds', async (request, reply) => {
       error: new Error(feedResponse.error)
     }
   }
+
   const feedInfo = {
-    name: feed.title,
-    image: image?.link,
-    description: feed?.description,
-    link: feed?.link,
-    categories: feed?.entries,
-    slug: feed.title.toLowerCase().replace(' ', '-')
+    name: feedResponse.title,
+    image: feedResponse?.image?.link,
+    description: feedResponse?.description,
+    link: feedResponse?.link,
+    categories: feedResponse?.entries,
+    slug: feedResponse.title.toLowerCase().replace(' ', '-')
   };
 
+  console.log(feedInfo);
   return feedInfo;
 });
 

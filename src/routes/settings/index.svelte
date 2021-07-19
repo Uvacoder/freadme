@@ -6,31 +6,27 @@
   import { addFeed } from '$lib/services/feeds.service.js';
 
   let url;
+  let error;
+  let message;
 
   const newFeed = async () => {
-    const response = await fetch('http://localhost:8080/feeds', {
-      method: 'POST',
-      headers: {
-        'content-type': 'application/json',
-      },
-      body: JSON.stringify({
-        url: url
-      })
-    });
-
-    console.log(response);
-
-    if(!reponse.ok) {
-      return {
-        ok: false,
-        error: new Error(response.error?.message)
-      }
+    try {
+      const response = await fetch('http://localhost:8080/feeds', {
+        method: 'POST',
+        headers: {
+          'content-type': 'application/json',
+        },
+        body: JSON.stringify({
+          url: url
+        })
+      }); 
+      // console.log(response);
+      const data = await response.json();
+      // console.log(data);
+    } catch(error) {
+      console.error(error);
+      error = error?.message;
     }
-
-    const data = await response.json();
-
-    console.log(data);
-
   }
 </script>
 
