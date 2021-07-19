@@ -66,7 +66,7 @@ app.get('/subscriptions/:slug', (request, reply) => {
 });
 
 app.post('/feeds', async (request, reply) => {
-  // console.log(request.body.url);
+  
   try {
 
     const feedResponse = await parser.parseURL(request.body.url);
