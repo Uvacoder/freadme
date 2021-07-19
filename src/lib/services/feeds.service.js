@@ -2,28 +2,34 @@ import supabase from '../db.js';
 
 export const addFeed = async (feedInfo) => {
 
-  const { data, error } = await supabase()
-    .from('feeds')
-    .insert(feedInfo);
+  const { link, name, image, description, categories, slug } = feedInfo;
+  const newFeed = {
+    link,
+    name,
+    image: image || null,
+    description: description || null,
+    categories: categories || null,
+    slug,
+  };
+
+  console.log('newFeed: ', newFeed);
+
+  const { data, error } = await supabase().from('feeds').insert([newFeed], {returning: 'minimal'});
   
-  console.table(data);
+  // console.log(data);
   
-  if(error) {
-    console.error(error.message);
-    return {
-      ok: false,
-      error
-    }
-  }
+  // if(error) throw error;
   
-  return data;
+  // return data;
 };
 
 export const getFeeds = async () => {
   const { data, error } = await supabase.from('feeds').select();
 
   if(error) {
-    console.error(error);
+    if(error.status === 'Invalid authentication credentials') {
+      
+    }
   }
 
   return data

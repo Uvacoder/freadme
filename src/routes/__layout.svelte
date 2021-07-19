@@ -25,11 +25,16 @@
     }
     
     goto('/');
-    // console.log($session);
   }
 
   onMount(async() => {
-    $feeds = await getFeeds();
+    const feedResponse = await getFeeds();
+    if(!feedResponse) {
+      goto('/login');
+    } else {
+      $feeds = feedResponse;
+      goto('/');
+    }
     console.log($feeds);
   });
 
