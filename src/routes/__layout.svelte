@@ -11,29 +11,31 @@
   import Sidebar from '../lib/partials/Sidebar.svelte';
   import Header from '../lib/partials/Header.svelte';
 
-  if(browser) {
-    $session = supabase.auth.session();
+  // if(browser) {
+  //   $session = supabase.auth.session();
 
-    supabase.auth.onAuthStateChange((event, supaBaseSession) => {
-      $session = supaBaseSession;
-    });
+  //   supabase.auth.onAuthStateChange((event, supaBaseSession) => {
+  //     $session = supaBaseSession;
+  //   });
 
-    if($session?.user.aud === 'authenticated') {
-      $authed = true;
-    } else {
-      $authed = false;
-    }
+  //   if($session?.user.aud === 'authenticated') {
+  //     $authed = true;
+  //   } else {
+  //     $authed = false;
+  //   }
     
-    goto('/');
-  }
+  //   goto('/');
+  // }
 
   onMount(async() => {
     const feedResponse = await getFeeds();
     if(!feedResponse) {
-      goto('/login');
+      // goto('/login');
+      const subResponse = await fetch('http://localhost:8080/subscriptions');
+      const subData = await subResponse.json();
+      $feeds = [...subData];
     } else {
       $feeds = feedResponse;
-      goto('/');
     }
     console.log($feeds);
   });
