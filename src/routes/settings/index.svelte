@@ -4,7 +4,7 @@
 
 <script>
   import { addFeed } from '$lib/services/feeds.service.js';
-  import { feeds, feedObjects } from '$lib/stores/feeds.store.js';
+  import { feeds } from '$lib/stores/feeds.store.js';
 
   let url;
   let name;
@@ -27,10 +27,10 @@
       
       const persisted = await addFeed(data);
 
-      $feedObjects[persisted[0].feed_url] = persisted[0];
+      $feeds[persisted[0].feed_url] = persisted[0];
 
       updateFeedStore(persisted[0]);
-      console.log('$feedObjects', $feedObjects);
+      
     } catch(error) {
       console.error(error);
       error = error?.message;
@@ -39,7 +39,7 @@
 
   function updateFeedStore(inserted) {
     console.log('inserted: ', inserted);
-    $feeds = [...$feeds, inserted];
+    $feeds[inserted.slug] = inserted;
   }
 
 </script>
