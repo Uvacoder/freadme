@@ -27,6 +27,9 @@
       <h2 class="post-title">
         {post.title || ''}
       </h2>
+      <div class="post-control-icons">
+        *Add Icons Here!*
+      </div>
     </div>
     <div class="post-info">
       <div class="post-meta"><a href="{post.feedLink || ''}" tabindex="-1">{post.feedTitle || ''}</a>: <time>{new Date(post.pubDate).toLocaleString()}</time></div>
@@ -70,9 +73,10 @@
     flex-direction: column;
   }
   .post-header-control {
-    order: 2;
     display: flex;
-    gap: 3rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    order: 2;
     justify-content: space-between;
   }
 
@@ -104,6 +108,9 @@
     font-size: var(--font-2);
     margin-top: 0;
     line-height: 1.5;
+  }
+  .post-control-icons {
+    order: 2;
   }
   time {
     font-family: var(--sans);
