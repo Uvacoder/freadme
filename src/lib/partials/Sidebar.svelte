@@ -2,7 +2,7 @@
   export const ssr = false;
 </script>
 <script>
-  import { feeds, feedObjects } from '$lib/stores/feeds.store.js';
+  import { feeds } from '$lib/stores/feeds.store.js';
   import Button from '$lib/components/Button.svelte';
 </script>
 
@@ -18,7 +18,7 @@
     <li class="sidebar-menu-item">
       <Button buttonType="link" buttonStyle="iconText" iconName="feed" href="/" title="All Posts" /> 
     </li>
-    {#each Object.values($feedObjects) as feed}
+    {#each Object.values($feeds) as feed}
       <li class="sidebar-menu-item">
         <Button buttonType="link" buttonStyle={feed.image ? 'imageText' : 'text'} image={feed.image ? feed.image : ''} href="/feed/{feed.slug}" title={feed.name} /> 
       </li>

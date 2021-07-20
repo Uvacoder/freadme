@@ -4,7 +4,7 @@
   import { session } from '$app/stores';
   import { goto } from '$app/navigation';
   import { authed } from '$lib/stores/user.store.js';
-  import { feeds, feedObjects } from '$lib/stores/feeds.store.js';
+  import { feeds } from '$lib/stores/feeds.store.js';
   import '../lib/style/global.css';
   import supabase from '$lib/db.js';
   import { getFeeds } from '$lib/services/feeds.service.js';
@@ -36,11 +36,9 @@
       $feeds = [...subData];
     } else {
       feedResponse.forEach((feed) => {
-        $feedObjects[feed.slug] = feed;
+        $feeds[feed.slug] = feed;
       });
-      $feeds = feedResponse;
     }
-    console.log('$feedObjects: ', $feedObjects);
   });
 
 </script>
