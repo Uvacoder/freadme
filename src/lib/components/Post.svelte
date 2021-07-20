@@ -14,22 +14,24 @@
     class="post-header" 
     aria-label="{post.title || ''}. Press space or click to open content."
   >
+  <div class="post-image">
+    {#if post.feedImage}
+    <a href={post.feedLink || ''} tabindex="-1">
+      <img src="{post.feedImage || ''}" alt="{post.feedTitle || ''}" class="feed-image" tabindex="-1">
+    </a>
+    {/if}
+  </div>
+  <div class="post-header-content">
     <div class="post-header-control">
       <!-- <a href="#post-{post.guid}" class="button focused-only post-skip-content">Skip to Post Content</a> -->
       <h2 class="post-title">
-        <a href="{post.link || ''}" tabindex="0">{post.title || ''}</a>
+        {post.title || ''}
       </h2>
     </div>
     <div class="post-info">
-      <div class="post-image">
-        {#if post.feedImage}
-        <a href={post.feedLink || ''} tabindex="-1">
-          <img src="{post.feedImage || ''}" alt="{post.feedTitle || ''}" class="feed-image" tabindex="-1">
-        </a>
-        {/if}
-      </div>
       <div class="post-meta"><a href="{post.feedLink || ''}" tabindex="-1">{post.feedTitle || ''}</a>: <time>{new Date(post.pubDate).toLocaleString()}</time></div>
     </div>
+  </div>
   </summary>
   {#if open}
   <PostContent content={post["content:encoded"] || post.content} />
@@ -58,9 +60,14 @@
   .post-header {
     font-family: var(--sans);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     order: 1;
     padding: 0.5rem;
+    gap: 0.5rem;
+  }
+  .post-header-content {
+    display: flex;
+    flex-direction: column;
   }
   .post-header-control {
     order: 2;
@@ -73,7 +80,6 @@
     order: 1;
     display: flex;
     gap: 1rem;
-    align-items: center;
     font-size: var(--font-1);
     width: 0;
     height: 0;
