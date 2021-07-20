@@ -32,7 +32,7 @@
       </div>
     </div>
     <div class="post-info">
-      <div class="post-meta"><a href="{post.feedLink || ''}" tabindex="-1">{post.feedTitle || ''}</a>: <time>{new Date(post.pubDate).toLocaleString()}</time></div>
+      <div class="post-meta"><a href="{post.feedLink || ''}" tabindex="-1">{post.feedTitle || ''}</a>: <time>{new Date(post.pubDate).toLocaleDateString()}</time></div>
     </div>
   </div>
   </summary>
@@ -66,7 +66,7 @@
     flex-direction: row;
     order: 1;
     padding: 0.5rem;
-    gap: 0.5rem;
+    gap: 1rem;
   }
   .post-header-content {
     display: flex;
@@ -93,8 +93,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: var(--space-500);
-    height: var(--space-500);
+    width: var(--space-700);
+    height: var(--space-700);
   }
   .post-meta {
     display: flex;

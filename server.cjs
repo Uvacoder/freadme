@@ -1,31 +1,38 @@
 const fastify = require('fastify');
 const cors = require('cors');
 const Parser = require('rss-parser');
+const supa = require('@supabase/supabase-js');
+require('dotenv').config();
+
+const supabase = supa.createClient(
+  process.env.VITE_SUPABASE_URL,
+  process.env.VITE_SUPABASE_ANON_KEY
+)
 
 /* Dummy feed addresses until we setup some sort of DB */
 const subscriptions = [
   {
     name: 'CSS Tricks',
     slug: 'css-tricks',
-    url: 'https://css-tricks.com/feed',
+    feed_link: 'https://css-tricks.com/feed',
     image: 'https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/07/star.png?fit=32%2C32&ssl=1',
   },
   {
     name: 'The A11y Project',
     slug: 'the-a11y-project',
-    url: 'https://www.a11yproject.com/feed/feed.xml',
+    feed_link: 'https://www.a11yproject.com/feed/feed.xml',
     image: ''
   },
   {
     name: 'Smashing Magazine',
     slug: 'smashing-magazine',
-    url: 'http://www.smashingmagazine.com/feed/',
+    feed_link: 'http://www.smashingmagazine.com/feed/',
     image: 'https://www.smashingmagazine.com/images/favicon/app-icon-512x512.png',
   },
   {
     name: 'Piccalilli',
     slug: 'piccalilli',
-    url: 'https://piccalil.li/feed.xml',
+    feed_link: 'https://piccalil.li/feed.xml',
     image: ''
   },
 ];
@@ -34,18 +41,31 @@ const subscriptions = [
 const parser = new Parser();
 
 const app = fastify();
-// const app = express();
-
-// app.use(cors({orogin: true}));
 
 app.register(require('fastify-cors'), {origin: true});
 
 
+/* Get subscribed feeds from SupaBase */
+const getSubscriptions = async() => {
+  return await supabase
+    .from('feeds')
+    .select();
+}
+
+const getSubscription = async (slug) => {
+  return await supabase
+    .from('feeds')
+    .select('*')
+    .eq('slug', slug);
+}
+
+
 /* GET Requests */
 app.get('/feeds', async (request, reply) => {
-  console.log('headers: ', request.headers);
-  const allFeedsPromise = subscriptions.map( async(subscription) => {
-    return await parser.parseURL(subscription.url);
+  const feeds = await (await getSubscriptions());
+  
+  const allFeedsPromise = feeds.data.map( async(feed) => {
+    return await parser.parseURL(feed.feed_link);
   });
   const data =  await Promise.allSettled(allFeedsPromise);
   const allFeeds = data.map((feed) => feed.value);
@@ -53,8 +73,9 @@ app.get('/feeds', async (request, reply) => {
 });
 
 app.get('/feeds/:slug', async (request, reply) => {
-  const url = subscriptions.filter((subscription) => subscription.slug === request.params.slug)[0].url;
-  return await parser.parseURL(url);
+  const feed = await getSubscription(request.params.slug);
+  
+  return await parser.parseURL(feed.data[0].feed_link);
 });
 
 app.get('/subscriptions', (request, reply) => {
@@ -81,8 +102,6 @@ app.post('/feeds', async (request, reply) => {
       slug: name.toLowerCase().replace(/\s/g, '-'),
       categories: feedResponse?.categories,
     };
-
-    console.log('feed: ', feed);
 
     return feed;
     

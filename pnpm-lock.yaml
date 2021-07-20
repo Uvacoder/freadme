@@ -5,6 +5,7 @@ specifiers:
   '@sveltejs/kit': next
   concurrently: ^6.2.0
   cors: ^2.8.5
+  dotenv: ^10.0.0
   express: ^4.17.1
   fastify: ^3.19.1
   fastify-cors: ^6.0.2
@@ -22,6 +23,7 @@ specifiers:
 dependencies:
   concurrently: 6.2.0
   cors: 2.8.5
+  dotenv: 10.0.0
   express: 4.17.1
   fastify: 3.19.1
   fastify-cors: 6.0.2
@@ -34,7 +36,7 @@ dependencies:
 
 devDependencies:
   '@supabase/supabase-js': 1.19.0
-  '@sveltejs/kit': 1.0.0-next.131_svelte@3.38.3
+  '@sveltejs/kit': 1.0.0-next.132_svelte@3.38.3
   mdsvex: 0.9.8_svelte@3.38.3
   prettier: 2.2.1
   prettier-plugin-svelte: 2.3.1_prettier@2.2.1+svelte@3.38.3
@@ -111,14 +113,14 @@ packages:
       '@supabase/storage-js': 1.2.2
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.131_svelte@3.38.3:
-    resolution: {integrity: sha512-izTzzUbxTVuW+uwzCg5ltaCF4DZaD8fGI88IGb3fQ3qcmfRQi/vQUZuyfKc1CYxRDVohvaBSMQUQYie4AM6jGQ==}
+  /@sveltejs/kit/1.0.0-next.132_svelte@3.38.3:
+    resolution: {integrity: sha512-mX3ihuyTQr3302ZpihG3gXfTBcDPODlJ6ZoYu6f7TGo8+1OdpuDdozgi1CKLkrUBHYGnPO4E75XOVKlgJLjBQw==}
     engines: {node: ^12.20 || >=14.13}
     hasBin: true
     peerDependencies:
       svelte: ^3.34.0
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 1.0.0-next.12_svelte@3.38.3+vite@2.4.2
+      '@sveltejs/vite-plugin-svelte': 1.0.0-next.13_svelte@3.38.3+vite@2.4.2
       cheap-watch: 1.0.3
       sade: 1.7.4
       svelte: 3.38.3
@@ -127,8 +129,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/vite-plugin-svelte/1.0.0-next.12_svelte@3.38.3+vite@2.4.2:
-    resolution: {integrity: sha512-cuyNkJ6leptfv+7qL/fWQ7EpGWdguosFOUI0z93oQUmFTcX7QxJ5h+QI3NQyktBzlKL/761L8BbG2hHNkVbLIQ==}
+  /@sveltejs/vite-plugin-svelte/1.0.0-next.13_svelte@3.38.3+vite@2.4.2:
+    resolution: {integrity: sha512-hzacNmIOR55aE+yQj750R90+BbQERRVGjlu6TQLgy+Aw2bPmRJMLKvS/NmwO+I66DEiWQdFFHR+lxtwH4bbbXw==}
     engines: {node: ^12.20 || ^14.13.1 || >= 16}
     peerDependencies:
       svelte: ^3.34.0
@@ -136,6 +138,7 @@ packages:
     dependencies:
       '@rollup/pluginutils': 4.1.1
       debug: 4.3.2
+      diff-match-patch: 1.0.5
       kleur: 4.1.4
       magic-string: 0.25.7
       require-relative: 0.8.7
@@ -436,6 +439,15 @@ packages:
 
   /destroy/1.0.4:
     resolution: {integrity: sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=}
+    dev: false
+
+  /diff-match-patch/1.0.5:
+    resolution: {integrity: sha512-IayShXAgj/QMXgB0IWmKx+rOPuGMhqm5w6jvFxmVenXKIzRqTAAsbBPT3kWQeGANj3jGgvcvv4yK6SxqYmikgw==}
+    dev: true
+
+  /dotenv/10.0.0:
+    resolution: {integrity: sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==}
+    engines: {node: '>=10'}
     dev: false
 
   /ee-first/1.1.1:

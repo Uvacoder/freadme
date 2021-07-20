@@ -21,6 +21,7 @@
 	"dependencies": {
 		"concurrently": "^6.2.0",
 		"cors": "^2.8.5",
+		"dotenv": "^10.0.0",
 		"express": "^4.17.1",
 		"fastify": "^3.19.1",
 		"fastify-cors": "^6.0.2",

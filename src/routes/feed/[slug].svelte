@@ -14,6 +14,7 @@
 
 <script>
   import { onMount } from 'svelte';
+  import { feeds } from '$lib/stores/feeds.store.js';
   import { sortByPubDate } from '$lib/utils/sortByPubDate.js';
   import PostList from '$components/PostList.svelte';
   import FeedHeader from '$lib/partials/FeedHeader.svelte';
