@@ -4,7 +4,7 @@
   import { session } from '$app/stores';
   import { goto } from '$app/navigation';
   import { authed } from '$lib/stores/user.store.js';
-  import { feeds } from '$lib/stores/feeds.store.js';
+  import { feeds, feedObjects } from '$lib/stores/feeds.store.js';
   import '../lib/style/global.css';
   import supabase from '$lib/db.js';
   import { getFeeds } from '$lib/services/feeds.service.js';
@@ -29,16 +29,18 @@
 
   onMount(async() => {
     const feedResponse = await getFeeds();
-    console.log(feedResponse);
     if(!feedResponse) {
-      // goto('/login');
       const subResponse = await fetch('http://localhost:8080/subscriptions');
       const subData = await subResponse.json();
+
       $feeds = [...subData];
     } else {
+      feedResponse.forEach((feed) => {
+        $feedObjects[feed.slug] = feed;
+      });
       $feeds = feedResponse;
     }
-    console.log($feeds);
+    console.log('$feedObjects: ', $feedObjects);
   });
 
 </script>

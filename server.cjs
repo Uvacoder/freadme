@@ -12,7 +12,7 @@ const subscriptions = [
   },
   {
     name: 'The A11y Project',
-    slug: 'a11y-project',
+    slug: 'the-a11y-project',
     url: 'https://www.a11yproject.com/feed/feed.xml',
     image: ''
   },
@@ -71,15 +71,20 @@ app.post('/feeds', async (request, reply) => {
 
     const feedResponse = await parser.parseURL(request.body.url);
     const name = request.body.name !== '' || request.body.name !== undefined ? request.body.name : feedResponse.name;
-    
-    return {
+
+    const feed = {
+      feed_link: request.body.url,
       name: name,
+      link: feedResponse.link,
       image: feedResponse.image?.url,
       description: feedResponse?.description,
-      link: feedResponse?.link,
-      categories: feedResponse?.entries,
-      slug: feedResponse.title.toLowerCase().replace(' ', '-')
+      slug: name.toLowerCase().replace(/\s/g, '-'),
+      categories: feedResponse?.categories,
     };
+
+    console.log('feed: ', feed);
+
+    return feed;
     
   } catch(error) {
     if(!feedResponse.ok) {

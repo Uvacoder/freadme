@@ -2,23 +2,21 @@ import supabase from '../db.js';
 
 export const addFeed = async (feedInfo) => {
 
-  const { link, name, image, description, categories, slug } = feedInfo;
+  const { link, name, image, description, categories, slug, feed_link } = feedInfo;
+
   const newFeed = {
-    link,
+    feed_link,
     name,
+    link,
     image: image || null,
     description: description || null,
-    categories: categories || null,
     slug,
+    categories: categories || null,
   };
-
-  console.log('newFeed: ', newFeed);
 
   const { data, error } = await supabase
     .from('feeds')
-    .insert(newFeed, {upsert: true});
-  
-  console.log(data);
+    .upsert(newFeed);
   
   if(error) throw error;
   
@@ -30,9 +28,9 @@ export const getFeeds = async () => {
 
   if(error) {
     if(error.status === 'Invalid authentication credentials') {
-
+      // do something!
     }
   }
 
-  return data
+  return data;
 };
