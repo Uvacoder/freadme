@@ -117,7 +117,7 @@
     order: 1;
     display: flex;
     gap: 1rem;
-    font-size: var(--font-2);
+    font-size: var(--font-1);
     /* width: 0;
     height: 0;
     overflow: hidden; */
