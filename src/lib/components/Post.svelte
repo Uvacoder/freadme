@@ -94,7 +94,7 @@
     display: flex;
     flex-direction: column;
     order: 1;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     gap: 1rem;
   }
   .post-header-summary {
@@ -125,7 +125,7 @@
   .feed-image {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     width: var(--space-700);
     height: var(--space-700);
   }
