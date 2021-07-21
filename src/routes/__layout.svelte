@@ -105,6 +105,7 @@
     }
     main {
       position: unset;
+      margin-left: 20rem;
       order: 2;
       flex-basis: 0;
       flex-grow: 999;
@@ -113,11 +114,14 @@
       margin-top: var(--ui-header-height);
     }
     #sidebar {
-      position: unset;
-      flex-basis: 20rem;
-      flex-grow: 1;
-      transform: unset;
-      margin-top: var(--ui-header-height);
+      width: calc(20rem + 1px);
+      top: var(--ui-header-height);
+      /* position: unset; */
+      /* flex-basis: 20rem; */
+
+      /* flex-grow: 1; */
+      /* transform: unset; */
+      /* margin-top: var(--ui-header-height); */
     }
   }
 </style>

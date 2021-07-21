@@ -1,10 +1,20 @@
 <script>
+  import { fade } from 'svelte/transition';
   import PostContent from './PostContent.svelte';
+  import Icon from './Icon.svelte';
   export let post;
   let open = false;
+  let isRead = false;
 
   function handleToggle(event) {
     open = event.target.open;
+    readTimer();
+  }
+
+  function readTimer() {
+    setTimeout(() => {
+      isRead = true;
+    }, 2000);
   }
 </script>
 
@@ -14,31 +24,50 @@
     class="post-header" 
     aria-label="{post.title || ''}. Press space or click to open content."
   >
-  <div class="post-image">
-    {#if post.feedImage}
-    <a href={post.feedLink || ''} tabindex="-1">
-      <img src="{post.feedImage || ''}" alt="{post.feedTitle || ''}" class="feed-image" tabindex="-1">
-    </a>
-    {/if}
-  </div>
-  <div class="post-header-content">
-    <div class="post-header-control">
-      <!-- <a href="#post-{post.guid}" class="button focused-only post-skip-content">Skip to Post Content</a> -->
-      <h2 class="post-title">
-        {post.title || ''}
-      </h2>
-      <div class="post-control-icons">
-        *Add Icons Here!*
+  <div class="post-header-summary">
+    <div class="post-image">
+      {#if post.feedImage}
+      <a href={post.feedLink || ''} tabindex="-1">
+        <img src="{post.feedImage || ''}" alt="{post.feedTitle || ''}" class="feed-image" tabindex="-1">
+      </a>
+      {/if}
+    </div>
+    <div class="post-header-content">
+      <div class="post-header-control">
+        <!-- <a href="#post-{post.guid}" class="button focused-only post-skip-content">Skip to Post Content</a> -->
+        <h2 class="post-title">
+          {post.title || ''}
+        </h2>
+      </div>
+      <div class="post-info">
+        <div class="post-meta"><a href="{post.feedLink || ''}" tabindex="-1">{post.feedTitle || ''}</a>: <time>{new Date(post.pubDate).toLocaleDateString()}</time></div>
       </div>
     </div>
-    <div class="post-info">
-      <div class="post-meta"><a href="{post.feedLink || ''}" tabindex="-1">{post.feedTitle || ''}</a>: <time>{new Date(post.pubDate).toLocaleDateString()}</time></div>
-    </div>
   </div>
-  </summary>
-  {#if open}
-  <PostContent content={post["content:encoded"] || post.content} />
-  {/if}
+</summary>
+{#if open}
+<PostContent content={post["content:encoded"] || post.content} />
+
+<div class="post-control-icons" transition:fade>
+  <div class="post-control-icon">
+    <Icon name="star" size="1.5"/>
+  </div>
+  <div class="post-control-icon">
+    <Icon name="tag" size="1.5"/>
+  </div>
+  <div class="post-control-icon">
+    <Icon name="share" size="1.5"/>
+  </div>
+  <div class="post-control-icon">
+    {#if isRead}
+    <Icon name="read" size="1.5"/>
+    {:else}
+    <Icon name="unread" size="1.5"/>
+    {/if}
+  </div>
+</div>
+{/if}
+  
 </details>
 
 <style>
@@ -63,19 +92,23 @@
   .post-header {
     font-family: var(--sans);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     order: 1;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     gap: 1rem;
+  }
+  .post-header-summary {
+    display: flex;
+    gap: var(--space-500);
   }
   .post-header-content {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
   }
   .post-header-control {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
     order: 2;
     justify-content: space-between;
   }
@@ -84,10 +117,10 @@
     order: 1;
     display: flex;
     gap: 1rem;
-    font-size: var(--font-1);
-    width: 0;
+    font-size: var(--font-2);
+    /* width: 0;
     height: 0;
-    overflow: hidden;
+    overflow: hidden; */
   }
   .feed-image {
     display: flex;
@@ -111,6 +144,12 @@
   }
   .post-control-icons {
     order: 2;
+    display: flex;
+    justify-content: space-around;
+    /* max-width: 40rem; */
+  }
+  .post-control-icon:hover {
+    color: var(--primary-light);
   }
   time {
     font-family: var(--sans);
